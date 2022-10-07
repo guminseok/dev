@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  postgresdb:
+    image: postgres:14-alpine
+    container_name: adminDB
+    restart: always
+    env_file: .env
+    environment:
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
+    ports:
+      - "5432:5432"
+    volumes:
+      - admin:/var/lib/postgresql/data
+    networks:
+      - vwcl
+
+volumes:
+  admin:
+  client:
+networks:
+  vwcl:
+    name: vwcl
+    driver: bridge
