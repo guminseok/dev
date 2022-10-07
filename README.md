@@ -1,5 +1,9 @@
 # vwc-library
 
+```
+/
+pnpm i
+```
 
 ### vwclのフロント画面:  http://localhost:3000/
 ```
