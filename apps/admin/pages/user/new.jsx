@@ -57,6 +57,12 @@ const M_S_Layout = (props) => {
 
 export const NewUserForm = (props) => {
   const { title } = props;
+  const [currentSelected, setCurrentSelected] = useState("権限グループを選ぶ");
+  const options = [
+    { value: "1", content: "gg1" },
+    { value: "2", content: "gg2" },
+    { value: "3", content: "gg3" },
+  ];
   return (
     <>
       <h2 className="mb-4">新規ユーザーを追加</h2>
@@ -126,14 +132,16 @@ export const NewUserForm = (props) => {
               権限グループ
             </label>
             <select
-              id="countries"
+              onChange={(event) => setCurrentSelected(event.target.value)}
+              value={currentSelected}
+              id="権限グループを選ぶ"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             >
-              <option selected={true}> 権限グループを選ぶ</option>
-              <option value="US">{title}1</option>
-              <option value="CA">{title}2</option>
-              <option value="FR">{title}3</option>
-              <option value="DE">{title}4</option>
+              {options.map((option) => (
+                <option value={option.value} key={option.content}>
+                  {option.content}
+                </option>
+              ))}
             </select>
           </div>
         </>

@@ -75,12 +75,17 @@ const M_S_Layout = (props) => {
 };
 
 export const UserUpdate = (props) => {
+  const [currentSelected, setCurrentSelected] = useState("権限グループを選ぶ");
   const [isHidden, setIsHidden] = useState(true);
   const [userPicture, setUserPicture] = useState(
     "https://media.vwcity.net/wp-content/uploads/2022/10/banner2_s.jpg"
   );
   const { e, i } = props;
-  console.log("e", e);
+  const options = [
+    { value: "1", content: "gg1" },
+    { value: "2", content: "gg2" },
+    { value: "3", content: "gg3" },
+  ];
   const tdClassName =
     "py-3 px-2 w-60 font-medium text-gray-900 dark:text-white";
   return (
@@ -129,9 +134,9 @@ export const UserUpdate = (props) => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
               <span className="sr-only">Close modal</span>
@@ -229,17 +234,23 @@ export const UserUpdate = (props) => {
                               >
                                 権限グループ
                               </label> */}
+
                               <select
-                                id="countries"
+                                onChange={(event) =>
+                                  setCurrentSelected(event.target.value)
+                                }
+                                value={currentSelected}
+                                id="権限グループを選ぶ"
                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                               >
-                                <option selected={true}>
-                                  権限グループを選ぶ
-                                </option>
-                                <option value="US">1</option>
-                                <option value="CA">2</option>
-                                <option value="FR">3</option>
-                                <option value="DE">4</option>
+                                {options.map((option) => (
+                                  <option
+                                    value={option.value}
+                                    key={option.content}
+                                  >
+                                    {option.content}
+                                  </option>
+                                ))}
                               </select>
                             </div>
 

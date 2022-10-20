@@ -51,16 +51,21 @@ const M_S_Layout = (props) => {
   );
 };
 
-export const CTForm = (props) => {
-  const { titleM } = props;
-  const title =
-    titleM == PPTitles.新規カテゴリー || titleM == PPTitles.カテゴリー編集
+export const CTForm = ({ title }) => {
+  const titleM =
+    title == PPTitles.新規カテゴリー || title == PPTitles.カテゴリー編集
       ? "カテゴリー"
       : "タグ";
-  const isNew =
-    titleM == PPTitles.新規カテゴリー || titleM == PPTitles.新規タグ;
+  const isNew = title == PPTitles.新規カテゴリー || title == PPTitles.新規タグ;
   const labelText =
     "block mb-2 text-xs font-medium text-gray-500 dark:text-gray-300";
+  const [currentSelected, setCurrentSelected] = useState(""); // 親{title}を選ぶ
+  const options = [
+    { value: "1", content: "gg1" },
+    { value: "2", content: "gg2" },
+    { value: "3", content: "gg3" },
+  ];
+
   return (
     <>
       <form>
@@ -96,7 +101,7 @@ export const CTForm = (props) => {
           </div>
         </div>
 
-        {title == "カテゴリー" ? (
+        {titleM == "カテゴリー" ? (
           <>
             <div className="flex items-center mb-4">
               <input
@@ -109,7 +114,7 @@ export const CTForm = (props) => {
                 htmlFor="default-checkbox"
                 className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
-                子{title}
+                子{titleM}
               </label>
             </div>
             <div className="mb-6">
@@ -117,19 +122,21 @@ export const CTForm = (props) => {
                 {/* 親カテゴリーを選ぶ */}
               </label>
               <select
-                id="countries"
+                onChange={(event) => setCurrentSelected(event.target.value)}
+                value={currentSelected}
+                id={1}
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               >
-                <option selected={true}> 親{title}を選ぶ</option>
-                <option value="US">{title}1</option>
-                <option value="CA">{title}2</option>
-                <option value="FR">{title}3</option>
-                <option value="DE">{title}4</option>
+                {options.map((option) => (
+                  <option value={option.value} key={option.content}>
+                    {option.content}
+                  </option>
+                ))}
               </select>
               <label htmlFor="countries" className={labelText}>
-                タグとは異なり、{title}
+                タグとは異なり、{titleM}
                 は階層構造を持つことができます。たとえば、ジャズというカテゴリーの下にビバップやビッグバンドという子
-                {title}
+                {titleM}
                 を作る、といったようなことです。これはオプションです。
               </label>
             </div>
@@ -213,9 +220,9 @@ export const CategoryUpdate = (props) => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
               <span className="sr-only">Close modal</span>
