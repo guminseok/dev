@@ -58,7 +58,7 @@ export const Table_G = (props) => {
       <div className="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:border-blue-300 hover:border-2">
         {useEntries.map((e, i) => {
           return isMediaType && e[0] == "slug" ? (
-            <MediaUpdate e={e} i={i} value={values[2]} isGrid={true} />
+            <MediaUpdate key={e} e={e} i={i} value={values[2]} isGrid={true} />
           ) : (
             <></>
           );
@@ -104,13 +104,24 @@ export const Table_G = (props) => {
           const isMedia = isMediaType && e[0] == "slug";
           const isPostTT = isPostType && e[0] == "title";
           return isCatTag ? (
-            <CategoryUpdate e={e} i={i} type={updateType} />
+            <CategoryUpdate
+              key={"CategoryUpdate" + i}
+              e={e}
+              i={i}
+              type={updateType}
+            />
           ) : isUser ? (
-            <UserUpdate e={e} i={i} />
+            <UserUpdate key={"UserUpdate" + i} e={e} i={i} />
           ) : isMedia ? (
-            <MediaUpdate e={e} i={i} value={values[2]} isGrid={false} />
+            <MediaUpdate
+              key={"MediaUpdate" + i}
+              e={e}
+              i={i}
+              value={values[2]}
+              isGrid={false}
+            />
           ) : isPostTT ? (
-            <div onClick={() => router.push("/post/new")}>
+            <div onClick={() => router.push("/post/new")} key={"PostList" + i}>
               <a className="block py-1 px-2 rounded transition duration-200 w-60">
                 <div className=" text-blue-600 font-bold">{e[1]}</div>
               </a>
@@ -121,7 +132,11 @@ export const Table_G = (props) => {
               <img src={e[1]}></img>
             </td>
           ) : (
-            <td key={"table-cell_" + i} id={e[0]} className={tdClassName}>
+            <td
+              key={"table-cell_" + e[0] + i}
+              id={e[0]}
+              className={tdClassName}
+            >
               {e[1]}
             </td>
           );
@@ -372,7 +387,7 @@ const Filter = ({ title, count, rowsPerPage, totalPages, setActivePage }) => {
               <li>
                 <div className="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                   <input
-                    checked={true}
+                    // checked={true}
                     id="filter-radio-example-2"
                     type="radio"
                     value=""

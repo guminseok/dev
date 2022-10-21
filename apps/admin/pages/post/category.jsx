@@ -184,7 +184,7 @@ export const CategoryUpdate = (props) => {
   return (
     <>
       <>
-        <td key={"table-cell_" + i} id={e[0]} className={tdClassName}>
+        <td id={e[0]} className={tdClassName}>
           <div
             className="hover:text-blue-300 text-blue-700 font-bold"
             onClick={() => setIsHidden(!isHidden)}

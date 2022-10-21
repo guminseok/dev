@@ -281,7 +281,7 @@ const DropDownSearch = (props) => {
           aria-labelledby="dropdownSearchButton"
         >
           {optionList.map((li) => {
-            return <Option cat={li} />;
+            return <Option key={li} cat={li} />;
           })}
         </ul>
 
