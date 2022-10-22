@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
 import { useState } from "react";
 
@@ -5,6 +6,8 @@ import { MediaUpdate } from "../pages/media";
 import { CategoryUpdate } from "../pages/post/category";
 import { UserUpdate } from "../pages/user";
 import { PPTitles } from "../utils/util_const";
+import Image from "next/image";
+/* eslint-disable react/display-name */
 
 export const Table_G = (props) => {
   const { head, rows, disc, type } = props;
@@ -129,7 +132,7 @@ export const Table_G = (props) => {
           ) : // <MediaUpdate e={e} i={i} value={values[2]} isGrid={false} />
           e[0] == "thumbnail" ? (
             <td key={e[0] + i + e[1]} className={tdClassName}>
-              <img src={e[1]}></img>
+              <img src={e[1]} alt="" layout="fill"></img>
             </td>
           ) : (
             <td
@@ -460,6 +463,7 @@ const Filter = ({ title, count, rowsPerPage, totalPages, setActivePage }) => {
     </>
   );
 };
+Filter.displayName = "";
 const Search = ({ title }) => {
   // const title = props;
   return (

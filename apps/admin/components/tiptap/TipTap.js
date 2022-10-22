@@ -93,10 +93,10 @@ const test_content = `
 const editorBoxClass =
   "border-solid border-2 border-black min-h-full opacity-50  mb-4";
 
-const MenuBox = ({ child }) => {
-  return <div className="border-solid border-2 w-full" children={child}></div>;
-};
+// const MenuBox = ({ child }) => {
+//   return <div className="border-solid border-2 w-full" children={child}></div>;
+// };
 
-const EditBox = () => {
-  return <div className="border-solid border-2 w-full"> Editor Content </div>;
-};
+// const EditBox = () => {
+//   return <div className="border-solid border-2 w-full"> Editor Content </div>;
+// };

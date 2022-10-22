@@ -1,14 +1,15 @@
+/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
 import { Table_G } from "../../components/Table_G";
 import { userIchiranHead2 } from "../../mock-data/mock_data";
 import { userData } from "../../mock-data/users_Data";
 import { PPTitles } from "../../utils/util_const";
+import Image from "next/image";
 
 const Category = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const pTitle = PPTitles.ユーザー;
-  console.log("pTitle", pTitle);
 
   const submitData = async (e) => {
     e.preventDefault();
@@ -28,7 +29,7 @@ const Category = () => {
     <>
       <div className="flex flex-col w-screen h-full">
         <div className="flex flex-none bg-red-000 h-16 my-3">
-          <h1>{pTitle}</h1>
+          <h1>{pTitle}yyyyyyyy</h1>
           {/* <UserUpdate /> */}
         </div>
         <div className="flex-initial bg-green-200 h-full">
@@ -155,6 +156,7 @@ export const UserUpdate = (props) => {
                         src={userPicture}
                         draggable="false"
                         alt=""
+                        layout="fill"
                       />
                       {/* <div className="attachment-actions">
                         <button

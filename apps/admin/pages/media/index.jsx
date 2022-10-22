@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
 import { Table_G } from "../../components/Table_G";
 import { mediaData, mediaDataMock } from "../../mock-data/media_Data";
 import { mediaHead, tagIchiranHead } from "../../mock-data/mock_data";
 import { PPTitles } from "../../utils/util_const";
+import Image from "next/image";
 
 const Category = () => {
   const [title, setTitle] = useState("");
@@ -179,12 +181,17 @@ export const MediaUpdate = (props) => {
               className="hover:text-blue-300 text-blue-700 font-bold"
               onClick={() => setIsHidden(!isHidden)}
             >
-              <img src={value}></img>
+              <img src={value} alt={""} layout="fill"></img>
               {e[1]}
             </div>
           </td>
         ) : (
-          <img src={value} onClick={() => setIsHidden(!isHidden)}></img>
+          <img
+            src={value}
+            onClick={() => setIsHidden(!isHidden)}
+            alt={""}
+            layout="fill"
+          ></img>
         )}
       </>
       <div
@@ -235,6 +242,7 @@ export const MediaUpdate = (props) => {
                         src="https://media.vwcity.net/wp-content/uploads/2022/10/banner2_s.jpg"
                         draggable="false"
                         alt=""
+                        layout="fill"
                       />
                       {/* <div className="attachment-actions">
                         <button
