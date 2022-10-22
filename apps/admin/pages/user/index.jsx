@@ -29,7 +29,7 @@ const Category = () => {
     <>
       <div className="flex flex-col w-screen h-full">
         <div className="flex flex-none bg-red-000 h-16 my-3">
-          <h1>{pTitle}yyyyyyyy</h1>
+          <h1>{pTitle}</h1>
           {/* <UserUpdate /> */}
         </div>
         <div className="flex-initial bg-green-200 h-full">
