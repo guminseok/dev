@@ -1,5 +1,22 @@
-version: "3.7"
+version: '3.7'
 services:
+  admin:
+    container_name: vwcl-admin
+    image: vwc-admin-image
+    build:
+      context: ./apps/admin
+      dockerfile: Dockerfile.dev
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    volumes:
+      - ./admin/public:/app/public
+    restart: always
+    ports:
+      - 3001:3001
+    networks:
+      - vwcl
   postgresdb:
     image: postgres:14-alpine
     container_name: adminDB
@@ -15,7 +32,21 @@ services:
       - admin:/var/lib/postgresql/data
     networks:
       - vwcl
-
+  client:
+    container_name: vwcl-client
+    image: vwc-client-image
+    build:
+      context: ./apps/client
+      dockerfile: Dockerfile.dev
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - vwcl
 volumes:
   admin:
   client:

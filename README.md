@@ -1,18 +1,19 @@
 # vwc-library
 
+### ローカル環境構築
+
 ```
-/
-pnpm i
+docker-compose -f docker-compose.dev.yml up --build -d
 ```
 
-### vwclのフロント画面:  http://localhost:3000/
+
 ```
-cd apps/client
-pnpm dev
+- docker-compose -f docker-compose.dev.yml down
 ```
 
-### vwclのバック管理画面: http://localhost:3001/
+`client`, `admin` が以下の PORT に割り振られる
+
 ```
-cd apps/admin
-pnpm dev
+http://localhost:3000/ #client側画面
+http://localhost:3001/ #admin管理画面
 ```
