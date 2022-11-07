@@ -4,7 +4,9 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  // url      = env("DATABASE_URL")
+  url      = "postgresql://dev:dev@postgresdb:5432/dev"
+  // url      = "postgresql://dev:dev@localhost:5432/dev"
 }
 
 model Account {
@@ -26,10 +28,24 @@ model Account {
 }
 
 model Post {
-  id      Int     @id @default(autoincrement())
-  title   String
-  content String?
-  user    String
+  id             String   @id @default(uuid())
+  title          String?
+  content        String?
+  user           String
+  rendered       String?
+  slug           String?
+  date_published DateTime @default("2020-01-12T00:00:00+00:00")
+  date_modified  DateTime @updatedAt
+  date_created   DateTime @default(now())
+  status         String
+  type           String?
+  post_link      String?
+  media_featured String?
+  modified_by    String?
+  excerpt        String?
+  revisions      Int[]
+  categoryList   Int[]
+  tagList        Int[]
 }
 
 model Session {

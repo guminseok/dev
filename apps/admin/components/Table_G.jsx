@@ -124,11 +124,13 @@ export const Table_G = (props) => {
               isGrid={false}
             />
           ) : isPostTT ? (
-            <div onClick={() => router.push("/post/new")} key={"PostList" + i}>
-              <a className="block py-1 px-2 rounded transition duration-200 w-60">
-                <div className=" text-blue-600 font-bold">{e[1]}</div>
-              </a>
-            </div>
+            <td key={"PostList" + i}>
+              <div onClick={() => router.push("/post/new")}>
+                <a className="block py-1 px-2 rounded transition duration-200 w-60">
+                  <div className=" text-blue-600 font-bold">{e[1]}</div>
+                </a>
+              </div>
+            </td>
           ) : // <MediaUpdate e={e} i={i} value={values[2]} isGrid={false} />
           e[0] == "thumbnail" ? (
             <td key={e[0] + i + e[1]} className={tdClassName}>

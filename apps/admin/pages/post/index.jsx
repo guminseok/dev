@@ -1,28 +1,10 @@
 import { Table_G } from "../../components/Table_G";
-import {
-  toukouIchiranHead2,
-  toukouIchiranRows,
-} from "../../mock-data/mock_data";
 import { PPTitles } from "../../utils/util_const";
+import getAllPosts from "../api/posts/getPosts";
 
-const Edit = () => {
+const PostList = ({ postList }) => {
   const pTitle = PPTitles.投稿一覧;
-
-  // const submitData = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const body = { title, content, user: "them" };
-  //     await fetch("/api/post", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify(body),
-  //     });
-  //     // await router.push("/drafts");
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-
+  postList = JSON.parse(postList);
   return (
     <>
       <div className="flex flex-col w-screen h-full">
@@ -31,7 +13,7 @@ const Edit = () => {
         </div>
         <div className="flex-initial bg-green-000 h-full">
           <div className="bg-white flex h-full">
-            <Main_L />
+            <Main_L postList={postList} />
 
             <Side_L />
           </div>
@@ -41,25 +23,37 @@ const Edit = () => {
   );
 };
 
-export default Edit;
+export default PostList;
 
-const Main_L = () => {
+const Main_L = ({ postList }) => {
+  const usersHead = {
+    id: "id",
+    title: "タイトル",
+    user: "投稿者",
+    categoryList: "カテゴリー",
+    tagList: "タグ",
+    status: "ステータス",
+    media_featured: "サムネイル",
+    date_modified: "更新した時間",
+    date_published: "投稿した時間",
+  };
+
   const discLabels = [
     "title",
-    "contributor",
-    "category",
-    "tag",
-    "publish_date",
+    "user",
+    "categoryList",
+    "tagList",
     "status",
-    "date_created",
-    "thumbnail",
-    "last_modified",
+    "media_featured",
+    "date_modified",
+    "date_published",
   ];
   return (
     <div className={" flex-1 h-full ml-4 mb-6"}>
       <Table_G
-        head={toukouIchiranHead2}
-        rows={toukouIchiranRows}
+        head={usersHead}
+        // rows={toukouIchiranRows}
+        rows={postList}
         disc={discLabels}
         type={PPTitles.投稿一覧}
       />
@@ -77,32 +71,10 @@ const Side_L = () => {
   );
 };
 
-{
-  /* <form onSubmit={submitData}>
-          <h1>新規投稿を追加</h1>
-          <br />
-          <input
-            autoFocus
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder="タイトルを追加"
-            type="text"
-            value={title}
-          />
-          <textarea
-            cols={50}
-            onChange={(e) => {
-              setContent(e.target.value);
-              // if (globalContext != null) {
-              // globalContext.content = e.target.value;
-              // }
-            }}
-            placeholder="Content"
-            rows={8}
-            value={post.content}
-          />
-          <input disabled={!content || !title} type="submit" value="Create" />
-          <a className="back" href="#" onClick={() => router.push("/")}>
-            or Cancel
-          </a>
-        </form> */
+export async function getServerSideProps(context) {
+  const postList = await getAllPosts();
+
+  return {
+    props: { postList: postList },
+  };
 }

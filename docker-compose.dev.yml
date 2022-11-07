@@ -10,22 +10,21 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
       - WATCHPACK_POLLING=true
-    volumes:
-      - ./admin/public:/app/public
     restart: always
     ports:
       - 3001:3001
     networks:
       - vwcl
+    depends_on:
+      - postgresdb
   postgresdb:
-    image: postgres:14-alpine
+    image: postgres
     container_name: adminDB
     restart: always
-    env_file: .env
     environment:
-      POSTGRES_USER: ${DATABASE_USERNAME}
-      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
-      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: dev
     ports:
       - "5432:5432"
     volumes:
@@ -49,7 +48,6 @@ services:
       - vwcl
 volumes:
   admin:
-  client:
 networks:
   vwcl:
     name: vwcl

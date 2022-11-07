@@ -173,7 +173,7 @@ export const MediaUpdate = (props) => {
   const tdClassName =
     "py-3 px-2 w-60 font-medium text-gray-900 dark:text-white";
   return (
-    <>
+    <td>
       <>
         {!isGrid ? (
           <td key={"table-cell_" + i} id={e[0]} className={tdClassName}>
@@ -379,7 +379,7 @@ export const MediaUpdate = (props) => {
           </div>
         </div>
       </div>
-    </>
+    </td>
   );
 };
 
