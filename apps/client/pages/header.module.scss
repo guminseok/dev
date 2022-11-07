@@ -1,0 +1,18 @@
+.header {
+    text-decoration: none;
+    background: rgb(13, 14, 16, 0.8);
+    align-items: center;
+    width: auto;
+    height: 60px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+    &-icon {
+        margin-top: 10px;
+        color: white;
+        margin-left: 15%;
+    }
+
+    &-icon-img {
+        width: 40px;
+    }
+}

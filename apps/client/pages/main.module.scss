@@ -1,0 +1,50 @@
+.top {
+    &-body {
+        background: rgba(162, 121, 41, 0.25);
+    }
+
+    &-title {
+        font-size: 20px;
+        display: flex;
+        height: 70px;
+        flex-wrap: nowrap;
+
+        &-font {
+            margin: 20px 0;
+        }
+
+        &-list {
+            cursor: pointer;
+            width: 20%;
+            text-align: center;
+        }
+
+        &-line {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-keyword-item {
+        text-align: center;
+        margin: 10px 0 30px;
+    }
+
+    &-keyword-title {
+        font-weight: bold;
+        font-size: 25px;
+        margin: 25px 0;
+    }
+
+    &-keyword {
+        &-title {
+            font-weight: bold;
+            font-size: 25px;
+            margin: 25px 0;
+        }
+
+        &-item {
+            text-align: center;
+            margin: 10px 0 30px;
+        }
+    }
+}
