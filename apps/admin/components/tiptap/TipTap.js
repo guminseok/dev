@@ -8,13 +8,18 @@ import { useEffect, useState } from "react";
 import TextAlign from "@tiptap/extension-text-align";
 import { MenuBar } from "./MenuBar";
 import { useKijiStore } from "../../utils/updateStore";
+import { useRouter } from "next/router";
 
 const Tiptap = () => {
+  const router = useRouter();
+  const isNewPostPath = router.pathname == "/post/new" ? true : false;
   const storePost = useKijiStore((state) => state.post);
   const setContent = useKijiStore((state) => state.setContent);
   const setTitle = useKijiStore((state) => state.setTitle);
-  const [ttContent, setTTContent] = useState(storePost.content);
-  const [ttTitle, setTTTitle] = useState(storePost.title);
+  const [ttContent, setTTContent] = useState(
+    isNewPostPath ? "" : storePost.content
+  );
+  const [ttTitle, setTTTitle] = useState(isNewPostPath ? "" : storePost.title);
   const [showHTML, setShowHTML] = useState(false);
 
   const label = showHTML ? "kiji" : "HTML";
