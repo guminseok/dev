@@ -44,37 +44,7 @@ const Side_L = () => {
   );
 };
 
-// const KouKai = ({}) => {
-//   const title = "公開";
-
-//   return (
-//     <div className="bg-orange-000 h-auto w-64 border-2">
-//       <table className="w-full h-full text-sm text-left text-gray-500 dark:text-gray-400 table-auto">
-//         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-//           <tr>
-//             <th scope="col" className="py-2 px-4">
-//               {title}
-//             </th>
-//             <th scope="col" className="py-2 px-2"></th>
-//             <th scope="col" className="py-2 px-2"></th>
-//           </tr>
-//         </thead>
-//         <tbody>
-//           <Draft_View />
-
-//           <Status />
-//           {/* <Share /> */}
-
-//           <Schedule />
-
-//           <Gomi_Koukai />
-//         </tbody>
-//       </table>
-//     </div>
-//   );
-// };
-
-const KouKai = () => {
+export const KouKai = () => {
   const title = "公開";
   return (
     <div className="bg-orange-000 h-auto w-64 border-2">
@@ -189,7 +159,8 @@ const Koukai = () => {
   const router = useRouter();
   const isNewPostPath = router.pathname == "/post/new" ? true : false;
   const storePost = useKijiStore((state) => state.post);
-  const submitNewPost = async () => {
+  const submitNewPost = async (e) => {
+    e.preventDefault();
     try {
       const body = storePost;
       body.status = "公開済み";
@@ -206,11 +177,26 @@ const Koukai = () => {
       console.error(error);
     }
   };
+  const submitEditPost = async (e) => {
+    e.preventDefault();
+    try {
+      const body = storePost;
+      const response = await fetch(`/api/posts/edit/${storePost.id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      console.log("submitEditPost result:", await response.json());
+      router.push(`/post`);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <td className="py-2 px-2">
       <a
-        onClick={() => {
-          isNewPostPath ? submitNewPost() : submitEditPost();
+        onClick={(e) => {
+          isNewPostPath ? submitNewPost(e) : submitEditPost(e);
         }}
         className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
       >
@@ -220,7 +206,7 @@ const Koukai = () => {
   );
 };
 
-const DropDownSearch = (props) => {
+export const DropDownSearch = (props) => {
   const { title } = props;
   const optionList = [
     "TOPICS",
@@ -233,14 +219,11 @@ const DropDownSearch = (props) => {
   const handleOnChange = () => {
     setIsChecked(!isChecked);
   };
-  const [isHidden, setIsHiden] = useState(false);
-  const listHidden = isHidden ? "hidden" : "block";
 
   const Option = (props) => {
     const { cat } = props;
     return (
       <li className="w-full rounded-t-lg border-b border-gray-200 dark:border-gray-600">
-        {/* li had no styling */}
         <div className="flex items-center pl-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
           <input
             id={cat + `-checkbox`}
@@ -262,104 +245,46 @@ const DropDownSearch = (props) => {
   };
 
   return (
-    <div style={{ marginBottom: "20px" }}>
-      <button
-        id="dropdownSearchButton"
-        data-dropdown-toggle="dropdownSearch"
-        data-dropdown-placement="bottom"
-        className="text-black hover:bg-blue-100 border-black border-2 focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-300 dark:hover:bg-blue-400 dark:focus:ring-blue-600"
-        type="button"
-        onClick={() => {
-          setIsHiden(!isHidden);
-        }}
-      >
-        {title}
-        <svg
-          className="ml-2 w-4 h-4"
-          aria-hidden="true"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M19 9l-7 7-7-7"
-          ></path>
-        </svg>
-      </button>
-
-      {/* <!-- Dropdown menu --> */}
-      <div
-        id="dropdownSearch"
-        className={
-          listHidden + " z-10 w-60 bg-white rounded shadow dark:bg-gray-700"
-        }
-        // style={{
-        //   position: "absolute",
-        //   inset: "0px auto auto 0px",
-        //   margin: "0px",
-        //   transform: "translate3d(0px, 326.4px, 0px)",
-        // }}
-        // data-popper-reference-hidden=""
-        // data-popper-escaped=""
-        // data-popper-placement="bottom"
-      >
-        <div className="flex-none h-8 text-white ml-2 mt-2">{title}</div>
-        <div className="p-3">
-          <label htmlFor="input-group-search" className="sr-only">
-            検索
-          </label>
-          <div className="relative">
-            <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-              <svg
-                className="w-5 h-5 text-gray-500 dark:text-gray-400"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-            </div>
-            <input
-              type="text"
-              id="input-group-search"
-              className="block p-2 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="検索"
-            ></input>
+    <div
+      id="dropdownSearch"
+      className={"z-10 w-60 bg-white rounded shadow dark:bg-gray-700"}
+      style={{ marginBottom: "20px" }}
+    >
+      <div className="flex-none h-8 ml-2 mt-2">{title}</div>
+      <div className="p-3">
+        <label className="sr-only">検索</label>
+        <div className="relative">
+          <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+            <svg
+              className="w-5 h-5 text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clipRule="evenodd"
+              ></path>
+            </svg>
           </div>
+          <input
+            type="text"
+            id="input-group-search"
+            className="block p-2 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="検索"
+          ></input>
         </div>
-        <ul
-          className="overflow-y-auto px-3 pb-3 h-48 text-sm text-gray-700 dark:text-gray-200"
-          aria-labelledby="dropdownSearchButton"
-        >
-          {optionList.map((li) => {
-            return <Option key={li} cat={li} />;
-          })}
-        </ul>
-
-        {/* <div className="flex">
-          <a
-            href="#"
-            className="flex items-center p-3 text-sm font-medium text-red-600 bg-gray-50 border-t border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-red-500 hover:underline"
-          >
-            + 新規カテゴリーを追加
-          </a>
-          <a
-            href="#"
-            className="flex items-center p-3 text-sm font-medium text-red-600 bg-gray-50 border-t border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-red-500 hover:underline"
-          >
-            - カテゴリーを削除する
-          </a>
-        </div> */}
       </div>
+      <ul
+        className="overflow-y-auto px-3 pb-3 h-48 text-sm text-gray-700 dark:text-gray-200"
+        aria-labelledby="dropdownSearchButton"
+      >
+        {optionList.map((li) => {
+          return <Option key={li} cat={li} />;
+        })}
+      </ul>
     </div>
   );
 };
