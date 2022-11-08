@@ -1,21 +1,23 @@
+/* eslint-disable react/display-name */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEditor, EditorContent } from "@tiptap/react";
 import Image from "@tiptap/extension-image";
 import StarterKit from "@tiptap/starter-kit";
-import React from "react";
+import React, { memo } from "react";
 import { useEffect, useState } from "react";
 import TextAlign from "@tiptap/extension-text-align";
 import { MenuBar } from "./MenuBar";
-import HTMLEditor from "../../components/tiptap/HTMLEditor";
-import { useStore } from "../../store";
+import { useKijiStore } from "../../utils/updateStore";
 
 const Tiptap = () => {
-  const [ttContent, setTTContent] = useState("");
+  const storePost = useKijiStore((state) => state.post);
+  const setContent = useKijiStore((state) => state.setContent);
+  const setTitle = useKijiStore((state) => state.setTitle);
+  const [ttContent, setTTContent] = useState(storePost.content);
+  const [ttTitle, setTTTitle] = useState(storePost.title);
   const [showHTML, setShowHTML] = useState(false);
 
   const label = showHTML ? "kiji" : "HTML";
-
-  const sampleContent = useStore((state) => state.content);
-  console.log("sampleContent", sampleContent);
 
   const editor = useEditor({
     extensions: [
@@ -25,9 +27,8 @@ const Tiptap = () => {
         types: ["heading", "paragraph"],
       }),
     ],
-    content: sampleContent,
+    content: ttContent,
     onUpdate: ({ editor }) => {
-      // const json = editor.getJSON();
       const html = editor.getHTML();
       setTTContent(html);
     },
@@ -50,13 +51,56 @@ const Tiptap = () => {
   };
 
   useEffect(() => {
-    // updatePostContent(ttContent);
+    setContent(ttContent);
   }, [ttContent]);
+  useEffect(() => {
+    if (editor !== null && editor.commands !== null) {
+      editor.commands.setContent(ttContent);
+    }
+  }, [showHTML]);
+  useEffect(() => {
+    setTitle(ttTitle);
+  }, [ttTitle]);
+
+  const HTMLEditor = memo(() => {
+    return (
+      <div className="flex-col w-full h-full bg-yellow-000">
+        <div className={editorBoxClass}>
+          {/* <div className="EditorMirror"> */}
+          <form
+            className=""
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
+          >
+            <textarea
+              className="EditorMirror"
+              onChange={(e) => {
+                setTTContent(e.target.value);
+              }}
+              value={ttContent}
+            />
+          </form>
+          {/* </div> */}
+        </div>
+      </div>
+    );
+  });
 
   return (
     <div className="flex-col w-full h-full bg-yellow-000 shadow-lg">
       {/* <div>{post.content}</div> */}
 
+      <div className="flex justify-end">
+        <input
+          autoFocus
+          onChange={(e) => setTTTitle(e.target.value)}
+          placeholder="タイトルを追加"
+          type="text"
+          value={ttTitle}
+          className="w-full h-10 border-2 border-black rounded mb-4"
+        />
+      </div>
       <div className="bg-orange-300 flex justify-end">
         <button
           className="border-solid border-black border-2 px-2"
@@ -72,7 +116,7 @@ const Tiptap = () => {
       {/* <EditorContent className={editorBoxClass} editor={editor} /> */}
 
       {showHTML ? (
-        <HTMLEditor />
+        <HTMLEditor key={"HTMLEditor"} />
       ) : (
         <EditorContent className={editorBoxClass} editor={editor} />
       )}
@@ -92,11 +136,3 @@ const test_content = `
 
 const editorBoxClass =
   "border-solid border-2 border-black min-h-full opacity-50  mb-4";
-
-// const MenuBox = ({ child }) => {
-//   return <div className="border-solid border-2 w-full" children={child}></div>;
-// };
-
-// const EditBox = () => {
-//   return <div className="border-solid border-2 w-full"> Editor Content </div>;
-// };

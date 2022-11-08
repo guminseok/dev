@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { flatStore, useKijiStore } from "../../utils/updateStore";
 import Tiptap from "../../components/tiptap/TipTap";
+import { useRouter } from "next/router";
 
-const Edit = () => {
+const New = () => {
   const pTitle = "新規投稿を追加";
 
   return (
@@ -12,7 +14,7 @@ const Edit = () => {
         </div>
         <div className="flex-initial bg-green-000 h-full">
           <div className="bg-white flex h-full">
-            <Main_L />
+            <Main_L pid={flatStore.id} />
 
             <Side_L />
           </div>
@@ -22,12 +24,12 @@ const Edit = () => {
   );
 };
 
-export default Edit;
+export default New;
 
-const Main_L = () => {
+const Main_L = ({ pId }) => {
   return (
     <div className="flex-initial w-10/12 h-full ml-4">
-      <Tiptap />
+      <Tiptap pId={pId} />
     </div>
   );
 };
@@ -41,6 +43,36 @@ const Side_L = () => {
     </div>
   );
 };
+
+// const KouKai = ({}) => {
+//   const title = "公開";
+
+//   return (
+//     <div className="bg-orange-000 h-auto w-64 border-2">
+//       <table className="w-full h-full text-sm text-left text-gray-500 dark:text-gray-400 table-auto">
+//         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+//           <tr>
+//             <th scope="col" className="py-2 px-4">
+//               {title}
+//             </th>
+//             <th scope="col" className="py-2 px-2"></th>
+//             <th scope="col" className="py-2 px-2"></th>
+//           </tr>
+//         </thead>
+//         <tbody>
+//           <Draft_View />
+
+//           <Status />
+//           {/* <Share /> */}
+
+//           <Schedule />
+
+//           <Gomi_Koukai />
+//         </tbody>
+//       </table>
+//     </div>
+//   );
+// };
 
 const KouKai = () => {
   const title = "公開";
@@ -133,7 +165,7 @@ const KouKai = () => {
           </tr>
 
           <tr className="bg-white border-b dark:bg-gray-600 dark:border-gray-700">
-            <th
+            <td
               scope="row"
               className="py-2 px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
             >
@@ -143,20 +175,48 @@ const KouKai = () => {
               >
                 ゴミ箱へ移動
               </a>
-            </th>
-            <td className="py-2 px-2 font-bold"></td>
-            <td className="py-2 px-2">
-              <a
-                href="#"
-                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >
-                {title}
-              </a>
             </td>
+            <td className="py-2 px-2 font-bold"></td>
+            <Koukai />
           </tr>
         </tbody>
       </table>
     </div>
+  );
+};
+
+const Koukai = () => {
+  const router = useRouter();
+  const isNewPostPath = router.pathname == "/post/new" ? true : false;
+  const storePost = useKijiStore((state) => state.post);
+  const submitNewPost = async () => {
+    try {
+      const body = storePost;
+      body.status = "公開済み";
+      const response = await fetch(`/api/posts/new`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const jRes = await response.json();
+      const id = jRes.id;
+      console.log("submitNewPost response: response::", jRes, id);
+      router.push(`/post`);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  return (
+    <td className="py-2 px-2">
+      <a
+        onClick={() => {
+          isNewPostPath ? submitNewPost() : submitEditPost();
+        }}
+        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+      >
+        公開
+      </a>
+    </td>
   );
 };
 
