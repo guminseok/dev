@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.jsx", "components/tiptap/HTMLEditor.jsx", "pages/post/tag.jsx", "pages/post/new.jsx", "pages/post/category.jsx", "mock-data/users_Data.js", "mock-data/tag_Data.js", "mock-data/posts_Data_Real.js", "mock-data/mock_data.js", "mock-data/media_Data.js", "mock-data/category_Data.js", "pages/user/new.jsx", "pages/user/index.jsx", "util_const.js", "pages/media/index.jsx", "components/Table_G.jsx", "pages/post/index.jsx", "components/layouts/Header.jsx", "components/layouts/ASideMenu.jsx", "components/layouts/AdminLayout.jsx", "lib/prisma.js", "pages/api/hello.js", "pages/_app.jsx"],
   "exclude": ["node_modules"]
 }

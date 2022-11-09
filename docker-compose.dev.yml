@@ -1,24 +1,53 @@
-version: "3.7"
+version: '3.7'
 services:
+  admin:
+    container_name: vwcl-admin
+    image: vwc-admin-image
+    build:
+      context: ./apps/admin
+      dockerfile: Dockerfile.dev
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    restart: always
+    ports:
+      - 3001:3001
+    networks:
+      - vwcl
+    depends_on:
+      - postgresdb
   postgresdb:
-    image: postgres:14-alpine
+    image: postgres
     container_name: adminDB
     restart: always
-    env_file: .env
     environment:
-      POSTGRES_USER: ${DATABASE_USERNAME}
-      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
-      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: dev
     ports:
       - "5432:5432"
     volumes:
       - admin:/var/lib/postgresql/data
     networks:
       - vwcl
-
+  client:
+    container_name: vwcl-client
+    image: vwc-client-image
+    build:
+      context: ./apps/client
+      dockerfile: Dockerfile.dev
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - vwcl
 volumes:
   admin:
-  client:
 networks:
   vwcl:
     name: vwcl
