@@ -2,11 +2,14 @@
     &-item {
         text-align: center;
         margin: 10px;
+        width: 100%;
+        display: flex;
     }
 
     &-title {
         font-weight: bold;
         font-size: 25px;
+        width: 100%;
     }
 
     &-line {

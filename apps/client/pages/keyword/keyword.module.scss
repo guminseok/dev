@@ -1,0 +1,13 @@
+.dropdown {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  visibility: hidden;
+  background-color: white;
+}
+
+.dropdown:hover .menu {
+  visibility: visible;
+}

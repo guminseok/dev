@@ -3,6 +3,7 @@ import {React, useState} from 'react';
 import SubTopVideo from './subTopVideo';
 import Feature from './feature';
 import style from './top.module.scss';
+import Video from './video';
 import Detail from './detail';
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {Navigation, Pagination, Autoplay} from "swiper";
@@ -16,6 +17,14 @@ const Top = (props) => {
         postsDataMock
     };
     let obj = DataReal.postsDataMock;
+    // function custonSort(a, b) {
+    //     return a.id < b.id
+    //     ? 1
+    //     : -1;
+    // }
+    
+    // obj.sort(custonSort);
+
     const [ViewSubTitle, setViewSubTitle] = useState(
         <Feature obj={obj} setViewSubTitle={props.setViewSubTitle}/>
     );
@@ -159,12 +168,13 @@ const Top = (props) => {
                 </div>
             </div>
 
-            <SubTopVideo/>
+            <SubTopVideo setViewSubTitle={props.setViewSubTitle}/>
 
             <div class="grid grid-cols-6 gap-4">
                 <div class="col-start-2 col-span-4  ...">
                     <div className={style['top-sub']}>
-                        <button className={style['top-sub-button']}>
+                        <button className={style['top-sub-button']}
+                        onClick={() => props.setViewSubTitle(<Video setViewSubTitle={props.setViewSubTitle}/>)}>
                             動画一覧</button>
                         <hr/>
                         <div className={style['top-sub-title']}>特集記事</div>

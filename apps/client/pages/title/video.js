@@ -2,31 +2,27 @@ import {React} from 'react';
 import style from './subTop.module.scss';
 import rankStyle from './ranking.module.scss';
 import Detail from './detail';
-import {postsDataMock} from '../mock/postsDataMock3';
+import {postsDataMock} from '../mock/postsDataMock';
 
-const Feature = (props) => {
+const Video = (props) => {
     const DataReal = {
         postsDataMock
     };
     let obj = DataReal.postsDataMock;
     window.scrollTo({top: 0, behavior: "smooth"});
-    function custonSort(a) {
-        if (a.feature) {
-            return -1
-        }
-        if (!a.feature) {
-            return 1 
-        }
-    }
-    obj.sort(custonSort);
-
-    if (!props.title) {
-        obj = obj.slice(0, 3);
-    }
-
+    // function custonSort(a) {
+    //     if (a.feature) {
+    //         return -1
+    //     }
+    //     if (!a.feature) {
+    //         return 1 
+    //     }
+    // }
+    // obj.sort(custonSort);
+    
     const ViewSubTitle = obj.map(movie => {
         const result = [];
-        if (movie.feature) {
+        if (movie.video) {
             for (let num = 0; num < movie.keyword.length; num++) {
                 result.push(
                     <span className={style['top-sub-keyword']}>
@@ -37,13 +33,13 @@ const Feature = (props) => {
             return (
                 <div
                     className={style['top-sub-feature-cursor']}
-                    onClick={() => props.setViewSubTitle(<Detail title={movie.id}/>)}>
+                    onClick={() => props.setViewSubTitle(<Detail title={movie.id} type="V"/>)}>
                     <div className={style['top-sub-feature']}>
                         {movie.title.rendered}
                     </div>
                     <div className={style['top-sub-feature-content']}>
 
-                        <img src={movie.url} className={style['top-sub-feature-img']} alt='React'/>
+                        <iframe src={movie.url} className={style['top-sub-feature-img']} alt='React'/>
 
                         <span className={style['top-sub-feature-area']}>
                             <span className={style['top-sub-feature-text']}>{movie.excerpt.rendered}</span>
@@ -81,4 +77,4 @@ const Feature = (props) => {
     );
 }
 
-export default Feature;
+export default Video;

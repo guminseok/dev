@@ -33,7 +33,7 @@ const Main = () => {
                             className = {`btn ${tab === 'ranking' ? 'active' : ''}`}
                             onClick={() => {
                                 setViewSubTitle(
-                                // <Ranking setViewSubTitle={setViewSubTitle}/> クリックするとRankingのページに遷移
+                                 <Ranking setViewSubTitle={setViewSubTitle}/> 
                                 );
                                 setTab('ranking');
                                 setKeywordtab('');
@@ -49,7 +49,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                              //  <Categories categories="100" title="事業型ファンド" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                               <Categories categories="100" title="事業型ファンド" setViewSubTitle={setViewSubTitle}/> 
                                             );
                                             setTab('attention');
                                             setKeywordtab('');
@@ -58,7 +58,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                              //  <Categories categories="101" title="不動産クラウドファンディング" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                              <Categories categories="101" title="不動産クラウドファンディング" setViewSubTitle={setViewSubTitle}/>
                                             );
                                             setTab('attention');
                                             setKeywordtab('');
@@ -67,7 +67,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                               //  <Categories categories="102" title="ソーシャルレンディング" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                  <Categories categories="102" title="ソーシャルレンディング" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('attention');
                                             setKeywordtab('');
@@ -84,7 +84,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                               // <Categories categories="103" title="株式投資" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="103" title="株式投資" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('default');
                                             setKeywordtab('');
@@ -93,7 +93,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                              //  <Categories categories="104" title="投資信託" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="104" title="投資信託" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('default');
                                             setKeywordtab('');
@@ -102,7 +102,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                              //  <Categories categories="105" title="不動産投資" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="105" title="不動産投資" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('default');
                                             setKeywordtab('');
@@ -111,7 +111,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                              //  <Categories categories="106" title="FX" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="106" title="FX" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('default');
                                             setKeywordtab('');
@@ -120,7 +120,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                               // <Categories categories="107" title="初心者向け" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="107" title="初心者向け" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('default');
                                             setKeywordtab('');
@@ -137,7 +137,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                              //  <Categories categories="108" title="ブロックチェーン" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="108" title="ブロックチェーン" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('blockchain');
                                             setKeywordtab('');
@@ -146,7 +146,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                              //  <Categories categories="109" title="仮想通貨" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="109" title="仮想通貨" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('blockchain');
                                             setKeywordtab('');
@@ -155,7 +155,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                             //   <Categories categories="110" title="NFT" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="110" title="NFT" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('blockchain');
                                             setKeywordtab('');
@@ -164,7 +164,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                               // <Categories categories="111" title="セキュリティトークン" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="111" title="セキュリティトークン" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('blockchain');
                                             setKeywordtab('');
@@ -173,7 +173,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                               // <Categories categories="112" title="スマートコントラクト" setViewSubTitle={setViewSubTitle}/>
+                                                 <Categories categories="112" title="スマートコントラクト" setViewSubTitle={setViewSubTitle}/>
                                             );
                                             setTab('blockchain');
                                             setKeywordtab('');
@@ -182,7 +182,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                               // <Categories categories="113" title="Web3" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="113" title="Web3" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('blockchain');
                                             setKeywordtab('');
@@ -191,7 +191,7 @@ const Main = () => {
                                         class={'menu-list'}
                                         onClick={() => {
                                             setViewSubTitle(
-                                              //  <Categories categories="114" title="メタバース" setViewSubTitle={setViewSubTitle}/> クリックするとCategoriesのページに遷移
+                                                 <Categories categories="114" title="メタバース" setViewSubTitle={setViewSubTitle}/>  
                                             );
                                             setTab('blockchain');
                                             setKeywordtab('');
@@ -207,7 +207,7 @@ const Main = () => {
                             className = {`top-keyword ${keywordtab === 'virtual' ? 'active' : ''}`}
                             onClick={() => {
                                 setViewSubTitle(
-                                // <Keyword keyword="仮想通貨" setViewSubTitle={setViewSubTitle}/> クリックするとKeywordのページに遷移
+                                  <Keyword keyword="仮想通貨" setViewSubTitle={setViewSubTitle}/>  
                                 );
                                 setKeywordtab('virtual');
                             }}>
@@ -216,7 +216,7 @@ const Main = () => {
                             className = {`top-keyword ${keywordtab === 'cryptographic' ? 'active' : ''}`}
                             onClick={() => {
                                 setViewSubTitle(
-                                // <Keyword keyword="暗号資産" setViewSubTitle={setViewSubTitle}/> クリックするとKeywordのページに遷移
+                                  <Keyword keyword="暗号資産" setViewSubTitle={setViewSubTitle}/>  
                                 );
                                 setKeywordtab('cryptographic');
                             }}>
@@ -225,7 +225,7 @@ const Main = () => {
                             className = {`top-keyword ${keywordtab === 'account' ? 'active' : ''}`}
                             onClick={() => {
                                 setViewSubTitle(
-                                // <Keyword keyword="口座開設" setViewSubTitle={setViewSubTitle}/> クリックするとKeywordのページに遷移
+                                  <Keyword keyword="口座開設" setViewSubTitle={setViewSubTitle}/>  
                                 );
                                 setKeywordtab('account');
                             }}>
@@ -234,7 +234,7 @@ const Main = () => {
                             className = {`top-keyword ${keywordtab === 'smart' ? 'active' : ''}`}
                             onClick={() => {
                                 setViewSubTitle(
-                                   // <Keyword keyword="スマートコントラクト" setViewSubTitle={setViewSubTitle}/> クリックするとKeywordのページに遷移
+                                     <Keyword keyword="スマートコントラクト" setViewSubTitle={setViewSubTitle}/>  
                                 );
                                 setKeywordtab('smart');
                             }}>
@@ -243,7 +243,7 @@ const Main = () => {
                             className = {`top-keyword ${keywordtab === 'blockchain' ? 'active' : ''}`}
                             onClick={() => {
                                 setViewSubTitle(
-                                //  <Keyword keyword="ブロックチェーン" setViewSubTitle={setViewSubTitle}/> クリックするとKeywordのページに遷移
+                                   <Keyword keyword="ブロックチェーン" setViewSubTitle={setViewSubTitle}/>  
                                 );
                                 setKeywordtab('blockchain');
                             }}>
@@ -252,7 +252,7 @@ const Main = () => {
                             className = {`top-keyword ${keywordtab === 'metavers' ? 'active' : ''}`}
                             onClick={() => {
                                 setViewSubTitle(
-                                // <Keyword keyword="メタバース" setViewSubTitle={setViewSubTitle}/>  クリックするとKeywordのページに遷移
+                                  <Keyword keyword="メタバース" setViewSubTitle={setViewSubTitle}/>   
                                 );
                                 setKeywordtab('metavers');
                             }}>

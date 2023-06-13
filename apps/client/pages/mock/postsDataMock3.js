@@ -1,11 +1,11 @@
 export const postsDataMock = [
     {
-        id: 1,
+        id: 85,
         monthCount: 9,
         dayCount: 5,
         weekCount: 6,
         feature: "",
-        triangle: "注目の投資",
+        kind: "注目の投資", 
         date: "2022-10-15T09:30:13",
         date_gmt: "2022-10-15T00:30:13",
         guid: {
@@ -22,86 +22,98 @@ export const postsDataMock = [
         title: {
             rendered: "分散投資とは？どんなメリットがあるの？"
         },
-        keyword: ["#仮想通貨"],
+        keyword: ["#仮想通貨" , "#口座開設", "#スマートコントラクト"],
         content: {
-            rendered: '<p>投資をする際に投資先などを多様に分散させることを分散投資といいます。分散投資は、資産運用のリスクを減らす方法の中でも、実行しやすいだけでなく重要な方法' +
-                    'でもあります。</p>\n<p>今回は、4つの分散投資の紹介と分散投資に期待できるメリットを解説しましょう。</p>\n<div id="ez-toc-co' +
-                    'ntainer" class="ez-toc-v2_0_22 counter-hierarchy ez-toc-grey">\n<div class="ez' +
-                    '-toc-title-container">\n<p class="ez-toc-title">目次（クリックで項目へジャンプ）</p>\n<span cl' +
-                    'ass="ez-toc-title-toggle"><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs' +
-                    ' ez-toc-btn-default ez-toc-toggle" style="display: none;"><i class="ez-toc-gly' +
-                    'phicon ez-toc-icon-toggle"></i></a></span></div>\n<nav><ul class="ez-toc-list ' +
-                    'ez-toc-list-level-1"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class' +
-                    '="ez-toc-link ez-toc-heading-1" href="https://media.vwcity.net/advantages-of-d' +
-                    'iversified-investment/#4%E3%81%A4%E3%81%AE%E5%88%86%E6%95%A3%E6%8A%95%E8%B3%87' +
-                    '" title="4つの分散投資">4つの分散投資</a><ul class="ez-toc-list-level-3"><li class="ez-toc' +
-                    '-heading-level-3"><a class="ez-toc-link ez-toc-heading-2" href="https://media.' +
-                    'vwcity.net/advantages-of-diversified-investment/#%E6%8A%95%E8%B3%87%E5%AF%BE%E' +
-                    '8%B1%A1%E3%81%A8%E3%81%AA%E3%82%8B%E8%B3%87%E7%94%A3%E3%81%AE%E5%88%86%E6%95%A' +
-                    '3" title="投資対象となる資産の分散">投資対象となる資産の分散</a></li><li class="ez-toc-page-1 ez-toc-h' +
-                    'eading-level-3"><a class="ez-toc-link ez-toc-heading-3" href="https://media.vw' +
-                    'city.net/advantages-of-diversified-investment/#%E9%8A%98%E6%9F%84%E3%81%AE%E5%' +
-                    '88%86%E6%95%A3" title="銘柄の分散">銘柄の分散</a></li><li class="ez-toc-page-1 ez-toc-he' +
-                    'ading-level-3"><a class="ez-toc-link ez-toc-heading-4" href="https://media.vwc' +
-                    'ity.net/advantages-of-diversified-investment/#%E6%8A%95%E8%B3%87%E5%9C%B0%E5%9' +
-                    'F%9F%E3%81%AE%E5%88%86%E6%95%A3" title="投資地域の分散">投資地域の分散</a></li><li class="ez' +
-                    '-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-5" hr' +
-                    'ef="https://media.vwcity.net/advantages-of-diversified-investment/#%E6%99%82%E' +
-                    '9%96%93%E3%81%AE%E5%88%86%E6%95%A3" title="時間の分散">時間の分散</a></li></ul></li><li ' +
-                    'class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-head' +
-                    'ing-6" href="https://media.vwcity.net/advantages-of-diversified-investment/#%E' +
-                    '5%88%86%E6%95%A3%E6%8A%95%E8%B3%87%E3%81%99%E3%82%8B%E3%83%A1%E3%83%AA%E3%83%8' +
-                    '3%E3%83%88" title="分散投資するメリット">分散投資するメリット</a></li></ul></nav></div>\n<h2><span' +
-                    ' class="ez-toc-section" id="4%E3%81%A4%E3%81%AE%E5%88%86%E6%95%A3%E6%8A%95%E8%' +
-                    'B3%87"></span>4つの分散投資<span class="ez-toc-section-end"></span></h2>\n<p><img lo' +
-                    'ading="lazy" class="size-full wp-image-4514 alignnone" src="https://media.vwci' +
-                    'ty.net/wp-content/uploads/2022/10/pexels-d_vaughn-bell-2068664.jpg" alt="" wid' +
-                    'th="750" height="500" srcset="https://media.vwcity.net/wp-content/uploads/2022' +
-                    '/10/pexels-d_vaughn-bell-2068664.jpg 750w, https://media.vwcity.net/wp-content' +
-                    '/uploads/2022/10/pexels-d_vaughn-bell-2068664-300x200.jpg 300w" sizes="(max-wi' +
-                    'dth: 750px) 100vw, 750px" /></p>\n<p>資産運用において価格変動リスクを軽減するために分散投資は有効です。そこで、分散投資' +
-                    'の対象範囲を知るために、分散投資の種類を4つ紹介します。</p>\n<h3><span class="ez-toc-section" id="%E6%8A%' +
-                    '95%E8%B3%87%E5%AF%BE%E8%B1%A1%E3%81%A8%E3%81%AA%E3%82%8B%E8%B3%87%E7%94%A3%E3%' +
-                    '81%AE%E5%88%86%E6%95%A3"></span>投資対象となる資産の分散<span class="ez-toc-section-end"><' +
-                    '/span></h3>\n<p>分散投資は、値動きの異なる投資対象を複数分散することでリスク軽減の幅を広げられます。例えば、株式と債券では経済動向などの影響' +
-                    'を受けて異なる値動きが考えられます。株式が値上げ傾向にあるときは、一般的には債券の値が下がるためです。</p>\n<div class="balloon-o' +
-                    'ver">日本銀行は景気が悪くなっている時に金利を下げ、景気が悪い時は株価が下がります。一方、債券の価格が上がるのは、金利が下がった時です。</div>\n' +
-                    '<p>そのような観点から、複数の投資対象や資産を分散する必要があります。考えられる投資対象は、次のとおりです。</p>\n<ul>\n<li>年金</li>' +
-                    '\n<li>保険</li>\n<li>預貯金</li>\n<li>株式（国内および海外）</li>\n<li>債券（国内および海外）</li>\n<li>通' +
-                    '貨</li>\n<li>不動産</li>\n<li>商品ファンドなど</li>\n</ul>\n<h3><span class="ez-toc-sectio' +
-                    'n" id="%E9%8A%98%E6%9F%84%E3%81%AE%E5%88%86%E6%95%A3"></span>銘柄の分散<span class=' +
-                    '"ez-toc-section-end"></span></h3>\n<p>株式投資の場合は、銘柄を分散することで値動きによる影響を抑えられます。ひとつの銘' +
-                    '柄だけに資金のすべてを投じるのではなく、複数の銘柄に分散する方法です。</p>\n<table style="border-collapse: collap' +
-                    'se; width: 61.1111%;" border="1">\n<tbody>\n<tr>\n<td style="width: 29.4142%; ' +
-                    'text-align: center;"><span style="font-size: 12pt;">1銘柄に100万円投資</span></td>\n<' +
-                    'td style="width: 31.6969%; text-align: center;"><span style="font-size: 12pt;"' +
-                    '>複数の銘柄に分散投資</span></td>\n</tr>\n<tr>\n<td style="width: 29.4142%; text-align: ' +
-                    'center;"><span style="font-size: 12pt;">Ａ社：1株500円を2,000株</span></td>\n<td styl' +
-                    'e="width: 31.6969%; text-align: center;"><span style="font-size: 12pt;">A社：1株5' +
-                    '00円を500株</span><br />\n<span style="font-size: 12pt;">B社：1株500円を500株</span><br' +
-                    ' />\n<span style="font-size: 12pt;">C社：1株700円を200株</span><br />\n<span style="' +
-                    'font-size: 12pt;">D社：1株300円を1,200株</span></td>\n</tr>\n</tbody>\n</table>\n<p>' +
-                    '銘柄の分散では、債券であれば国債や社債など異なる銘柄に分散投資することを考えるのも一手です。</p>\n<h3><span class="ez-toc-se' +
-                    'ction" id="%E6%8A%95%E8%B3%87%E5%9C%B0%E5%9F%9F%E3%81%AE%E5%88%86%E6%95%A3"></' +
-                    'span>投資地域の分散<span class="ez-toc-section-end"></span></h3>\n<p>地域分散は、例えば国内だけではな' +
-                    'く世界各国を対象に分散投資することです。投資対象となる国の情勢や為替変動の影響から地域ごとの値動きの違いが考えられます。例えば、「新興国と先進国」や「欧州と' +
-                    'アジア」など異なる状況の地域を組み合わせて、投資をすることもリスク回避に繋がります。</p>\n<h3><span class="ez-toc-sectio' +
-                    'n" id="%E6%99%82%E9%96%93%E3%81%AE%E5%88%86%E6%95%A3"></span>時間の分散<span class=' +
-                    '"ez-toc-section-end"></span></h3>\n<p>時間の分散は、投資タイミングを分けることです。株式など一度に全額を投じないで、数' +
-                    '回に分けて買い足すイメージです。一度に買ってしまうと、価格が高い時期に買ってしまうかもしれません。時間の分散は、そのような高値づかみリスクを抑えられます。<' +
-                    '/p>\n<p>また、投資信託などの積立は定額投資となるため、価格変動リスクを防げる時間分散とも言えます。</p>\n<h2><span class="ez' +
-                    '-toc-section" id="%E5%88%86%E6%95%A3%E6%8A%95%E8%B3%87%E3%81%99%E3%82%8B%E3%83' +
-                    '%A1%E3%83%AA%E3%83%83%E3%83%88"></span>分散投資するメリット<span class="ez-toc-section-e' +
-                    'nd"></span></h2>\n<p><img loading="lazy" class="size-full wp-image-4515 alignn' +
-                    'one" src="https://media.vwcity.net/wp-content/uploads/2022/10/pexels-energepic' +
-                    'com-159888.jpg" alt="" width="750" height="500" srcset="https://media.vwcity.n' +
-                    'et/wp-content/uploads/2022/10/pexels-energepiccom-159888.jpg 750w, https://med' +
-                    'ia.vwcity.net/wp-content/uploads/2022/10/pexels-energepiccom-159888-300x200.jp' +
-                    'g 300w" sizes="(max-width: 750px) 100vw, 750px" /></p>\n<p>資産運用を分散投資で取り組むメリットは' +
-                    '、投資先の<strong>価格変動リスクを抑えられる</strong>ことです。条件の異なる複数資産に投資することで、一方の資産が値下がりしても一方で値上が' +
-                    'りする状況を作れます。特徴の違う投資対象に対して、分散して投資することで収益と損失のバランスを保てる可能性が高くなります。</p>\n<h5><a href' +
-                    '="https://media.vwcity.net/investment-beginner/" rel="nofollow ">初心者におすすめ！始めやす' +
-                    'い投資3選</a></h5>\n',
+            rendered: '<div id="body_text"><p>不動産クラウドファンディングは、少額で始められる投資として注目されています。ただし、利回りが良ければその分のリ' +
+                    'スクも考えられるでしょう。</p><p>今回は、不動産クラウドファンディングのデメリットにあたるリスク部分を解説します。リスク回避に向けた事例を2つ紹介して' +
+                    'いますのでお役立てください。</p><div id="ez-toc-container" class="ez-toc-v2_0_22 counter-hie' +
+                    'rarchy ez-toc-grey"><div class="ez-toc-title-container"><p class="ez-toc-title' +
+                    '">目次（クリックで項目へジャンプ）</p><span class="ez-toc-title-toggle"><a class="ez-toc-pull-' +
+                    'right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"><i class="ez-' +
+                    'toc-glyphicon ez-toc-icon-toggle"></i></a></span></div><nav><ul class="ez-toc-' +
+                    'list ez-toc-list-level-1"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a ' +
+                    'class="ez-toc-link ez-toc-heading-1" href="#%E4%B8%8D%E5%8B%95%E7%94%A3%E3%82%' +
+                    'AF%E3%83%A9%E3%82%A6%E3%83%89%E3%83%95%E3%82%A1%E3%83%B3%E3%83%87%E3%82%A3%E3%' +
+                    '83%B3%E3%82%B0%E3%81%AE%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%81%AB%' +
+                    'E3%81%82%E3%81%9F%E3%82%8B%E3%83%AA%E3%82%B9%E3%82%AF" title="不動産クラウドファンディングのデ' +
+                    'メリットにあたるリスク">不動産クラウドファンディングのデメリットにあたるリスク</a><ul class="ez-toc-list-level-3"><l' +
+                    'i class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-2" href=' +
+                    '"#%E4%BA%8B%E6%A5%AD%E8%80%85%E3%81%AE%E5%80%92%E7%94%A3%E3%83%AA%E3%82%B9%E3%' +
+                    '82%AF" title="事業者の倒産リスク">事業者の倒産リスク</a></li><li class="ez-toc-page-1 ez-toc-hea' +
+                    'ding-level-3"><a class="ez-toc-link ez-toc-heading-3" href="#%E5%AE%B6%E8%B3%8' +
+                    '3%E5%8F%8E%E5%85%A5%E6%B8%9B%E5%B0%91%E3%81%AB%E3%82%88%E3%82%8B%E9%85%8D%E5%B' +
+                    'D%93%E9%87%91%E6%B8%9B%E5%B0%91%E3%83%AA%E3%82%B9%E3%82%AF" title="家賃収入減少による配当' +
+                    '金減少リスク">家賃収入減少による配当金減少リスク</a></li><li class="ez-toc-page-1 ez-toc-heading-leve' +
+                    'l-3"><a class="ez-toc-link ez-toc-heading-4" href="#%E4%B8%AD%E9%80%94%E8%A7%A' +
+                    '3%E7%B4%84%E4%B8%8D%E5%8F%AF%E3%83%AA%E3%82%B9%E3%82%AF" title="中途解約不可リスク">中途解' +
+                    '約不可リスク</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-t' +
+                    'oc-link ez-toc-heading-5" href="#%E4%B8%8D%E5%8B%95%E7%94%A3%E8%A9%95%E4%BE%A1' +
+                    '%E9%A1%8D%E4%B8%8B%E8%90%BD%E3%81%AB%E3%82%88%E3%82%8B%E6%BA%80%E9%A1%8D%E5%84' +
+                    '%9F%E9%82%84%E4%B8%8D%E5%8F%AF%E3%83%AA%E3%82%B9%E3%82%AF" title="不動産評価額下落による満' +
+                    '額償還不可リスク">不動産評価額下落による満額償還不可リスク</a></li></ul></li><li class="ez-toc-page-1 ez-t' +
+                    'oc-heading-level-2"><a class="ez-toc-link ez-toc-heading-6" href="#%E3%83%AA%E' +
+                    '3%82%B9%E3%82%AF%E5%9B%9E%E9%81%BF%E7%AD%96%E3%81%9D%E3%81%AE1%EF%BC%9A%E8%A4%' +
+                    '87%E6%95%B0%E3%81%AE%E6%A5%AD%E8%80%85%E3%82%92%E6%AF%94%E8%BC%83%E3%81%97%E3%' +
+                    '81%A6%E9%81%B8%E3%81%B6" title="リスク回避策その1：複数の業者を比較して選ぶ">リスク回避策その1：複数の業者を比較して選ぶ' +
+                    '</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-lin' +
+                    'k ez-toc-heading-7" href="#%E3%83%AA%E3%82%B9%E3%82%AF%E5%9B%9E%E9%81%BF%E7%AD' +
+                    '%96%E3%81%9D%E3%81%AE2%EF%BC%9A%E5%88%86%E6%95%A3%E6%8A%95%E8%B3%87" title="リス' +
+                    'ク回避策その2：分散投資">リスク回避策その2：分散投資</a></li></ul></nav></div><h2><span class="ez-toc-' +
+                    'section" id="%E4%B8%8D%E5%8B%95%E7%94%A3%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E' +
+                    '3%83%95%E3%82%A1%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%83%8' +
+                    '7%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%81%AB%E3%81%82%E3%81%9F%E3%82%8B%E3%8' +
+                    '3%AA%E3%82%B9%E3%82%AF"></span>不動産クラウドファンディングのデメリットにあたるリスク<span class="ez-toc-' +
+                    'section-end"></span></h2><p><img class="size-full wp-image-4198 alignnone" src' +
+                    '="https://media.vwcity.net/wp-content/uploads/2022/09/pexels-julio-nery-183991' +
+                    '9.jpg" alt="" width="750" height="500" srcset="https://media.vwcity.net/wp-con' +
+                    'tent/uploads/2022/09/pexels-julio-nery-1839919.jpg 750w, https://media.vwcity.' +
+                    'net/wp-content/uploads/2022/09/pexels-julio-nery-1839919-300x200.jpg 300w" siz' +
+                    'es="(max-width: 750px) 100vw, 750px"></p><p>不動産クラウドファンディングには、デメリットになるリスクがあります。' +
+                    '</p><h3><span class="ez-toc-section" id="%E4%BA%8B%E6%A5%AD%E8%80%85%E3%81%AE%' +
+                    'E5%80%92%E7%94%A3%E3%83%AA%E3%82%B9%E3%82%AF"></span>事業者の倒産リスク<span class="ez-' +
+                    'toc-section-end"></span></h3><p>不動産クラウドファンディングを取り扱う事業者は、一般の企業と同じく倒産リスクを抱えています。' +
+                    '</p><p>不動産クラウドファンディング運営事業者は、投資家から預かった資産を事業者自身の資産とは明確に区別して管理（これを分別管理といいます）することが' +
+                    '義務付けられているとはいえ、株式会社であれば業績が悪化すれば倒産する可能性も考えられます。</p><p>ただし、不動産クラウドファンディングの事業者は、国土' +
+                    '交通省より不動産特定共同事業者としての認可を受けて資本金などの条件を兼ね備えています。そのため、社会情勢の変化を受けなければ、倒産リスクが低くなるでしょう。' +
+                    '</p><h3><span class="ez-toc-section" id="%E5%AE%B6%E8%B3%83%E5%8F%8E%E5%85%A5%' +
+                    'E6%B8%9B%E5%B0%91%E3%81%AB%E3%82%88%E3%82%8B%E9%85%8D%E5%BD%93%E9%87%91%E6%B8%' +
+                    '9B%E5%B0%91%E3%83%AA%E3%82%B9%E3%82%AF"></span>家賃収入減少による配当金減少リスク<span class="e' +
+                    'z-toc-section-end"></span></h3><p>不動産クラウドファンディングでは、家賃収入減少による配当金の減少が考えられます。不動産ク' +
+                    'ラウドファンディングの投資家が受け取る配当金は、家賃収入からそれぞれの配当割合で分配される仕組みです。</p><p>投資先賃貸物件の入居者が減ってしまうと、' +
+                    '家賃収入が減少します。常に満室状態でなければ、空室による収入減は避けられません。投資先は、収入の変動についても事前に調べておく必要があります。</p><h3' +
+                    '><span class="ez-toc-section" id="%E4%B8%AD%E9%80%94%E8%A7%A3%E7%B4%84%E4%B8%8' +
+                    'D%E5%8F%AF%E3%83%AA%E3%82%B9%E3%82%AF"></span>中途解約不可リスク<span class="ez-toc-sec' +
+                    'tion-end"></span></h3><p>不動産クラウドファンディングは、出資すると中途解約できないリスクがあります。</p><p>不動産クラウドフ' +
+                    'ァンディングは、流動性がなく、投資開始から償還まで現金化できない仕組みです。そのため、運用期間が長期になれば運用中に社会情勢の変化で損失することも考えられま' +
+                    'す。ファンドの選定基準は、運用期間の長さも必要です。</p><h3><span class="ez-toc-section" id="%E4%B8%8D%E' +
+                    '5%8B%95%E7%94%A3%E8%A9%95%E4%BE%A1%E9%A1%8D%E4%B8%8B%E8%90%BD%E3%81%AB%E3%82%8' +
+                    '8%E3%82%8B%E6%BA%80%E9%A1%8D%E5%84%9F%E9%82%84%E4%B8%8D%E5%8F%AF%E3%83%AA%E3%8' +
+                    '2%B9%E3%82%AF"></span>不動産評価額下落による満額償還不可リスク<span class="ez-toc-section-end"></s' +
+                    'pan></h3><p>不動産クラウドファンディングは、投資した不動産の評価額下落により、元本が満額償還されないリスクもあります。</p><p>不動産の建物' +
+                    '部分は、時間の経過とともに評価額が下がることが原則です。そのような評価額下落への対処として、ファンド事業者は劣後出資を設定しています。劣後出資の割合が大きい' +
+                    '業者を選ぶことで、出資金が償還されないリスクを小さくできるでしょう。</p><h2><span class="ez-toc-section" id="%E3' +
+                    '%83%AA%E3%82%B9%E3%82%AF%E5%9B%9E%E9%81%BF%E7%AD%96%E3%81%9D%E3%81%AE1%EF%BC%9' +
+                    'A%E8%A4%87%E6%95%B0%E3%81%AE%E6%A5%AD%E8%80%85%E3%82%92%E6%AF%94%E8%BC%83%E3%8' +
+                    '1%97%E3%81%A6%E9%81%B8%E3%81%B6"></span>リスク回避策その1：複数の業者を比較して選ぶ<span class="ez-' +
+                    'toc-section-end"></span></h2><p><img loading="lazy" class="size-full wp-image-' +
+                    '4199 alignnone" src="https://media.vwcity.net/wp-content/uploads/2022/09/pexel' +
+                    's-curtis-adams-5071140.jpg" alt="" width="750" height="500" srcset="https://me' +
+                    'dia.vwcity.net/wp-content/uploads/2022/09/pexels-curtis-adams-5071140.jpg 750w' +
+                    ', https://media.vwcity.net/wp-content/uploads/2022/09/pexels-curtis-adams-5071' +
+                    '140-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px"></p><p>不動産クラウドファ' +
+                    'ンディングによるリスクを回避するには、複数の業者を比較して選ぶ必要があります。選ぶ際のポイントは、次のとおりです。</p><ul><li>事業者の実績</l' +
+                    'i><li>取扱いファンド</li><li>入出金手数料</li><li>劣後出資の割合</li></ul><h2><span class="ez-toc-' +
+                    'section" id="%E3%83%AA%E3%82%B9%E3%82%AF%E5%9B%9E%E9%81%BF%E7%AD%96%E3%81%9D%E' +
+                    '3%81%AE2%EF%BC%9A%E5%88%86%E6%95%A3%E6%8A%95%E8%B3%87"></span>リスク回避策その2：分散投資<s' +
+                    'pan class="ez-toc-section-end"></span></h2><p><img loading="lazy" class="size-' +
+                    'full wp-image-4200 alignnone" src="https://media.vwcity.net/wp-content/uploads' +
+                    '/2022/09/francesca-tosolini-XcVm8mn7NUM-unsplash.jpg" alt="" width="750" heigh' +
+                    't="500" srcset="https://media.vwcity.net/wp-content/uploads/2022/09/francesca-' +
+                    'tosolini-XcVm8mn7NUM-unsplash.jpg 750w, https://media.vwcity.net/wp-content/up' +
+                    'loads/2022/09/francesca-tosolini-XcVm8mn7NUM-unsplash-300x200.jpg 300w" sizes=' +
+                    '"(max-width: 750px) 100vw, 750px"></p><p>不動産クラウドファンディングは、運用を始めたら期間満了まで中途解約できませ' +
+                    'ん。そのため、手持ち資金を分散させた投資スタイルで投資先の暴落リスクを回避します。</p><p>不動産クラウドファンディングは、例えば1口1万円から始められ' +
+                    'る少額投資が可能です。少額で始められるため、1つの投資先だけではなく、複数の投資先に分散投資ができます。</p></div>',
             protected: false
         },
         excerpt: {
@@ -111,12 +123,12 @@ export const postsDataMock = [
         },
         categories: [104]
     }, {
-        id: 2,
+        id: 84,
         monthCount: 22,
         dayCount: 15,
         weekCount: 19,
         feature: "",
-        triangle: "投資の基本",
+        kind: "投資の基本",
         date: "2022-10-10T09:30:34",
         date_gmt: "2022-10-10T00:30:34",
         guid: {
@@ -311,12 +323,12 @@ export const postsDataMock = [
         },
         categories: [104]
     }, {
-        id: 3,
+        id: 83,
         monthCount: 73,
         dayCount: 53,
         feature: "",
         weekCount: 63,
-        triangle: "ブロックチェーン",
+        kind: "ブロックチェーン",
         date: "2022-10-06T09:30:22",
         date_gmt: "2022-10-06T00:30:22",
         guid: {
@@ -420,12 +432,12 @@ export const postsDataMock = [
         },
         categories: [104]
     }, {
-        id: 4,
+        id: 82,
         monthCount: 3,
         dayCount: 3,
         feature: "O",
         weekCount: 3,
-        triangle: "ブロックチェーン",
+        kind: "ブロックチェーン",
         date: "2022-10-04T09:30:29",
         date_gmt: "2022-10-04T00:30:29",
         guid: {
@@ -563,12 +575,12 @@ export const postsDataMock = [
         },
         categories: [104]
     }, {
-        id: 5,
+        id: 81,
         monthCount: 100,
         dayCount: 20,
         weekCount: 40,
         feature: "",
-        triangle: "投資の基本",
+        kind: "投資の基本",
         date: "2022-10-04T09:30:21",
         date_gmt: "2022-10-04T00:30:21",
         guid: {
@@ -701,12 +713,12 @@ export const postsDataMock = [
         },
         categories: [104]
     }, {
-        id: 6,
+        id: 80,
         monthCount: 144,
         dayCount: 65,
         weekCount: 100,
         feature: "O",
-        triangle: "注目の投資",
+        kind: "注目の投資",
         date: "2022-10-04T09:30:08",
         date_gmt: "2022-10-04T00:30:08",
         guid: {
@@ -802,7 +814,7 @@ export const postsDataMock = [
         },
         categories: [103]
     }, {
-        id: 7,
+        id: 79,
         monthCount: 155,
         dayCount: 52,
         weekCount: 54,
@@ -885,7 +897,7 @@ export const postsDataMock = [
         url: "https://media.vwcity.net/wp-content/uploads/2022/10/image2-480x213.jpg",
         keyword: ["#仮想通貨", "#ブロックチェーン"]
     }, {
-        id: 8,
+        id: 78,
         monthCount: 500,
         dayCount: 24,
         weekCount: 500,
@@ -967,7 +979,7 @@ export const postsDataMock = [
                 "png",
         keyword: ["#口座開設", "#スマートコントラクト"]
     }, {
-        id: 9,
+        id: 77,
         monthCount: 510,
         dayCount: 67,
         weekCount: 510,
@@ -1059,7 +1071,7 @@ export const postsDataMock = [
         ],
         categories: [103]
     }, {
-        id: 10,
+        id: 76,
         monthCount: 515,
         dayCount: 73,
         weekCount: 515,
@@ -1225,7 +1237,7 @@ export const postsDataMock = [
                 "0.jpg",
         keyword: [" #スマートコントラクト", "#ブロックチェーン"]
     }, {
-        id: 11,
+        id: 75,
         monthCount: 515,
         dayCount: 73,
         weekCount: 512,
@@ -1337,7 +1349,7 @@ export const postsDataMock = [
         },
         categories: [102]
     }, {
-        id: 12,
+        id: 74,
         monthCount: 415,
         dayCount: 100,
         weekCount: 403,
@@ -1536,7 +1548,7 @@ export const postsDataMock = [
         },
         categories: [102]
     }, {
-        id: 5132,
+        id: 73,
         monthCount: 411,
         dayCount: 30,
         weekCount: 202,
@@ -1644,7 +1656,7 @@ export const postsDataMock = [
         },
         categories: [102]
     }, {
-        id: 13,
+        id: 72,
         monthCount: 410,
         dayCount: 22,
         weekCount: 380,
@@ -1787,7 +1799,7 @@ export const postsDataMock = [
         },
         categories: [102]
     }, {
-        id: 14,
+        id: 71,
         monthCount: 400,
         dayCount: 44,
         weekCount: 300,
@@ -1925,7 +1937,7 @@ export const postsDataMock = [
         },
         categories: [102]
     }, {
-        id: 1331,
+        id: 70,
         monthCount: 404,
         dayCount: 20,
         weekCount: 303,
@@ -2063,7 +2075,7 @@ export const postsDataMock = [
         },
         categories: [101]
     }, {
-        id: 15,
+        id: 69,
         monthCount: 452,
         dayCount: 345,
         weekCount: 402,
@@ -2207,7 +2219,7 @@ export const postsDataMock = [
         },
         categories: [101]
     }, {
-        id: 16,
+        id: 68,
         monthCount: 403,
         dayCount: 124,
         weekCount: 300,
@@ -2344,7 +2356,7 @@ export const postsDataMock = [
         },
         categories: [101]
     }, {
-        id: 17,
+        id: 67,
         monthCount: 406,
         dayCount: 405,
         weekCount: 405,
@@ -2482,7 +2494,7 @@ export const postsDataMock = [
         },
         categories: [101]
     }, {
-        id: 18,
+        id: 66,
         monthCount: 720,
         dayCount: 594,
         weekCount: 600,
@@ -2620,7 +2632,7 @@ export const postsDataMock = [
         },
         categories: [101]
     }, {
-        id: 1111,
+        id: 65,
         monthCount: 800,
         dayCount: 521,
         weekCount: 600,
@@ -2758,7 +2770,7 @@ export const postsDataMock = [
         },
         categories: [100]
     }, {
-        id: 19,
+        id: 64,
         monthCount: 451,
         dayCount: 102,
         weekCount: 203,
@@ -2896,7 +2908,7 @@ export const postsDataMock = [
         },
         categories: [100]
     }, {
-        id: 20,
+        id: 63,
         monthCount: 409,
         dayCount: 403,
         weekCount: 403,
@@ -3034,7 +3046,7 @@ export const postsDataMock = [
         },
         categories: [100]
     }, {
-        id: 21,
+        id: 62,
         monthCount: 323,
         dayCount: 223,
         weekCount: 302,
@@ -3172,7 +3184,7 @@ export const postsDataMock = [
         },
         categories: [100]
     }, {
-        id: 22,
+        id: 61,
         monthCount: 123,
         dayCount: 92,
         weekCount: 100,
@@ -3315,7 +3327,7 @@ export const postsDataMock = [
         },
         categories: [100]
     }, {
-        id: 23,
+        id: 60,
         monthCount: 712,
         dayCount: 231,
         weekCount: 300,
@@ -3453,7 +3465,7 @@ export const postsDataMock = [
         },
         categories: [105]
     }, {
-        id: 24,
+        id: 59,
         monthCount: 75,
         dayCount: 4,
         weekCount: 10,
@@ -3591,7 +3603,7 @@ export const postsDataMock = [
         },
         categories: [105]
     }, {
-        id: 25,
+        id: 58,
         monthCount: 85,
         dayCount: 23,
         weekCount: 30,
@@ -3735,7 +3747,7 @@ export const postsDataMock = [
         },
         categories: [105]
     }, {
-        id: 26,
+        id: 57,
         monthCount: 23,
         dayCount: 2,
         weekCount: 20,
@@ -3874,7 +3886,7 @@ export const postsDataMock = [
         },
         categories: [105]
     }, {
-        id: 27,
+        id: 56,
         monthCount: 73,
         dayCount: 23,
         weekCount: 50,
@@ -4013,7 +4025,7 @@ export const postsDataMock = [
         },
         categories: [105]
     }, {
-        id: 28,
+        id: 55,
         monthCount: 74,
         dayCount: 32,
         weekCount: 40,
@@ -4152,7 +4164,7 @@ export const postsDataMock = [
         },
         categories: [106]
     }, {
-        id: 29,
+        id: 54,
         monthCount: 74,
         dayCount: 51,
         weekCount: 60,
@@ -4292,7 +4304,7 @@ export const postsDataMock = [
         },
         categories: [106]
     }, {
-        id: 30,
+        id: 53,
         monthCount: 211,
         dayCount: 100,
         weekCount: 110,
@@ -4431,7 +4443,7 @@ export const postsDataMock = [
         },
         categories: [106]
     }, {
-        id: 31,
+        id: 52,
         monthCount: 124,
         dayCount: 11,
         weekCount: 110,
@@ -4567,7 +4579,7 @@ export const postsDataMock = [
         },
         categories: [106]
     }, {
-        id: 32,
+        id: 51,
         monthCount: 521,
         dayCount: 23,
         weekCount: 400,
@@ -4704,7 +4716,7 @@ export const postsDataMock = [
         },
         categories: [106]
     }, {
-        id: 33,
+        id: 50,
         monthCount: 999,
         dayCount: 22,
         weekCount: 500,
@@ -4842,7 +4854,7 @@ export const postsDataMock = [
         },
         categories: [107]
     }, {
-        id: 34,
+        id: 49,
         monthCount: 987,
         dayCount: 13,
         weekCount: 980,
@@ -4980,7 +4992,7 @@ export const postsDataMock = [
         },
         categories: [107]
     }, {
-        id: 36,
+        id: 48,
         monthCount: 987,
         dayCount: 50,
         weekCount: 950,
@@ -5117,7 +5129,7 @@ export const postsDataMock = [
         },
         categories: [107]
     }, {
-        id: 35,
+        id: 47,
         monthCount: 980,
         dayCount: 11,
         weekCount: 970,
@@ -5255,7 +5267,7 @@ export const postsDataMock = [
         },
         categories: [107]
     }, {
-        id: 37,
+        id: 46,
         monthCount: 998,
         dayCount: 121,
         weekCount: 990,
@@ -5394,7 +5406,7 @@ export const postsDataMock = [
         },
         categories: [107]
     }, {
-        id: 38,
+        id: 45,
         monthCount: 998,
         dayCount: 15,
         weekCount: 30,
@@ -5531,7 +5543,7 @@ export const postsDataMock = [
         },
         categories: [108]
     }, {
-        id: 39,
+        id: 44,
         monthCount: 777,
         dayCount: 55,
         weekCount: 700,
@@ -5670,7 +5682,7 @@ export const postsDataMock = [
         },
         categories: [108]
     }, {
-        id: 40,
+        id: 43,
         monthCount: 124,
         dayCount: 51,
         weekCount: 100,
@@ -5808,7 +5820,7 @@ export const postsDataMock = [
         },
         categories: [108]
     }, {
-        id: 41,
+        id: 42,
         monthCount: 412,
         dayCount: 67,
         weekCount: 400,
@@ -5946,7 +5958,7 @@ export const postsDataMock = [
         },
         categories: [108]
     }, {
-        id: 42,
+        id: 41,
         monthCount: 451,
         dayCount: 123,
         weekCount: 401,
@@ -6084,7 +6096,7 @@ export const postsDataMock = [
         },
         categories: [108]
     }, {
-        id: 43,
+        id: 40,
         monthCount: 123,
         dayCount: 12,
         weekCount: 120,
@@ -6222,7 +6234,7 @@ export const postsDataMock = [
         },
         categories: [109]
     }, {
-        id: 44,
+        id: 39,
         monthCount: 524,
         dayCount: 500,
         weekCount: 510,
@@ -6360,7 +6372,7 @@ export const postsDataMock = [
         },
         categories: [109]
     }, {
-        id: 45,
+        id: 38,
         monthCount: 513,
         dayCount: 501,
         weekCount: 510,
@@ -6498,7 +6510,7 @@ export const postsDataMock = [
         },
         categories: [109]
     }, {
-        id: 46,
+        id: 37,
         monthCount: 123,
         dayCount: 23,
         weekCount: 120,
@@ -6637,7 +6649,7 @@ export const postsDataMock = [
         },
         categories: [109]
     }, {
-        id: 47,
+        id: 36,
         monthCount: 373,
         dayCount: 20,
         weekCount: 300,
@@ -6774,7 +6786,7 @@ export const postsDataMock = [
         },
         categories: [109]
     }, {
-        id: 48,
+        id: 35,
         monthCount: 634,
         dayCount: 600,
         weekCount: 601,
@@ -6829,7 +6841,7 @@ export const postsDataMock = [
         },
         categories: [110]
     }, {
-        id: 49,
+        id: 34,
         monthCount: 412,
         dayCount: 123,
         weekCount: 400,
@@ -6966,7 +6978,7 @@ export const postsDataMock = [
         },
         categories: [110]
     }, {
-        id: 50,
+        id: 33,
         monthCount: 242,
         dayCount: 100,
         weekCount: 200,
@@ -7074,7 +7086,7 @@ export const postsDataMock = [
         },
         categories: [110]
     }, {
-        id: 51,
+        id: 32,
         monthCount: 521,
         dayCount: 23,
         weekCount: 500,
@@ -7157,7 +7169,7 @@ export const postsDataMock = [
         url: "https://media.vwcity.net/wp-content/uploads/2022/10/image2-480x213.jpg",
         keyword: ["#仮想通貨", "#ブロックチェーン"]
     }, {
-        id: 52,
+        id: 31,
         monthCount: 534,
         dayCount: 155,
         weekCount: 500,
@@ -7295,7 +7307,7 @@ export const postsDataMock = [
         },
         categories: [110]
     }, {
-        id: 53,
+        id: 30,
         monthCount: 745,
         dayCount: 670,
         weekCount: 676,
@@ -7494,7 +7506,7 @@ export const postsDataMock = [
         },
         categories: [111]
     }, {
-        id: 54,
+        id: 29,
         monthCount: 35,
         dayCount: 5,
         weekCount: 30,
@@ -7594,7 +7606,7 @@ export const postsDataMock = [
         },
         categories: [111]
     }, {
-        id: 55,
+        id: 28,
         monthCount: 213,
         dayCount: 20,
         weekCount: 200,
@@ -7736,7 +7748,7 @@ export const postsDataMock = [
         },
         categories: [111]
     }, {
-        id: 56,
+        id: 27,
         monthCount: 335,
         dayCount: 30,
         weekCount: 330,
@@ -7836,7 +7848,7 @@ export const postsDataMock = [
         },
         categories: [111]
     }, {
-        id: 57,
+        id: 26,
         monthCount: 153,
         dayCount: 30,
         weekCount: 150,
@@ -7975,7 +7987,7 @@ export const postsDataMock = [
         },
         categories: [111]
     }, {
-        id: 58,
+        id: 25,
         monthCount: 213,
         dayCount: 13,
         weekCount: 210,
@@ -8117,7 +8129,7 @@ export const postsDataMock = [
         },
         categories: [112]
     }, {
-        id: 59,
+        id: 24,
         monthCount: 62,
         dayCount: 20,
         weekCount: 61,
@@ -8254,7 +8266,7 @@ export const postsDataMock = [
         },
         categories: [112]
     }, {
-        id: 60,
+        id: 23,
         monthCount: 753,
         dayCount: 56,
         weekCount: 604,
@@ -8354,7 +8366,7 @@ export const postsDataMock = [
         },
         categories: [112]
     }, {
-        id: 61,
+        id: 22,
         monthCount: 213,
         dayCount: 11,
         weekCount: 209,
@@ -8437,7 +8449,7 @@ export const postsDataMock = [
         url: "https://media.vwcity.net/wp-content/uploads/2022/10/image2-480x213.jpg",
         keyword: ["#仮想通貨", "#ブロックチェーン"]
     }, {
-        id: 62,
+        id: 21,
         monthCount: 432,
         dayCount: 31,
         weekCount: 420,
@@ -8519,7 +8531,7 @@ export const postsDataMock = [
                 "png",
         keyword: ["#口座開設", "#スマートコントラクト"]
     }, {
-        id: 63,
+        id: 20,
         monthCount: 521,
         dayCount: 24,
         weekCount: 501,
@@ -8657,7 +8669,7 @@ export const postsDataMock = [
         },
         categories: [113]
     }, {
-        id: 64,
+        id: 19,
         monthCount: 512,
         dayCount: 241,
         weekCount: 300,
@@ -8801,7 +8813,7 @@ export const postsDataMock = [
         },
         categories: [113]
     }, {
-        id: 65,
+        id: 18,
         monthCount: 123,
         dayCount: 44,
         weekCount: 100,
@@ -8940,7 +8952,7 @@ export const postsDataMock = [
         },
         categories: [113]
     }, {
-        id: 66,
+        id: 17,
         monthCount: 363,
         dayCount: 241,
         weekCount: 303,
@@ -9079,7 +9091,7 @@ export const postsDataMock = [
         },
         categories: [113]
     }, {
-        id: 67,
+        id: 16,
         monthCount: 524,
         dayCount: 492,
         weekCount: 500,
@@ -9218,7 +9230,7 @@ export const postsDataMock = [
         },
         categories: [113]
     }, {
-        id: 68,
+        id: 15,
         monthCount: 123,
         dayCount: 12,
         weekCount: 100,
@@ -9417,7 +9429,7 @@ export const postsDataMock = [
         },
         categories: [114]
     }, {
-        id: 69,
+        id: 14,
         monthCount: 745,
         dayCount: 515,
         weekCount: 700,
@@ -9525,7 +9537,7 @@ export const postsDataMock = [
         },
         categories: [114]
     }, {
-        id: 70,
+        id: 13,
         monthCount: 231,
         dayCount: 13,
         weekCount: 200,
@@ -9668,7 +9680,7 @@ export const postsDataMock = [
         },
         categories: [114]
     }, {
-        id: 71,
+        id: 12,
         monthCount: 745,
         dayCount: 59,
         weekCount: 700,
@@ -9723,7 +9735,7 @@ export const postsDataMock = [
         },
         categories: [114]
     }, {
-        id: 72,
+        id: 11,
         monthCount: 453,
         dayCount: 23,
         weekCount: 430,
@@ -9861,5 +9873,1149 @@ export const postsDataMock = [
             protected: false
         },
         categories: [114]
-    }
+    }, {
+        id: 9,
+        VmonthCount: 60,
+        VdayCount: 40,
+        VweekCount: 50,
+        feature: "",
+        video: "O",
+        date: "2022-10-04T09:30:21",
+        title: {
+            rendered: "不特法（不動産特定共同事業法）の業務管理者とは？"
+        },
+        url: "https://www.youtube.com/embed/9GO2c_fQfx4",
+        keyword: [
+            "#メタバース", "#暗号資産"
+        ],
+        content: {
+            rendered: '<p>株取引には、保有する資金などを担保にして株を売買する方法として<strong>「信用取引」</strong>があります。</p>\n<p>今回はその信' +
+                    '用取引について、仕組みや利用するメリット・デメリットなどを説明します。</p>\n<div id="ez-toc-container" class="ez-' +
+                    'toc-v2_0_22 counter-hierarchy ez-toc-grey">\n<div class="ez-toc-title-containe' +
+                    'r">\n<p class="ez-toc-title">目次（クリックで項目へジャンプ）</p>\n<span class="ez-toc-title-t' +
+                    'oggle"><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default' +
+                    ' ez-toc-toggle" style="display: none;"><i class="ez-toc-glyphicon ez-toc-icon-' +
+                    'toggle"></i></a></span></div>\n<nav><ul class="ez-toc-list ez-toc-list-level-1' +
+                    '"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-to' +
+                    'c-heading-1" href="https://media.vwcity.net/margin-trading/#%E4%BF%A1%E7%94%A8' +
+                    '%E5%8F%96%E5%BC%95%E3%81%A8%E3%81%AF%EF%BC%9F" title="信用取引とは？">信用取引とは？</a></li' +
+                    '><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc' +
+                    '-heading-2" href="https://media.vwcity.net/margin-trading/#%E4%BF%A1%E7%94%A8%' +
+                    'E5%8F%96%E5%BC%95%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF" title="信用取引の仕組み">信用取引の仕' +
+                    '組み</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-level-3"><a cl' +
+                    'ass="ez-toc-link ez-toc-heading-3" href="https://media.vwcity.net/margin-tradi' +
+                    'ng/#%E5%88%B6%E5%BA%A6%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%AE%E5%AF%BE%E' +
+                    '8%B1%A1%E9%8A%98%E6%9F%84" title="制度信用取引の対象銘柄">制度信用取引の対象銘柄</a></li></ul></li><' +
+                    'li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-h' +
+                    'eading-4" href="https://media.vwcity.net/margin-trading/#%E4%BF%A1%E7%94%A8%E5' +
+                    '%8F%96%E5%BC%95%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%83%A1%E3%83%AA' +
+                    '%E3%83%83%E3%83%88%E3%83%BB%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88" titl' +
+                    'e="信用取引を利用するメリット・デメリット">信用取引を利用するメリット・デメリット</a><ul class="ez-toc-list-level-3"' +
+                    '><li class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-5" hr' +
+                    'ef="https://media.vwcity.net/margin-trading/#%E3%83%A1%E3%83%AA%E3%83%83%E3%83' +
+                    '%88" title="メリット">メリット</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3' +
+                    '"><a class="ez-toc-link ez-toc-heading-6" href="https://media.vwcity.net/margi' +
+                    'n-trading/#%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88" title="デメリット">デメリット<' +
+                    '/a></li></ul></li></ul></nav></div>\n<h2><span class="ez-toc-section" id="%E4%' +
+                    'BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%A8%E3%81%AF%EF%BC%9F"></span>信用取引とは？<sp' +
+                    'an class="ez-toc-section-end"></span></h2>\n<p><img loading="lazy" class="size' +
+                    '-full wp-image-4369 alignnone" src="https://media.vwcity.net/wp-content/upload' +
+                    's/2022/09/pexels-alesia-kozik-6770610.jpg" alt="" width="750" height="500" src' +
+                    'set="https://media.vwcity.net/wp-content/uploads/2022/09/pexels-alesia-kozik-6' +
+                    '770610.jpg 750w, https://media.vwcity.net/wp-content/uploads/2022/09/pexels-al' +
+                    'esia-kozik-6770610-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /' +
+                    '></p>\n<p>信用取引は、<strong>資金または証券などを証券会社に委託保証金として担保にする</strong>取引方法です。証券会社に預けた委託' +
+                    '保証金により定められた期限内で資金を借りたり、証券を借りたりできます。</p>\n<p>返済する際は、借りた対象となる反対売買で対応します。</p>\n<h' +
+                    '2><span class="ez-toc-section" id="%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%' +
+                    'AE%E4%BB%95%E7%B5%84%E3%81%BF"></span>信用取引の仕組み<span class="ez-toc-section-end"' +
+                    '></span></h2>\n<p><img loading="lazy" class="size-full wp-image-4370 alignnone' +
+                    '" src="https://media.vwcity.net/wp-content/uploads/2022/09/tyy.jpg" alt="" wid' +
+                    'th="750" height="500" srcset="https://media.vwcity.net/wp-content/uploads/2022' +
+                    '/09/tyy.jpg 750w, https://media.vwcity.net/wp-content/uploads/2022/09/tyy-300x' +
+                    '200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /></p>\n<p>信用取引は、2つの形式から' +
+                    '選びます。<b>一般信用取引と制度信用取引</b>です。</p>\n<p>それぞれの仕組みを比べてみましょう。</p>\n<table style="bor' +
+                    'der-collapse: collapse; width: 100%; height: 90px;" border="1">\n<tbody>\n<tr ' +
+                    'style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; text-align: ' +
+                    'center;"></td>\n<td style="width: 40.8164%; height: 15px; text-align: center;"' +
+                    '><span style="font-size: 12pt;">一般信用取引</span></td>\n<td style="width: 40.4761%' +
+                    '; height: 15px; text-align: center;"><span style="font-size: 12pt;">制度信用取引</sp' +
+                    'an></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; heigh' +
+                    't: 15px; text-align: center;"><span style="font-size: 12pt;">取引対象の銘柄</span></t' +
+                    'd>\n<td style="width: 40.8164%; height: 15px; text-align: center;"><span style' +
+                    '="font-size: 12pt;">原則として全上場銘柄対象</span></td>\n<td style="width: 40.4761%; heig' +
+                    'ht: 15px; text-align: center;"><span style="font-size: 12pt;">取引所で選定された銘柄</spa' +
+                    'n></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height' +
+                    ': 15px; text-align: center;"><span style="font-size: 12pt;">返済期限</span></td>\n' +
+                    '<td style="width: 40.8164%; height: 15px; text-align: center;"><span style="fo' +
+                    'nt-size: 12pt;">証券会社と顧客で取り決める</span></td>\n<td style="width: 40.4761%; height:' +
+                    ' 15px; text-align: center;"><span style="font-size: 12pt;">6カ月まで</span></td>\n' +
+                    '</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; t' +
+                    'ext-align: center;"><span style="font-size: 12pt;">品貸料（逆日歩）※</span></td>\n<td ' +
+                    'style="width: 40.8164%; height: 15px; text-align: center;"><span style="font-s' +
+                    'ize: 12pt;">証券会社と顧客で取り決める</span></td>\n<td style="width: 40.4761%; height: 15p' +
+                    'x; text-align: center;"><span style="font-size: 12pt;">取引所の発表による</span></td>\n' +
+                    '</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; t' +
+                    'ext-align: center;"><span style="font-size: 12pt;">権利処理方法</span></td>\n<td sty' +
+                    'le="width: 40.8164%; height: 15px; text-align: center;"><span style="font-size' +
+                    ': 12pt;">証券会社と顧客で取り決める</span></td>\n<td style="width: 40.4761%; height: 15px; ' +
+                    'text-align: center;"><span style="font-size: 12pt;">取引所の定めるところ</span></td>\n</' +
+                    'tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; tex' +
+                    't-align: center;"><span style="font-size: 12pt;">貸借の可否</span></td>\n<td style=' +
+                    '"width: 40.8164%; height: 15px; text-align: center;"><span style="font-size: 1' +
+                    '2pt;">貸借不可</span></td>\n<td style="width: 40.4761%; height: 15px; text-align: ' +
+                    'center;"><span style="font-size: 12pt;">貸借可能</span></td>\n</tr>\n</tbody>\n</t' +
+                    'able>\n<p>※信用取引において貸株料以外に発生する、<b>売り建てで借りている株の手数料</b></p>\n<h3><span class="ez-' +
+                    'toc-section" id="%E5%88%B6%E5%BA%A6%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%' +
+                    'AE%E5%AF%BE%E8%B1%A1%E9%8A%98%E6%9F%84"></span>制度信用取引の対象銘柄<span class="ez-toc-' +
+                    'section-end"></span></h3>\n<p>制度信用取引の対象銘柄は、一定の基準を満たすことで取引所に選定されます。</p>\n<p>以下の' +
+                    'ような基準が設けられています。</p>\n<ul>\n<li>制度信用銘柄：　証券会社との貸借取引において資金のみ借り入れできる</li>\n<li>制度信' +
+                    '用取引の貸借銘柄：　証券会社との貸借取引において資金および株式どちらも借り入れできる</li>\n</ul>\n<h2><span class="ez-to' +
+                    'c-section" id="%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%82%92%E5%88%A9%E7%94%A8' +
+                    '%E3%81%99%E3%82%8B%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%83%BB%E3%83%87%E3%83' +
+                    '%A1%E3%83%AA%E3%83%83%E3%83%88"></span>信用取引を利用するメリット・デメリット<span class="ez-toc-' +
+                    'section-end"></span></h2>\n<p><img loading="lazy" class="size-full wp-image-43' +
+                    '71 alignnone" src="https://media.vwcity.net/wp-content/uploads/2022/09/van-tay' +
+                    '-media-chyT9XPAdcg-unsplash.jpg" alt="" width="750" height="500" srcset="https' +
+                    '://media.vwcity.net/wp-content/uploads/2022/09/van-tay-media-chyT9XPAdcg-unspl' +
+                    'ash.jpg 750w, https://media.vwcity.net/wp-content/uploads/2022/09/van-tay-medi' +
+                    'a-chyT9XPAdcg-unsplash-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750p' +
+                    'x" /></p>\n<p>信用取引を利用する場合は、メリットとなる部分とデメリットになる部分を理解しましょう。</p>\n<h3><span class=' +
+                    '"ez-toc-section" id="%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88"></span>メリット<span cl' +
+                    'ass="ez-toc-section-end"></span></h3>\n<p>信用取引のメリットは、証券会社に担保として預託した委託保証金の約3倍まで' +
+                    '売買が可能なことです。例えば、30万円の資金を委託保証金とした場合、約90万円までの株を購入できます。株価が予想どおりの結果になれば大きな成果も考えられます' +
+                    '。</p>\n<p>また、現物取引の差金決済禁止とは違い、当日中複数回取引できることもメリットです。さらに、株価が下落する局面で取引する信用売り（空売り）が' +
+                    '利用できることも特徴のひとつです。</p>\n<p>信用売りは、証券会社から借りた株を市場で売却します。売却した株を株価が下がったタイミングで買い戻して返却' +
+                    'する方法です。</p>\n<h3><span class="ez-toc-section" id="%E3%83%87%E3%83%A1%E3%83%AA%' +
+                    'E3%83%83%E3%83%88"></span>デメリット<span class="ez-toc-section-end"></span></h3>\n' +
+                    '<p>信用取引のデメリットは、担保として預託した資金以上に取引できることから、リスクも大きくなる点です。思惑どおりに株価が変動すれば利益が期待できますが、逆' +
+                    'の場合は、大きな損失になることも考えられます。</p>\n<p>また、選んだ銘柄に信用取引の制限が掛けられることも有り得ます。</p>\n<p>コスト面にお' +
+                    'いても、信用取引のほうが現物取引よりも手数料が高くなることが多いことでしょう。</p>\n<h5><a href="https://media.vwcity' +
+                    '.net/about-stock/" target="_blank" rel="noopener">株（株式）とは？初心者にもわかりやすく解説</a></h' +
+                    '5>\n<h5><a href="https://media.vwcity.net/investment-tax/" target="_blank" rel' +
+                    '="noopener">投資の税金が気になる！「特定口座」を覚えておこう</a></h5>\n'
+        },
+        excerpt: {
+            rendered: "不動産特定共同事業（以下、不特法）を行う事業者は、不特法のもとで運営する事業ごとに業務管理者を置くことが定められています。不特法では、契約に必要な書類や財産" +
+                    "管理報告書の記名押印ができる人が業務管理者と指定されています。今回は、不動産特定共同事業で定められている業務管理者の業務内容や資格要件について解説しましょう" +
+                    "。"
+        },
+        categories: []
+    }, {
+        id: 8,
+        VmonthCount: 75,
+        VdayCount: 4,
+        VweekCount: 10,
+        feature: "",
+        video: "O",
+        date: "2022-10-04T09:30:21",
+        title: {
+            rendered: "投資型クラウドファンディングとは？ソーシャルレンディングとの違い"
+        },
+        url: "https://www.youtube.com/embed/MjmTLSOcUwU",
+        keyword: [
+            "#メタバース", "#口座開設", "#仮想通貨"
+        ],
+        content: {
+            rendered: '<p>株取引には、保有する資金などを担保にして株を売買する方法として<strong>「信用取引」</strong>があります。</p>\n<p>今回はその信' +
+                    '用取引について、仕組みや利用するメリット・デメリットなどを説明します。</p>\n<div id="ez-toc-container" class="ez-' +
+                    'toc-v2_0_22 counter-hierarchy ez-toc-grey">\n<div class="ez-toc-title-containe' +
+                    'r">\n<p class="ez-toc-title">目次（クリックで項目へジャンプ）</p>\n<span class="ez-toc-title-t' +
+                    'oggle"><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default' +
+                    ' ez-toc-toggle" style="display: none;"><i class="ez-toc-glyphicon ez-toc-icon-' +
+                    'toggle"></i></a></span></div>\n<nav><ul class="ez-toc-list ez-toc-list-level-1' +
+                    '"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-to' +
+                    'c-heading-1" href="https://media.vwcity.net/margin-trading/#%E4%BF%A1%E7%94%A8' +
+                    '%E5%8F%96%E5%BC%95%E3%81%A8%E3%81%AF%EF%BC%9F" title="信用取引とは？">信用取引とは？</a></li' +
+                    '><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc' +
+                    '-heading-2" href="https://media.vwcity.net/margin-trading/#%E4%BF%A1%E7%94%A8%' +
+                    'E5%8F%96%E5%BC%95%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF" title="信用取引の仕組み">信用取引の仕' +
+                    '組み</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-level-3"><a cl' +
+                    'ass="ez-toc-link ez-toc-heading-3" href="https://media.vwcity.net/margin-tradi' +
+                    'ng/#%E5%88%B6%E5%BA%A6%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%AE%E5%AF%BE%E' +
+                    '8%B1%A1%E9%8A%98%E6%9F%84" title="制度信用取引の対象銘柄">制度信用取引の対象銘柄</a></li></ul></li><' +
+                    'li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-h' +
+                    'eading-4" href="https://media.vwcity.net/margin-trading/#%E4%BF%A1%E7%94%A8%E5' +
+                    '%8F%96%E5%BC%95%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%83%A1%E3%83%AA' +
+                    '%E3%83%83%E3%83%88%E3%83%BB%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88" titl' +
+                    'e="信用取引を利用するメリット・デメリット">信用取引を利用するメリット・デメリット</a><ul class="ez-toc-list-level-3"' +
+                    '><li class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-5" hr' +
+                    'ef="https://media.vwcity.net/margin-trading/#%E3%83%A1%E3%83%AA%E3%83%83%E3%83' +
+                    '%88" title="メリット">メリット</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3' +
+                    '"><a class="ez-toc-link ez-toc-heading-6" href="https://media.vwcity.net/margi' +
+                    'n-trading/#%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88" title="デメリット">デメリット<' +
+                    '/a></li></ul></li></ul></nav></div>\n<h2><span class="ez-toc-section" id="%E4%' +
+                    'BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%A8%E3%81%AF%EF%BC%9F"></span>信用取引とは？<sp' +
+                    'an class="ez-toc-section-end"></span></h2>\n<p><img loading="lazy" class="size' +
+                    '-full wp-image-4369 alignnone" src="https://media.vwcity.net/wp-content/upload' +
+                    's/2022/09/pexels-alesia-kozik-6770610.jpg" alt="" width="750" height="500" src' +
+                    'set="https://media.vwcity.net/wp-content/uploads/2022/09/pexels-alesia-kozik-6' +
+                    '770610.jpg 750w, https://media.vwcity.net/wp-content/uploads/2022/09/pexels-al' +
+                    'esia-kozik-6770610-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /' +
+                    '></p>\n<p>信用取引は、<strong>資金または証券などを証券会社に委託保証金として担保にする</strong>取引方法です。証券会社に預けた委託' +
+                    '保証金により定められた期限内で資金を借りたり、証券を借りたりできます。</p>\n<p>返済する際は、借りた対象となる反対売買で対応します。</p>\n<h' +
+                    '2><span class="ez-toc-section" id="%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%' +
+                    'AE%E4%BB%95%E7%B5%84%E3%81%BF"></span>信用取引の仕組み<span class="ez-toc-section-end"' +
+                    '></span></h2>\n<p><img loading="lazy" class="size-full wp-image-4370 alignnone' +
+                    '" src="https://media.vwcity.net/wp-content/uploads/2022/09/tyy.jpg" alt="" wid' +
+                    'th="750" height="500" srcset="https://media.vwcity.net/wp-content/uploads/2022' +
+                    '/09/tyy.jpg 750w, https://media.vwcity.net/wp-content/uploads/2022/09/tyy-300x' +
+                    '200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /></p>\n<p>信用取引は、2つの形式から' +
+                    '選びます。<b>一般信用取引と制度信用取引</b>です。</p>\n<p>それぞれの仕組みを比べてみましょう。</p>\n<table style="bor' +
+                    'der-collapse: collapse; width: 100%; height: 90px;" border="1">\n<tbody>\n<tr ' +
+                    'style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; text-align: ' +
+                    'center;"></td>\n<td style="width: 40.8164%; height: 15px; text-align: center;"' +
+                    '><span style="font-size: 12pt;">一般信用取引</span></td>\n<td style="width: 40.4761%' +
+                    '; height: 15px; text-align: center;"><span style="font-size: 12pt;">制度信用取引</sp' +
+                    'an></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; heigh' +
+                    't: 15px; text-align: center;"><span style="font-size: 12pt;">取引対象の銘柄</span></t' +
+                    'd>\n<td style="width: 40.8164%; height: 15px; text-align: center;"><span style' +
+                    '="font-size: 12pt;">原則として全上場銘柄対象</span></td>\n<td style="width: 40.4761%; heig' +
+                    'ht: 15px; text-align: center;"><span style="font-size: 12pt;">取引所で選定された銘柄</spa' +
+                    'n></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height' +
+                    ': 15px; text-align: center;"><span style="font-size: 12pt;">返済期限</span></td>\n' +
+                    '<td style="width: 40.8164%; height: 15px; text-align: center;"><span style="fo' +
+                    'nt-size: 12pt;">証券会社と顧客で取り決める</span></td>\n<td style="width: 40.4761%; height:' +
+                    ' 15px; text-align: center;"><span style="font-size: 12pt;">6カ月まで</span></td>\n' +
+                    '</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; t' +
+                    'ext-align: center;"><span style="font-size: 12pt;">品貸料（逆日歩）※</span></td>\n<td ' +
+                    'style="width: 40.8164%; height: 15px; text-align: center;"><span style="font-s' +
+                    'ize: 12pt;">証券会社と顧客で取り決める</span></td>\n<td style="width: 40.4761%; height: 15p' +
+                    'x; text-align: center;"><span style="font-size: 12pt;">取引所の発表による</span></td>\n' +
+                    '</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; t' +
+                    'ext-align: center;"><span style="font-size: 12pt;">権利処理方法</span></td>\n<td sty' +
+                    'le="width: 40.8164%; height: 15px; text-align: center;"><span style="font-size' +
+                    ': 12pt;">証券会社と顧客で取り決める</span></td>\n<td style="width: 40.4761%; height: 15px; ' +
+                    'text-align: center;"><span style="font-size: 12pt;">取引所の定めるところ</span></td>\n</' +
+                    'tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; tex' +
+                    't-align: center;"><span style="font-size: 12pt;">貸借の可否</span></td>\n<td style=' +
+                    '"width: 40.8164%; height: 15px; text-align: center;"><span style="font-size: 1' +
+                    '2pt;">貸借不可</span></td>\n<td style="width: 40.4761%; height: 15px; text-align: ' +
+                    'center;"><span style="font-size: 12pt;">貸借可能</span></td>\n</tr>\n</tbody>\n</t' +
+                    'able>\n<p>※信用取引において貸株料以外に発生する、<b>売り建てで借りている株の手数料</b></p>\n<h3><span class="ez-' +
+                    'toc-section" id="%E5%88%B6%E5%BA%A6%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%' +
+                    'AE%E5%AF%BE%E8%B1%A1%E9%8A%98%E6%9F%84"></span>制度信用取引の対象銘柄<span class="ez-toc-' +
+                    'section-end"></span></h3>\n<p>制度信用取引の対象銘柄は、一定の基準を満たすことで取引所に選定されます。</p>\n<p>以下の' +
+                    'ような基準が設けられています。</p>\n<ul>\n<li>制度信用銘柄：　証券会社との貸借取引において資金のみ借り入れできる</li>\n<li>制度信' +
+                    '用取引の貸借銘柄：　証券会社との貸借取引において資金および株式どちらも借り入れできる</li>\n</ul>\n<h2><span class="ez-to' +
+                    'c-section" id="%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%82%92%E5%88%A9%E7%94%A8' +
+                    '%E3%81%99%E3%82%8B%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%83%BB%E3%83%87%E3%83' +
+                    '%A1%E3%83%AA%E3%83%83%E3%83%88"></span>信用取引を利用するメリット・デメリット<span class="ez-toc-' +
+                    'section-end"></span></h2>\n<p><img loading="lazy" class="size-full wp-image-43' +
+                    '71 alignnone" src="https://media.vwcity.net/wp-content/uploads/2022/09/van-tay' +
+                    '-media-chyT9XPAdcg-unsplash.jpg" alt="" width="750" height="500" srcset="https' +
+                    '://media.vwcity.net/wp-content/uploads/2022/09/van-tay-media-chyT9XPAdcg-unspl' +
+                    'ash.jpg 750w, https://media.vwcity.net/wp-content/uploads/2022/09/van-tay-medi' +
+                    'a-chyT9XPAdcg-unsplash-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750p' +
+                    'x" /></p>\n<p>信用取引を利用する場合は、メリットとなる部分とデメリットになる部分を理解しましょう。</p>\n<h3><span class=' +
+                    '"ez-toc-section" id="%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88"></span>メリット<span cl' +
+                    'ass="ez-toc-section-end"></span></h3>\n<p>信用取引のメリットは、証券会社に担保として預託した委託保証金の約3倍まで' +
+                    '売買が可能なことです。例えば、30万円の資金を委託保証金とした場合、約90万円までの株を購入できます。株価が予想どおりの結果になれば大きな成果も考えられます' +
+                    '。</p>\n<p>また、現物取引の差金決済禁止とは違い、当日中複数回取引できることもメリットです。さらに、株価が下落する局面で取引する信用売り（空売り）が' +
+                    '利用できることも特徴のひとつです。</p>\n<p>信用売りは、証券会社から借りた株を市場で売却します。売却した株を株価が下がったタイミングで買い戻して返却' +
+                    'する方法です。</p>\n<h3><span class="ez-toc-section" id="%E3%83%87%E3%83%A1%E3%83%AA%' +
+                    'E3%83%83%E3%83%88"></span>デメリット<span class="ez-toc-section-end"></span></h3>\n' +
+                    '<p>信用取引のデメリットは、担保として預託した資金以上に取引できることから、リスクも大きくなる点です。思惑どおりに株価が変動すれば利益が期待できますが、逆' +
+                    'の場合は、大きな損失になることも考えられます。</p>\n<p>また、選んだ銘柄に信用取引の制限が掛けられることも有り得ます。</p>\n<p>コスト面にお' +
+                    'いても、信用取引のほうが現物取引よりも手数料が高くなることが多いことでしょう。</p>\n<h5><a href="https://media.vwcity' +
+                    '.net/about-stock/" target="_blank" rel="noopener">株（株式）とは？初心者にもわかりやすく解説</a></h' +
+                    '5>\n<h5><a href="https://media.vwcity.net/investment-tax/" target="_blank" rel' +
+                    '="noopener">投資の税金が気になる！「特定口座」を覚えておこう</a></h5>\n',
+            protected: false
+        },
+        excerpt: {
+            rendered: "クラウドファンディングといえば、何かプロジェクトの立ち上げなどのための資金調達の手段として知られていますが、ソーシャルレンディングとはどのような関係があるの" +
+                    "でしょうか。この記事では、注目されている投資型クラウドファンディングとソーシャルレンディングの違いなどについて解説していきます。",
+            protected: false
+        },
+        categories: []
+    },{
+        id: 7,
+        VmonthCount: 31,
+        VdayCount: 3,
+        Vfeature: "",
+        video: "O",
+        weekCount: 30,
+        kind: "ブロックチェーン",
+        date: "2022-10-04T09:30:29",
+        url: "https://www.youtube.com/embed/9N84AlI6jjY",
+        title: {
+            rendered: "つみたてNISAの特徴は？一般NISAとの違いは？"
+        },
+        keyword: [
+            "#口座開設", "#メタバース"
+        ],
+        content: {
+            rendered: '<p>資産運用について調べていると、NISAのことをよく耳にしませんか？NISAは、少額投資非課税制度です。</p>\n<p>NISAには、一般NISAとつ' +
+                    'みたてNISAがあります。同じNISA制度なのに、何が違うのでしょうか？</p>\n<p>今回は、つみたてNISAの特徴について解説します。</p>\n<p' +
+                    '>一般NISAとの違いなど、合わせて紹介するのでぜひ、参考にしてください。</p>\n<p>&nbsp;</p>\n<div id="ez-toc-cont' +
+                    'ainer" class="ez-toc-v2_0_22 counter-hierarchy ez-toc-grey">\n<div class="ez-t' +
+                    'oc-title-container">\n<p class="ez-toc-title">目次（クリックで項目へジャンプ）</p>\n<span clas' +
+                    's="ez-toc-title-toggle"><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs e' +
+                    'z-toc-btn-default ez-toc-toggle" style="display: none;"><i class="ez-toc-glyph' +
+                    'icon ez-toc-icon-toggle"></i></a></span></div>\n<nav><ul class="ez-toc-list ez' +
+                    '-toc-list-level-1"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="' +
+                    'ez-toc-link ez-toc-heading-1" href="https://media.vwcity.net/nisa-feature/#%E3' +
+                    '%81%A4%E3%81%BF%E3%81%9F%E3%81%A6NISA%E3%81%AF%E3%81%A9%E3%82%93%E3%81%AA%E5%8' +
+                    '8%B6%E5%BA%A6%EF%BC%9F" title="つみたてNISAはどんな制度？">つみたてNISAはどんな制度？</a></li><li cl' +
+                    'ass="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-headin' +
+                    'g-2" href="https://media.vwcity.net/nisa-feature/#%E4%B8%80%E8%88%ACNISA%E3%81' +
+                    '%A8%E3%81%AE%E9%81%95%E3%81%84" title="一般NISAとの違い">一般NISAとの違い</a></li><li clas' +
+                    's="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-' +
+                    '3" href="https://media.vwcity.net/nisa-feature/#%E3%81%93%E3%82%93%E3%81%AA%E4' +
+                    '%BA%BA%E3%81%AF%E3%81%A4%E3%81%BF%E3%81%9F%E3%81%A6NISA%E3%81%8C%E3%81%8A%E3%8' +
+                    '1%99%E3%81%99%E3%82%81" title="こんな人はつみたてNISAがおすすめ">こんな人はつみたてNISAがおすすめ</a></li>' +
+                    '</ul></nav></div>\n<h2><span class="ez-toc-section" id="%E3%81%A4%E3%81%BF%E3%' +
+                    '81%9F%E3%81%A6NISA%E3%81%AF%E3%81%A9%E3%82%93%E3%81%AA%E5%88%B6%E5%BA%A6%EF%BC' +
+                    '%9F"></span>つみたてNISAはどんな制度？<span class="ez-toc-section-end"></span></h2>\n<p><' +
+                    'img loading="lazy" class="size-full wp-image-3553 alignnone" src="https://medi' +
+                    'a.vwcity.net/wp-content/uploads/2022/07/pexels-anna-nekrashevich-6801874.jpg" ' +
+                    'alt="" width="750" height="540" srcset="https://media.vwcity.net/wp-content/up' +
+                    'loads/2022/07/pexels-anna-nekrashevich-6801874.jpg 750w, https://media.vwcity.' +
+                    'net/wp-content/uploads/2022/07/pexels-anna-nekrashevich-6801874-300x216.jpg 30' +
+                    '0w" sizes="(max-width: 750px) 100vw, 750px" /><br />\nつみたてNISAは、長期・積立・分散の3要素にお' +
+                    'ける投資をサポートする目的で作られた非課税制度。つみたてNISA専用の口座を一人ひとつまで開設ができます。日本居住の20歳以上の方なら、誰でも取り組める資産' +
+                    '運用の制度です。</p>\n<p>制度の特徴としては、一般NISAとつみたてNISAを同時に利用できない点があげられます。利用者は、一般NISAもしくはつみ' +
+                    'たてNISAのどちらかを選ばなければなりません。最長で20年間続けて運用ができるため、長期目線で取り組める制度です。</p>\n<h2><span clas' +
+                    's="ez-toc-section" id="%E4%B8%80%E8%88%ACNISA%E3%81%A8%E3%81%AE%E9%81%95%E3%81' +
+                    '%84"></span>一般NISAとの違い<span class="ez-toc-section-end"></span></h2>\n<p><img l' +
+                    'oading="lazy" class="size-full wp-image-3554 alignnone" src="https://media.vwc' +
+                    'ity.net/wp-content/uploads/2022/07/pexels-burak-kebaber-186461.jpg" alt="" wid' +
+                    'th="750" height="500" srcset="https://media.vwcity.net/wp-content/uploads/2022' +
+                    '/07/pexels-burak-kebaber-186461.jpg 750w, https://media.vwcity.net/wp-content/' +
+                    'uploads/2022/07/pexels-burak-kebaber-186461-300x200.jpg 300w" sizes="(max-widt' +
+                    'h: 750px) 100vw, 750px" /><br />\nつみたてNISAは、同じ非課税制度でありながら、一般NISAとの違いがいくつかあります。' +
+                    '</p>\n<table style="border-collapse: collapse; width: 100%; height: 135px;" bo' +
+                    'rder="1">\n<tbody>\n<tr style="height: 15px;">\n<td style="width: 33.3333%; he' +
+                    'ight: 15px; text-align: center;"></td>\n<td style="width: 33.3333%; height: 15' +
+                    'px; text-align: center;"><span style="font-size: 12pt;">一般NISA</span></td>\n<t' +
+                    'd style="width: 33.3333%; height: 15px; text-align: center;"><span style="font' +
+                    '-size: 12pt;">つみたてNISA</span></td>\n</tr>\n<tr style="height: 15px;">\n<td sty' +
+                    'le="width: 33.3333%; height: 15px; text-align: center;"><span style="font-size' +
+                    ': 12pt;">非課税枠</span></td>\n<td style="width: 33.3333%; height: 15px; text-alig' +
+                    'n: center;"><span style="font-size: 12pt;">年間120万円</span></td>\n<td style="wid' +
+                    'th: 33.3333%; height: 15px; text-align: center;"><span style="font-size: 12pt;' +
+                    '">年間40万円</span></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 33.' +
+                    '3333%; height: 15px; text-align: center;"><span style="font-size: 12pt;">非課税期間' +
+                    '</span></td>\n<td style="width: 33.3333%; height: 15px; text-align: center;"><' +
+                    'span style="font-size: 12pt;">最長5年間</span></td>\n<td style="width: 33.3333%; h' +
+                    'eight: 15px; text-align: center;"><span style="font-size: 12pt;">最長20年間</span>' +
+                    '</td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 33.3333%; height: ' +
+                    '15px; text-align: center;"><span style="font-size: 12pt;">非課税対象</span></td>\n<' +
+                    'td style="width: 33.3333%; height: 15px; text-align: center;"><span style="fon' +
+                    't-size: 12pt;">譲渡益<br />\n</span><span style="font-size: 12pt;">配当金<br />\n</s' +
+                    'pan><span style="font-size: 12pt;">分配金</span></td>\n<td style="width: 33.3333%' +
+                    '; height: 15px; text-align: center;"><span style="font-size: 12pt;">譲渡益<br />' +
+                    '\n</span><span style="font-size: 12pt;">配当金<br />\n</span><span style="font-si' +
+                    'ze: 12pt;">分配金</span></td>\n</tr>\n<tr style="height: 15px;">\n<td style="widt' +
+                    'h: 33.3333%; height: 15px; text-align: center;"><span style="font-size: 12pt;"' +
+                    '>投資スタイル</span></td>\n<td style="width: 33.3333%; height: 15px; text-align: cen' +
+                    'ter;"><span style="font-size: 12pt;">通常の買付け・積立投資</span></td>\n<td style="width' +
+                    ': 33.3333%; height: 15px; text-align: center;"><span style="font-size: 12pt;">' +
+                    '積立投資のみ</span></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 33.33' +
+                    '33%; height: 15px; text-align: center;"><span style="font-size: 12pt;">引き出し制限<' +
+                    '/span></td>\n<td style="width: 33.3333%; height: 15px; text-align: center;"><s' +
+                    'pan style="font-size: 12pt;">なし</span></td>\n<td style="width: 33.3333%; heigh' +
+                    't: 15px; text-align: center;"><span style="font-size: 12pt;">なし</span></td>\n<' +
+                    '/tr>\n<tr style="height: 15px;">\n<td style="width: 33.3333%; height: 15px; te' +
+                    'xt-align: center;"><span style="font-size: 12pt;">利用対象年齢　</span></p>\n<p><span' +
+                    ' style="font-size: 12pt;">※2023年1月以降は18歳以上が利用可能</span></td>\n<td style="width:' +
+                    ' 33.3333%; height: 15px; text-align: center;"><span style="font-size: 12pt;">2' +
+                    '0歳以上</span></td>\n<td style="width: 33.3333%; height: 15px; text-align: center' +
+                    ';"><span style="font-size: 12pt;">20歳以上</span></td>\n</tr>\n<tr style="height:' +
+                    ' 15px;">\n<td style="width: 33.3333%; height: 15px; text-align: center;"><span' +
+                    ' style="font-size: 12pt;">購入対象となる金融商品</span></td>\n<td style="width: 33.3333%;' +
+                    ' height: 15px; text-align: center;"><span style="font-size: 12pt;">株式<br />\n<' +
+                    '/span><span style="font-size: 12pt;">ETF<br />\n</span><span style="font-size:' +
+                    ' 12pt;">公募株式投資信託など</span></td>\n<td style="width: 33.3333%; height: 15px; text' +
+                    '-align: center;"><span style="font-size: 12pt;">長期・積立・分散の投資条件を一定基準満たした投資信託</sp' +
+                    'an></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 33.3333%; heigh' +
+                    't: 15px; text-align: center;"><span style="font-size: 12pt;">投資利用期間</span></td' +
+                    '>\n<td style="width: 33.3333%; height: 15px; text-align: center;"><span style=' +
+                    '"font-size: 12pt;">2014年～2023年</span></td>\n<td style="width: 33.3333%; height' +
+                    ': 15px; text-align: center;"><span style="font-size: 12pt;">2018年～2042年</span>' +
+                    '<br />\n<span style="font-size: 12pt;">※期間内の最長20年間で可能な期間</span></td>\n</tr>\n<' +
+                    '/tbody>\n</table>\n<p>一般NISAは、投資方法と対象となる金融商品の種類が豊富です。また、非課税投資枠も大きくなります。</p>\n<' +
+                    'p>一方のつみたてNISAは、非課税期間と投資できる期間が長い特徴を持っています。</p>\n<h2><span class="ez-toc-section' +
+                    '" id="%E3%81%93%E3%82%93%E3%81%AA%E4%BA%BA%E3%81%AF%E3%81%A4%E3%81%BF%E3%81%9F' +
+                    '%E3%81%A6NISA%E3%81%8C%E3%81%8A%E3%81%99%E3%81%99%E3%82%81"></span>こんな人はつみたてNI' +
+                    'SAがおすすめ<span class="ez-toc-section-end"></span></h2>\n<p><img loading="lazy" c' +
+                    'lass="size-full wp-image-3555 alignnone" src="https://media.vwcity.net/wp-cont' +
+                    'ent/uploads/2022/07/pexels-max-vakhtbovych-6794921.jpg" alt="" width="750" hei' +
+                    'ght="509" srcset="https://media.vwcity.net/wp-content/uploads/2022/07/pexels-m' +
+                    'ax-vakhtbovych-6794921.jpg 750w, https://media.vwcity.net/wp-content/uploads/2' +
+                    '022/07/pexels-max-vakhtbovych-6794921-300x204.jpg 300w" sizes="(max-width: 750' +
+                    'px) 100vw, 750px" /></p>\n<p>つみたてNISAは、次のような人に向いている制度ではないでしょうか。</p>\n<ul>\n<li' +
+                    '>長期で利用したい人</li>\n<li>毎月コツコツと貯めたい人</li>\n<li>毎月一定額を積み立てたい人</li>\n<li>投資するタイミングを' +
+                    'がわからない人</li>\n<li>定期的に積み立てられることから忙しくても資産運用をしたい人</li>\n<li>まとまった資金のない人</li>\n</' +
+                    'ul>\n<p>長期投資や積立投資を分散投資によるリスク軽減を目指して貯金感覚で資産運用する場合は、つみたてNISAをおすすめします。</p>\n<div ' +
+                    'class="balloon-over">月々の積み立ても許容範囲であれば、コツコツと楽しめるかもしれませんね！</div>\n<div></div>\n<' +
+                    'h5><a href="https://media.vwcity.net/nisa-features/" target="_blank" rel="noop' +
+                    'ener">3種類の現行NISAの特徴を解説</a></h5>\n<p><a href="https://media.vwcity.net/shin-nis' +
+                    'a-point/" target="_blank" rel="noopener">2024年からスタートする「新NISA」とは？ポイントを解説</a></p' +
+                    '>\n',
+            protected: false
+        },
+        excerpt: {
+            rendered: "<p>資産運用について調べていると、NISAのことをよく耳にしませんか？NISAは、少額投資非課税制度です。 NISAには、一般NISAとつみたてNISAが" +
+                    "あります。同じNISA制度なのに、何が違うのでしょうか？ 今回は、つみ   \n",
+            protected: false
+        },
+        categories: []
+    }, {
+        id: 6,
+        VmonthCount: 144,
+        VdayCount: 65,
+        VweekCount: 100,
+        feature: "",
+        video: "O",
+        kind: "注目の投資",
+        date: "2022-10-04T09:30:08",
+        title: {
+            rendered: "一般NISAのロールオーバーとは？しないとどうなる？"
+        },
+        url: "https://www.youtube.com/embed/uRIEBMRSYrs",
+        keyword: [
+            "#仮想通貨", "#メタバース"
+        ],
+        content: {
+            rendered: '<p>「一般NISAの非課税期間は5年以上延長できないの？」</p>\n<p>少額投資非課税制度の一般NISAは、非課税期間が5年までとなっています。では、' +
+                    '最長5年で終了しなければいけないのでしょうか？</p>\n<p>一般NISAには、ロールオーバーという再度運用の仕組みがあります。ロールオーバーを利用すれば' +
+                    '、再度非課税による運用が可能です。</p>\n<p>今回は、一般NISAのロールオーバーについて解説します。ロールオーバーしなかったときの状態についても紹介' +
+                    'しますので期間延長を考えている人は参考にしてみてください。</p>\n<p>&nbsp;</p>\n<div id="ez-toc-container" c' +
+                    'lass="ez-toc-v2_0_22 counter-hierarchy ez-toc-grey">\n<div class="ez-toc-title' +
+                    '-container">\n<p class="ez-toc-title">目次（クリックで項目へジャンプ）</p>\n<span class="ez-to' +
+                    'c-title-toggle"><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-bt' +
+                    'n-default ez-toc-toggle" style="display: none;"><i class="ez-toc-glyphicon ez-' +
+                    'toc-icon-toggle"></i></a></span></div>\n<nav><ul class="ez-toc-list ez-toc-lis' +
+                    't-level-1"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-l' +
+                    'ink ez-toc-heading-1" href="https://media.vwcity.net/nisa-rollover/#%E3%83%AD%' +
+                    'E3%83%BC%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%81%A8%E3%81%AF%EF%BC%' +
+                    '9F" title="ロールオーバーとは？">ロールオーバーとは？</a><ul class="ez-toc-list-level-3"><li class' +
+                    '="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-2" href="https:' +
+                    '//media.vwcity.net/nisa-rollover/#%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%AA%E3%83%B' +
+                    'C%E3%83%90%E3%83%BC%E3%81%AE%E7%94%B3%E8%BE%BC%E3%81%BF" title="ロールオーバーの申込み">ロ' +
+                    'ールオーバーの申込み</a></li></ul></li><li class="ez-toc-page-1 ez-toc-heading-level-2">' +
+                    '<a class="ez-toc-link ez-toc-heading-3" href="https://media.vwcity.net/nisa-ro' +
+                    'llover/#%E3%81%AA%E3%81%9C%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%' +
+                    '90%E3%83%BC%E3%81%99%E3%82%8B%E5%BF%85%E8%A6%81%E3%81%8C%E3%81%82%E3%82%8B%E3%' +
+                    '81%AE%EF%BC%9F" title="なぜロールオーバーする必要があるの？">なぜロールオーバーする必要があるの？</a></li><li clas' +
+                    's="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-' +
+                    '4" href="https://media.vwcity.net/nisa-rollover/#%E3%83%AD%E3%83%BC%E3%83%AB%E' +
+                    '3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%81%97%E3%81%AA%E3%81%84%E3%81%A8%E3%81%A' +
+                    '9%E3%81%86%E3%81%AA%E3%82%8B%EF%BC%9F" title="ロールオーバーしないとどうなる？">ロールオーバーしないとどうな' +
+                    'る？</a></li></ul></nav></div>\n<h2><span class="ez-toc-section" id="%E3%83%AD%E' +
+                    '3%83%BC%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%81%A8%E3%81%AF%EF%BC%9' +
+                    'F"></span>ロールオーバーとは？<span class="ez-toc-section-end"></span></h2>\n<p><img loa' +
+                    'ding="lazy" class="size-full wp-image-3547 alignnone" src="https://media.vwcit' +
+                    'y.net/wp-content/uploads/2022/07/Untitled-design.jpg" alt="" width="750" heigh' +
+                    't="500" srcset="https://media.vwcity.net/wp-content/uploads/2022/07/Untitled-d' +
+                    'esign.jpg 750w, https://media.vwcity.net/wp-content/uploads/2022/07/Untitled-d' +
+                    'esign-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /><br />\n一般NI' +
+                    'SAには、ロールオーバーの仕組みがあります。非課税枠で運用している一般NISA口座の資産は、最長5年目で非課税期間が終了する制度です。ただし、新しい一般NI' +
+                    'SA口座を開設して非課税期間満了を迎えた資産を移すことにより再度、非課税枠で5年間の運用を継続できます。この移管する方法がロールオーバーです。</p>\n<' +
+                    'p>ロールオーバーすることにより、最長で10年間の非課税投資が可能となります。</p>\n<h3><span class="ez-toc-section" ' +
+                    'id="%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E' +
+                    '7%94%B3%E8%BE%BC%E3%81%BF"></span>ロールオーバーの申込み<span class="ez-toc-section-end">' +
+                    '</span></h3>\n<p>ロールオーバーは、証券会社により異なりますが、一般的にWebからの申請や申込書類に必要事項を記入して郵送する方法となるよう' +
+                    'です。</p>\n<p>ロールオーバーは、証券会社により申し込み期限が設定されている場合があるので、必要性があれば、早めに申し込んでおくことをおすすめします' +
+                    '。</p>\n<h2><span class="ez-toc-section" id="%E3%81%AA%E3%81%9C%E3%83%AD%E3%83%' +
+                    'BC%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%81%99%E3%82%8B%E5%BF%85%E8%' +
+                    'A6%81%E3%81%8C%E3%81%82%E3%82%8B%E3%81%AE%EF%BC%9F"></span>なぜロールオーバーする必要があるの？<' +
+                    'span class="ez-toc-section-end"></span></h2>\n<p><img loading="lazy" class="si' +
+                    'ze-full wp-image-3548 alignnone" src="https://media.vwcity.net/wp-content/uplo' +
+                    'ads/2022/07/pexels-essow-936722.jpg" alt="" width="750" height="500" srcset="h' +
+                    'ttps://media.vwcity.net/wp-content/uploads/2022/07/pexels-essow-936722.jpg 750' +
+                    'w, https://media.vwcity.net/wp-content/uploads/2022/07/pexels-essow-936722-300' +
+                    'x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /><br />\nなぜ、<b>ロールオーバー' +
+                    'する必要があるのでしょうか？</b></p>\n<p>その理由は、一般NISA口座で保有する金融商品（株式や投資信託の配当金・分配金など）を<b>非課税対象' +
+                    'のままにしておくため</b>です。つまり、節税しながら資産運用したい人にとっては、必要な取り組みとなるでしょう。</p>\n<h2><span class=' +
+                    '"ez-toc-section" id="%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%90%E3' +
+                    '%83%BC%E3%81%97%E3%81%AA%E3%81%84%E3%81%A8%E3%81%A9%E3%81%86%E3%81%AA%E3%82%8B' +
+                    '%EF%BC%9F"></span>ロールオーバーしないとどうなる？<span class="ez-toc-section-end"></span></h2' +
+                    '>\n<p><img loading="lazy" class="size-full wp-image-3549 alignnone" src="https' +
+                    '://media.vwcity.net/wp-content/uploads/2022/07/tech-daily-wcHwSy_JE4c-unsplash' +
+                    '.jpg" alt="" width="750" height="600" srcset="https://media.vwcity.net/wp-cont' +
+                    'ent/uploads/2022/07/tech-daily-wcHwSy_JE4c-unsplash.jpg 750w, https://media.vw' +
+                    'city.net/wp-content/uploads/2022/07/tech-daily-wcHwSy_JE4c-unsplash-300x240.jp' +
+                    'g 300w, https://media.vwcity.net/wp-content/uploads/2022/07/tech-daily-wcHwSy_' +
+                    'JE4c-unsplash-720x576.jpg 720w" sizes="(max-width: 750px) 100vw, 750px" /><br ' +
+                    '/>\n一般NISA制度による資産運用では、ロールオーバーの手続きをしないと、自動的に一般NISA口座を開設した証券会社の特定/一般口座に移管されます。何も' +
+                    '手続きしないでおくと、<strong>自動的に非課税対象の資産が課税対象の口座に移される</strong>ことがポイントです。</p>\n<p>ロールオーバ' +
+                    'ーは、翌年非課税枠の年間投資上限120万円を超えていたとしても、全額ロールオーバーとして手続きできます。</p>\n<p>このケースの場合は、一つ注意が必要' +
+                    'です。120万円を超えた投資金額をロールオーバーした年は、非課税投資枠が利用できなくなります。ロールオーバーには、このような条件があることも理解しておきまし' +
+                    'ょう。</p>\n<h5><a href="https://media.vwcity.net/nisa-rollover-2/" target="_blan' +
+                    'k" rel="noopener">新NISAの登場で一般NISAからのロールオーバーが可能に！詳しく解説</a></h5>\n',
+            protected: false
+        },
+        excerpt: {
+            rendered: "<p>「一般NISAの非課税期間は5年以上延長できないの？」 少額投資非課税制度の一般NISAは、非課税期間が5年までとなっています。では、最長5年で終了し" +
+                    "なければいけないのでしょうか？ 一般NISAには、ロールオーバーという   \n",
+            protected: false
+        },
+        categories: []
+    },{
+        id: 5,
+        VmonthCount: 9,
+        VdayCount: 5,
+        VweekCount: 6,
+        feature: "",
+        video: "O",
+        kind: "注目の投資",
+        date: "2022-10-15T09:30:13",
+        url: "https://www.youtube.com/embed/Q83z9q_5xCM",
+        title: {
+            rendered: "分散投資とは？どんなメリットがあるの？"
+        },
+        keyword: ["#仮想通貨", "#メタバース"],
+        content: {
+            rendered: '<div id="body_text"><p>不動産クラウドファンディングは、少額で始められる投資として注目されています。ただし、利回りが良ければその分のリ' +
+                    'スクも考えられるでしょう。</p><p>今回は、不動産クラウドファンディングのデメリットにあたるリスク部分を解説します。リスク回避に向けた事例を2つ紹介して' +
+                    'いますのでお役立てください。</p><div id="ez-toc-container" class="ez-toc-v2_0_22 counter-hie' +
+                    'rarchy ez-toc-grey"><div class="ez-toc-title-container"><p class="ez-toc-title' +
+                    '">目次（クリックで項目へジャンプ）</p><span class="ez-toc-title-toggle"><a class="ez-toc-pull-' +
+                    'right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"><i class="ez-' +
+                    'toc-glyphicon ez-toc-icon-toggle"></i></a></span></div><nav><ul class="ez-toc-' +
+                    'list ez-toc-list-level-1"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a ' +
+                    'class="ez-toc-link ez-toc-heading-1" href="#%E4%B8%8D%E5%8B%95%E7%94%A3%E3%82%' +
+                    'AF%E3%83%A9%E3%82%A6%E3%83%89%E3%83%95%E3%82%A1%E3%83%B3%E3%83%87%E3%82%A3%E3%' +
+                    '83%B3%E3%82%B0%E3%81%AE%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%81%AB%' +
+                    'E3%81%82%E3%81%9F%E3%82%8B%E3%83%AA%E3%82%B9%E3%82%AF" title="不動産クラウドファンディングのデ' +
+                    'メリットにあたるリスク">不動産クラウドファンディングのデメリットにあたるリスク</a><ul class="ez-toc-list-level-3"><l' +
+                    'i class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-2" href=' +
+                    '"#%E4%BA%8B%E6%A5%AD%E8%80%85%E3%81%AE%E5%80%92%E7%94%A3%E3%83%AA%E3%82%B9%E3%' +
+                    '82%AF" title="事業者の倒産リスク">事業者の倒産リスク</a></li><li class="ez-toc-page-1 ez-toc-hea' +
+                    'ding-level-3"><a class="ez-toc-link ez-toc-heading-3" href="#%E5%AE%B6%E8%B3%8' +
+                    '3%E5%8F%8E%E5%85%A5%E6%B8%9B%E5%B0%91%E3%81%AB%E3%82%88%E3%82%8B%E9%85%8D%E5%B' +
+                    'D%93%E9%87%91%E6%B8%9B%E5%B0%91%E3%83%AA%E3%82%B9%E3%82%AF" title="家賃収入減少による配当' +
+                    '金減少リスク">家賃収入減少による配当金減少リスク</a></li><li class="ez-toc-page-1 ez-toc-heading-leve' +
+                    'l-3"><a class="ez-toc-link ez-toc-heading-4" href="#%E4%B8%AD%E9%80%94%E8%A7%A' +
+                    '3%E7%B4%84%E4%B8%8D%E5%8F%AF%E3%83%AA%E3%82%B9%E3%82%AF" title="中途解約不可リスク">中途解' +
+                    '約不可リスク</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-t' +
+                    'oc-link ez-toc-heading-5" href="#%E4%B8%8D%E5%8B%95%E7%94%A3%E8%A9%95%E4%BE%A1' +
+                    '%E9%A1%8D%E4%B8%8B%E8%90%BD%E3%81%AB%E3%82%88%E3%82%8B%E6%BA%80%E9%A1%8D%E5%84' +
+                    '%9F%E9%82%84%E4%B8%8D%E5%8F%AF%E3%83%AA%E3%82%B9%E3%82%AF" title="不動産評価額下落による満' +
+                    '額償還不可リスク">不動産評価額下落による満額償還不可リスク</a></li></ul></li><li class="ez-toc-page-1 ez-t' +
+                    'oc-heading-level-2"><a class="ez-toc-link ez-toc-heading-6" href="#%E3%83%AA%E' +
+                    '3%82%B9%E3%82%AF%E5%9B%9E%E9%81%BF%E7%AD%96%E3%81%9D%E3%81%AE1%EF%BC%9A%E8%A4%' +
+                    '87%E6%95%B0%E3%81%AE%E6%A5%AD%E8%80%85%E3%82%92%E6%AF%94%E8%BC%83%E3%81%97%E3%' +
+                    '81%A6%E9%81%B8%E3%81%B6" title="リスク回避策その1：複数の業者を比較して選ぶ">リスク回避策その1：複数の業者を比較して選ぶ' +
+                    '</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-lin' +
+                    'k ez-toc-heading-7" href="#%E3%83%AA%E3%82%B9%E3%82%AF%E5%9B%9E%E9%81%BF%E7%AD' +
+                    '%96%E3%81%9D%E3%81%AE2%EF%BC%9A%E5%88%86%E6%95%A3%E6%8A%95%E8%B3%87" title="リス' +
+                    'ク回避策その2：分散投資">リスク回避策その2：分散投資</a></li></ul></nav></div><h2><span class="ez-toc-' +
+                    'section" id="%E4%B8%8D%E5%8B%95%E7%94%A3%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E' +
+                    '3%83%95%E3%82%A1%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%83%8' +
+                    '7%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%81%AB%E3%81%82%E3%81%9F%E3%82%8B%E3%8' +
+                    '3%AA%E3%82%B9%E3%82%AF"></span>不動産クラウドファンディングのデメリットにあたるリスク<span class="ez-toc-' +
+                    'section-end"></span></h2><p><img class="size-full wp-image-4198 alignnone" src' +
+                    '="https://media.vwcity.net/wp-content/uploads/2022/09/pexels-julio-nery-183991' +
+                    '9.jpg" alt="" width="750" height="500" srcset="https://media.vwcity.net/wp-con' +
+                    'tent/uploads/2022/09/pexels-julio-nery-1839919.jpg 750w, https://media.vwcity.' +
+                    'net/wp-content/uploads/2022/09/pexels-julio-nery-1839919-300x200.jpg 300w" siz' +
+                    'es="(max-width: 750px) 100vw, 750px"></p><p>不動産クラウドファンディングには、デメリットになるリスクがあります。' +
+                    '</p><h3><span class="ez-toc-section" id="%E4%BA%8B%E6%A5%AD%E8%80%85%E3%81%AE%' +
+                    'E5%80%92%E7%94%A3%E3%83%AA%E3%82%B9%E3%82%AF"></span>事業者の倒産リスク<span class="ez-' +
+                    'toc-section-end"></span></h3><p>不動産クラウドファンディングを取り扱う事業者は、一般の企業と同じく倒産リスクを抱えています。' +
+                    '</p><p>不動産クラウドファンディング運営事業者は、投資家から預かった資産を事業者自身の資産とは明確に区別して管理（これを分別管理といいます）することが' +
+                    '義務付けられているとはいえ、株式会社であれば業績が悪化すれば倒産する可能性も考えられます。</p><p>ただし、不動産クラウドファンディングの事業者は、国土' +
+                    '交通省より不動産特定共同事業者としての認可を受けて資本金などの条件を兼ね備えています。そのため、社会情勢の変化を受けなければ、倒産リスクが低くなるでしょう。' +
+                    '</p><h3><span class="ez-toc-section" id="%E5%AE%B6%E8%B3%83%E5%8F%8E%E5%85%A5%' +
+                    'E6%B8%9B%E5%B0%91%E3%81%AB%E3%82%88%E3%82%8B%E9%85%8D%E5%BD%93%E9%87%91%E6%B8%' +
+                    '9B%E5%B0%91%E3%83%AA%E3%82%B9%E3%82%AF"></span>家賃収入減少による配当金減少リスク<span class="e' +
+                    'z-toc-section-end"></span></h3><p>不動産クラウドファンディングでは、家賃収入減少による配当金の減少が考えられます。不動産ク' +
+                    'ラウドファンディングの投資家が受け取る配当金は、家賃収入からそれぞれの配当割合で分配される仕組みです。</p><p>投資先賃貸物件の入居者が減ってしまうと、' +
+                    '家賃収入が減少します。常に満室状態でなければ、空室による収入減は避けられません。投資先は、収入の変動についても事前に調べておく必要があります。</p><h3' +
+                    '><span class="ez-toc-section" id="%E4%B8%AD%E9%80%94%E8%A7%A3%E7%B4%84%E4%B8%8' +
+                    'D%E5%8F%AF%E3%83%AA%E3%82%B9%E3%82%AF"></span>中途解約不可リスク<span class="ez-toc-sec' +
+                    'tion-end"></span></h3><p>不動産クラウドファンディングは、出資すると中途解約できないリスクがあります。</p><p>不動産クラウドフ' +
+                    'ァンディングは、流動性がなく、投資開始から償還まで現金化できない仕組みです。そのため、運用期間が長期になれば運用中に社会情勢の変化で損失することも考えられま' +
+                    'す。ファンドの選定基準は、運用期間の長さも必要です。</p><h3><span class="ez-toc-section" id="%E4%B8%8D%E' +
+                    '5%8B%95%E7%94%A3%E8%A9%95%E4%BE%A1%E9%A1%8D%E4%B8%8B%E8%90%BD%E3%81%AB%E3%82%8' +
+                    '8%E3%82%8B%E6%BA%80%E9%A1%8D%E5%84%9F%E9%82%84%E4%B8%8D%E5%8F%AF%E3%83%AA%E3%8' +
+                    '2%B9%E3%82%AF"></span>不動産評価額下落による満額償還不可リスク<span class="ez-toc-section-end"></s' +
+                    'pan></h3><p>不動産クラウドファンディングは、投資した不動産の評価額下落により、元本が満額償還されないリスクもあります。</p><p>不動産の建物' +
+                    '部分は、時間の経過とともに評価額が下がることが原則です。そのような評価額下落への対処として、ファンド事業者は劣後出資を設定しています。劣後出資の割合が大きい' +
+                    '業者を選ぶことで、出資金が償還されないリスクを小さくできるでしょう。</p><h2><span class="ez-toc-section" id="%E3' +
+                    '%83%AA%E3%82%B9%E3%82%AF%E5%9B%9E%E9%81%BF%E7%AD%96%E3%81%9D%E3%81%AE1%EF%BC%9' +
+                    'A%E8%A4%87%E6%95%B0%E3%81%AE%E6%A5%AD%E8%80%85%E3%82%92%E6%AF%94%E8%BC%83%E3%8' +
+                    '1%97%E3%81%A6%E9%81%B8%E3%81%B6"></span>リスク回避策その1：複数の業者を比較して選ぶ<span class="ez-' +
+                    'toc-section-end"></span></h2><p><img loading="lazy" class="size-full wp-image-' +
+                    '4199 alignnone" src="https://media.vwcity.net/wp-content/uploads/2022/09/pexel' +
+                    's-curtis-adams-5071140.jpg" alt="" width="750" height="500" srcset="https://me' +
+                    'dia.vwcity.net/wp-content/uploads/2022/09/pexels-curtis-adams-5071140.jpg 750w' +
+                    ', https://media.vwcity.net/wp-content/uploads/2022/09/pexels-curtis-adams-5071' +
+                    '140-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px"></p><p>不動産クラウドファ' +
+                    'ンディングによるリスクを回避するには、複数の業者を比較して選ぶ必要があります。選ぶ際のポイントは、次のとおりです。</p><ul><li>事業者の実績</l' +
+                    'i><li>取扱いファンド</li><li>入出金手数料</li><li>劣後出資の割合</li></ul><h2><span class="ez-toc-' +
+                    'section" id="%E3%83%AA%E3%82%B9%E3%82%AF%E5%9B%9E%E9%81%BF%E7%AD%96%E3%81%9D%E' +
+                    '3%81%AE2%EF%BC%9A%E5%88%86%E6%95%A3%E6%8A%95%E8%B3%87"></span>リスク回避策その2：分散投資<s' +
+                    'pan class="ez-toc-section-end"></span></h2><p><img loading="lazy" class="size-' +
+                    'full wp-image-4200 alignnone" src="https://media.vwcity.net/wp-content/uploads' +
+                    '/2022/09/francesca-tosolini-XcVm8mn7NUM-unsplash.jpg" alt="" width="750" heigh' +
+                    't="500" srcset="https://media.vwcity.net/wp-content/uploads/2022/09/francesca-' +
+                    'tosolini-XcVm8mn7NUM-unsplash.jpg 750w, https://media.vwcity.net/wp-content/up' +
+                    'loads/2022/09/francesca-tosolini-XcVm8mn7NUM-unsplash-300x200.jpg 300w" sizes=' +
+                    '"(max-width: 750px) 100vw, 750px"></p><p>不動産クラウドファンディングは、運用を始めたら期間満了まで中途解約できませ' +
+                    'ん。そのため、手持ち資金を分散させた投資スタイルで投資先の暴落リスクを回避します。</p><p>不動産クラウドファンディングは、例えば1口1万円から始められ' +
+                    'る少額投資が可能です。少額で始められるため、1つの投資先だけではなく、複数の投資先に分散投資ができます。</p></div>',
+            protected: false
+        },
+        excerpt: {
+            rendered: "<p>投資をする際に投資先などを多様に分散させることを分散投資といいます。分散投資は、資産運用のリスクを減らす方法の中でも、実行しやすいだけでなく重要な方法" +
+                    "でもあります。 今回は、4つの分散投資の紹介と分散投資に期待できるメリ   \n",
+            protected: false
+        },
+        categories: []
+    }, {
+        id: 4,
+        VmonthCount: 22,
+        VdayCount: 15,
+        VweekCount: 19,
+        feature: "",
+        video: "O",
+        kind: "投資の基本",
+        date: "2022-10-10T09:30:34",
+        title: {
+            rendered: "不動産投資とリート、それぞれのメリット・デメリットを比較"
+        },
+        keyword: [
+            "#口座開設", "#スマートコントラクト"
+        ],
+        url: "https://www.youtube.com/embed/SnjsvlVSu2Q",
+        content: {
+            rendered: '<p>投資方法を考える際は、特徴やメリット・デメリットから判断することが近道になるでしょう。今回は、不動産投資とリートについて、それぞれのメリットとデメリッ' +
+                    'トを紹介します。ぜひ、比較検討のヒントにしてみてください。</p>\n<div id="ez-toc-container" class="ez-toc-v2' +
+                    '_0_22 counter-hierarchy ez-toc-grey">\n<div class="ez-toc-title-container">\n<' +
+                    'p class="ez-toc-title">目次（クリックで項目へジャンプ）</p>\n<span class="ez-toc-title-toggle"' +
+                    '><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-to' +
+                    'c-toggle" style="display: none;"><i class="ez-toc-glyphicon ez-toc-icon-toggle' +
+                    '"></i></a></span></div>\n<nav><ul class="ez-toc-list ez-toc-list-level-1"><li ' +
+                    'class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-head' +
+                    'ing-1" href="https://media.vwcity.net/realestate-reit-merit-demerit/#%E4%B8%8D' +
+                    '%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%81%A8%E3%83%AA%E3%83%BC%E3%83%88%E3%81' +
+                    '%AE%E7%89%B9%E5%BE%B4" title="不動産投資とリートの特徴">不動産投資とリートの特徴</a></li><li class="ez' +
+                    '-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-2" hr' +
+                    'ef="https://media.vwcity.net/realestate-reit-merit-demerit/#%E4%B8%8D%E5%8B%95' +
+                    '%E7%94%A3%E6%8A%95%E8%B3%87%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%83' +
+                    '%BB%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88" title="不動産投資のメリット・デメリット">不動産' +
+                    '投資のメリット・デメリット</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-lev' +
+                    'el-3"><a class="ez-toc-link ez-toc-heading-3" href="https://media.vwcity.net/r' +
+                    'ealestate-reit-merit-demerit/#%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88" title="メリッ' +
+                    'ト">メリット</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-' +
+                    'toc-link ez-toc-heading-4" href="https://media.vwcity.net/realestate-reit-meri' +
+                    't-demerit/#%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88" title="デメリット">デメリット<' +
+                    '/a></li></ul></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="e' +
+                    'z-toc-link ez-toc-heading-5" href="https://media.vwcity.net/realestate-reit-me' +
+                    'rit-demerit/#%E3%83%AA%E3%83%BC%E3%83%88%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E' +
+                    '3%83%88%E3%83%BB%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88" title="リートのメリット' +
+                    '・デメリット">リートのメリット・デメリット</a><ul class="ez-toc-list-level-3"><li class="ez-toc-he' +
+                    'ading-level-3"><a class="ez-toc-link ez-toc-heading-6" href="https://media.vwc' +
+                    'ity.net/realestate-reit-merit-demerit/#%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88-2"' +
+                    ' title="メリット">メリット</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a' +
+                    ' class="ez-toc-link ez-toc-heading-7" href="https://media.vwcity.net/realestat' +
+                    'e-reit-merit-demerit/#%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88-2" title="' +
+                    'デメリット">デメリット</a></li></ul></li></ul></nav></div>\n<h2><span class="ez-toc-sect' +
+                    'ion" id="%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%81%A8%E3%83%AA%E3%83' +
+                    '%BC%E3%83%88%E3%81%AE%E7%89%B9%E5%BE%B4"></span>不動産投資とリートの特徴<span class="ez-to' +
+                    'c-section-end"></span></h2>\n<p><img loading="lazy" class="size-full wp-image-' +
+                    '4414 alignnone" src="https://media.vwcity.net/wp-content/uploads/2022/10/plk9.' +
+                    'jpg" alt="" width="750" height="500" srcset="https://media.vwcity.net/wp-conte' +
+                    'nt/uploads/2022/10/plk9.jpg 750w, https://media.vwcity.net/wp-content/uploads/' +
+                    '2022/10/plk9-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /></p>' +
+                    '\n<p>不動産投資（現物不動産）とリートには、それぞれ特徴があります。特徴の違いを比較してみましょう。</p>\n<table style="border' +
+                    '-collapse: collapse; width: 100%; height: 75px;" border="1">\n<tbody>\n<tr sty' +
+                    'le="height: 15px;">\n<td style="width: 22.8818%; height: 15px; text-align: cen' +
+                    'ter;"></td>\n<td style="width: 40.2983%; height: 15px; text-align: center;"><s' +
+                    'pan style="font-size: 12pt;">不動産投資（現物不動産）</span></td>\n<td style="width: 36.81' +
+                    '98%; height: 15px; text-align: center;"><span style="font-size: 12pt;">リート</sp' +
+                    'an></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 22.8818%; heigh' +
+                    't: 15px; text-align: center;"><span style="font-size: 12pt;">不動産の取得</span></td' +
+                    '>\n<td style="width: 40.2983%; height: 15px; text-align: center;"><span style=' +
+                    '"font-size: 12pt;">取得が必要</span></td>\n<td style="width: 36.8198%; height: 15px' +
+                    '; text-align: center;"><span style="font-size: 12pt;">取得不要</span></td>\n</tr>' +
+                    '\n<tr style="height: 15px;">\n<td style="width: 22.8818%; height: 15px; text-a' +
+                    'lign: center;"><span style="font-size: 12pt;">投資先</span></td>\n<td style="widt' +
+                    'h: 40.2983%; height: 15px; text-align: center;"><span style="font-size: 12pt;"' +
+                    '>不動産自体</span></td>\n<td style="width: 36.8198%; height: 15px; text-align: cent' +
+                    'er;"><span style="font-size: 12pt;">投資法人</span></td>\n</tr>\n<tr style="height' +
+                    ': 15px;">\n<td style="width: 22.8818%; height: 15px; text-align: center;"><spa' +
+                    'n style="font-size: 12pt;">所得区分</span></td>\n<td style="width: 40.2983%; heigh' +
+                    't: 15px; text-align: center;"><span style="font-size: 12pt;">不動産所得</span></td>' +
+                    '\n<td style="width: 36.8198%; height: 15px; text-align: center;"><span style="' +
+                    'font-size: 12pt;">譲渡所得</span></td>\n</tr>\n<tr style="height: 15px;">\n<td sty' +
+                    'le="width: 22.8818%; height: 15px; text-align: center;"><span style="font-size' +
+                    ': 12pt;">運用の手間</span></td>\n<td style="width: 40.2983%; height: 15px; text-ali' +
+                    'gn: center;"><span style="font-size: 12pt;">手間が掛かる（不動産購入・不動産管理・賃料の受け取り・不動産の売却な' +
+                    'ど）</span></td>\n<td style="width: 36.8198%; height: 15px; text-align: center;"' +
+                    '><span style="font-size: 12pt;">投資法人や運用会社による運用のため手間が掛からない</span></td>\n</tr>\n' +
+                    '</tbody>\n</table>\n<h2><span class="ez-toc-section" id="%E4%B8%8D%E5%8B%95%E7' +
+                    '%94%A3%E6%8A%95%E8%B3%87%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%83%BB' +
+                    '%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88"></span>不動産投資のメリット・デメリット<span cl' +
+                    'ass="ez-toc-section-end"></span></h2>\n<p>不動産投資には、メリットとデメリットになる部分があります。</p>\n<' +
+                    'p>まず、不動産投資として対象になるのは、アパート・マンション経営や戸建て経営、駐車場、コインランドリーなどです。</p>\n<p><img loading' +
+                    '="lazy" class="size-full wp-image-4415 alignnone" src="https://media.vwcity.ne' +
+                    't/wp-content/uploads/2022/10/jkjy.jpg" alt="" width="750" height="500" srcset=' +
+                    '"https://media.vwcity.net/wp-content/uploads/2022/10/jkjy.jpg 750w, https://me' +
+                    'dia.vwcity.net/wp-content/uploads/2022/10/jkjy-300x200.jpg 300w" sizes="(max-w' +
+                    'idth: 750px) 100vw, 750px" /></p>\n<h3><span class="ez-toc-section" id="%E3%83' +
+                    '%A1%E3%83%AA%E3%83%83%E3%83%88"></span>メリット<span class="ez-toc-section-end"></' +
+                    'span></h3>\n<p>不動産投資のメリットとしては、次の要素が考えられます。</p>\n<table style="border-collapse:' +
+                    ' collapse; width: 100%; height: 60px;" border="1">\n<tbody>\n<tr style="height' +
+                    ': 15px;">\n<td style="width: 26.7146%; height: 15px; text-align: center;"><spa' +
+                    'n style="font-size: 12pt;">不動産投資のメリット</span></td>\n<td style="width: 73.2854%;' +
+                    ' height: 15px; text-align: center;"><span style="font-size: 12pt;">メリットとなる理由</' +
+                    'span></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 26.7146%; hei' +
+                    'ght: 15px; text-align: center;"><span style="font-size: 12pt;">安定した資産運用</span>' +
+                    '</td>\n<td style="width: 73.2854%; height: 15px; text-align: left; padding-lef' +
+                    't: 40px;"><span style="font-size: 12pt;">賃料収入において入居者の定着次第で安定した収入を見込める</span></' +
+                    'td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 26.7146%; height: 15' +
+                    'px; text-align: center;"><span style="font-size: 12pt;">相続税対策</span></td>\n<td' +
+                    ' style="width: 73.2854%; height: 15px; text-align: left; padding-left: 40px;">' +
+                    '<span style="font-size: 12pt;">遺産相続において現金で持っておくより不動産で所有したほうが相続税が安くなる場合がある</spa' +
+                    'n></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 26.7146%; height' +
+                    ': 15px; text-align: center;"><span style="font-size: 12pt;">運用初期の節税効果</span></' +
+                    'td>\n<td style="width: 73.2854%; height: 15px; text-align: left; padding-left:' +
+                    ' 40px;"><span style="font-size: 12pt;">不動産取得時に発生した運用初期の経費が家賃収入より多ければ課税所得から減額可能' +
+                    '・所得税や住民税も減額される</span></td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n<h3><spa' +
+                    'n class="ez-toc-section" id="%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88"></' +
+                    'span>デメリット<span class="ez-toc-section-end"></span></h3>\n<p>不動産投資のデメリットは、次の部分が' +
+                    '考えられます。</p>\n<table style="border-collapse: collapse; width: 100%; height: 237' +
+                    'px;" border="1">\n<tbody>\n<tr style="height: 15px;">\n<td style="width: 26.84' +
+                    '96%; height: 15px; text-align: center;"><span style="font-size: 12pt;">不動産投資のデ' +
+                    'メリット</span></td>\n<td style="width: 73.1504%; height: 15px; text-align: center' +
+                    ';"><span style="font-size: 12pt;">デメリットとなる理由</span></td>\n</tr>\n<tr style="he' +
+                    'ight: 200px;">\n<td style="width: 26.8496%; height: 192px; text-align: center;' +
+                    '"><span style="font-size: 12pt;">維持管理コスト</span></td>\n<td style="width: 73.150' +
+                    '4%; height: 192px; text-align: left;">\n<p style="padding-left: 40px;"><span s' +
+                    'tyle="font-weight: 400; font-size: 12pt;">不動産を取得するため賃貸物件などは設備の修繕・清掃と管理が必要</spa' +
+                    'n></p>\n<p style="padding-left: 40px;"><span style="font-weight: 400; font-siz' +
+                    'e: 12pt;">管理会社に委託すれば手間は省けるがコストが増える</span></p>\n<p style="padding-left: 40px;">' +
+                    '<span style="font-weight: 400; font-size: 12pt;">毎年の固定資産税が掛かる</span></p>\n</td' +
+                    '>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 26.8496%; height: 15px' +
+                    '; text-align: center;"><span style="font-size: 12pt;">価値の低下</span></td>\n<td s' +
+                    'tyle="width: 73.1504%; height: 15px; text-align: left;">\n<p style="padding-le' +
+                    'ft: 40px;"><span style="font-weight: 400; font-size: 12pt;">建物の老朽化による価値の低下</sp' +
+                    'an></p>\n<p style="padding-left: 40px;"><span style="font-weight: 400; font-si' +
+                    'ze: 12pt;">古い建物に見合った家賃設定が必要</span></p>\n<p style="padding-left: 40px;"><span s' +
+                    'tyle="font-weight: 400; font-size: 12pt;">需要がなければ借り手が見つからない</span></p>\n</td>' +
+                    '\n</tr>\n<tr style="height: 15px;">\n<td style="width: 26.8496%; height: 15px;' +
+                    ' text-align: center;"><span style="font-size: 12pt;">空室対策</span></td>\n<td sty' +
+                    'le="width: 73.1504%; height: 15px; text-align: left;">\n<p style="padding-left' +
+                    ': 40px;"><span style="font-weight: 400; font-size: 12pt;">入居期間は入居者次第になるため空室リスク' +
+                    'と隣り合わせ</span></p>\n<p style="padding-left: 40px;"><span style="font-weight: 40' +
+                    '0; font-size: 12pt;">災害や治安など外的要因に影響を受ける可能性もある</span></p>\n</td>\n</tr>\n</tbod' +
+                    'y>\n</table>\n<p>&nbsp;</p>\n<h2><span class="ez-toc-section" id="%E3%83%AA%E3' +
+                    '%83%BC%E3%83%88%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%83%BB%E3%83%87' +
+                    '%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88"></span>リートのメリット・デメリット<span class="ez-toc' +
+                    '-section-end"></span></h2>\n<p>リートは、自分で不動産を取得しない分、手間の掛からない資産運用と考えられます。</p>\n<h' +
+                    '5><a href="https://media.vwcity.net/about-reit/" target="_blank" rel="noopener' +
+                    '">不動産投資信託（リート）とは？仕組みやメリット・デメリットを解説</a></h5>\n<p><img loading="lazy" class="siz' +
+                    'e-full wp-image-4416 alignnone" src="https://media.vwcity.net/wp-content/uploa' +
+                    'ds/2022/10/eert.jpg" alt="" width="750" height="500" srcset="https://media.vwc' +
+                    'ity.net/wp-content/uploads/2022/10/eert.jpg 750w, https://media.vwcity.net/wp-' +
+                    'content/uploads/2022/10/eert-300x200.jpg 300w" sizes="(max-width: 750px) 100vw' +
+                    ', 750px" /></p>\n<h3><span class="ez-toc-section" id="%E3%83%A1%E3%83%AA%E3%83' +
+                    '%83%E3%83%88-2"></span>メリット<span class="ez-toc-section-end"></span></h3>\n<p>リ' +
+                    'ートによる資産運用のメリットは、次のとおりです。</p>\n<table style="border-collapse: collapse; width: ' +
+                    '100%; height: 45px;" border="1">\n<tbody>\n<tr style="height: 15px;">\n<td sty' +
+                    'le="width: 36.7583%; height: 15px; text-align: center;"><span style="font-size' +
+                    ': 12pt;">リートによる資産運用のメリット</span></td>\n<td style="width: 63.2417%; height: 15px' +
+                    '; text-align: center;"><span style="font-size: 12pt;">メリットとなる理由</span></td>\n<' +
+                    '/tr>\n<tr style="height: 15px;">\n<td style="width: 36.7583%; height: 15px; te' +
+                    'xt-align: center;"><span style="font-size: 12pt;">少額で運用できる</span></td>\n<td st' +
+                    'yle="width: 63.2417%; height: 15px; padding-left: 40px; text-align: left;"><sp' +
+                    'an style="font-weight: 400; font-size: 12pt;">実際の物件を購入しなくて済むため現物不動産よりも少額で始められる' +
+                    '</span></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 36.7583%; h' +
+                    'eight: 15px; text-align: center;"><span style="font-weight: 400; font-size: 12' +
+                    'pt;">複数の不動産への分散投資ができる</span></td>\n<td style="width: 63.2417%; height: 15px; t' +
+                    'ext-align: left;">\n<p style="padding-left: 40px;"><span style="font-weight: 4' +
+                    '00; font-size: 12pt;">証券市場で自由に売買できる</span></p>\n<p style="padding-left: 40px;"' +
+                    '><span style="font-weight: 400; font-size: 12pt;">複数の出資を集めていることから個人では取得が難しい複数物' +
+                    '件への分散投資も可能</span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<h3><span class="ez-t' +
+                    'oc-section" id="%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88-2"></span>デメリット<' +
+                    'span class="ez-toc-section-end"></span></h3>\n<p>リートによる資産運用のデメリットにあたる部分は、次のとおり' +
+                    'です。</p>\n<table style="border-collapse: collapse; width: 100%; height: 68px;" ' +
+                    'border="1">\n<tbody>\n<tr style="height: 15px;">\n<td style="width: 36.7583%; ' +
+                    'height: 15px; text-align: center;"><span style="font-size: 12pt;">リートによる資産運用のデ' +
+                    'メリット</span></td>\n<td style="width: 63.2417%; height: 15px; text-align: center' +
+                    ';"><span style="font-size: 12pt;">デメリットとなる理由</span></td>\n</tr>\n<tr style="he' +
+                    'ight: 15px;">\n<td style="width: 36.7583%; height: 25px; text-align: center;">' +
+                    '<span style="font-size: 12pt;">リートを目的にローンが組めない</span></td>\n<td style="width: ' +
+                    '63.2417%; height: 25px; text-align: left; padding-left: 40px;"><span style="fo' +
+                    'nt-size: 12pt;">現物不動産の場合はアパートローンや不動産投資ローンが利用できるがリート目的の融資がないため自己資金が必要</span></t' +
+                    'd>\n</tr>\n<tr style="height: 10px;">\n<td style="width: 36.7583%; height: 28p' +
+                    'x; text-align: center;"><span style="font-size: 12pt;">配当による控除を受けられない</span></' +
+                    'td>\n<td style="width: 63.2417%; height: 28px; text-align: left; padding-left:' +
+                    ' 40px;"><span style="font-size: 12pt;">リートの分配金は株式投資や投資信託で受けられる配当控除の対象外</span><' +
+                    '/td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n',
+            protected: false
+        },
+        excerpt: {
+            rendered: "<p>投資方法を考える際は、特徴やメリット・デメリットから判断することが近道になるでしょう。今回は、不動産投資とリートについて、それぞれのメリットとデメリッ" +
+                    "トを紹介します。ぜひ、比較検討のヒントにしてみてください。 目次（クリ   \n",
+            protected: false
+        },
+        categories: []
+    }, {
+        id: 3,
+        VmonthCount: 73,
+        VdayCount: 53,
+        Vfeature: "",
+        video: "O",
+        weekCount: 63,
+        kind: "ブロックチェーン",
+        date: "2022-10-06T09:30:22",
+        url: "https://www.youtube.com/embed/zmulq35s1K0",
+        title: {
+            rendered: "株の「配当」とは？必ずもらえるの？"
+        },
+        keyword: [
+            "#ブロックチェーン", "#メタバース"
+        ],
+        content: {
+            rendered: '<p>株取引において、保有している株式銘柄の企業から届く配当金。配当金は、株式の売買利益とは別に得られる分配益です。</p>\n<p>今回は、株の配当につい' +
+                    'て、配当している企業の特徴や配当される時期などを解説します。</p>\n<div id="ez-toc-container" class="ez-toc-v' +
+                    '2_0_22 counter-hierarchy ez-toc-grey">\n<div class="ez-toc-title-container">\n' +
+                    '<p class="ez-toc-title">目次（クリックで項目へジャンプ）</p>\n<span class="ez-toc-title-toggle' +
+                    '"><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-t' +
+                    'oc-toggle" style="display: none;"><i class="ez-toc-glyphicon ez-toc-icon-toggl' +
+                    'e"></i></a></span></div>\n<nav><ul class="ez-toc-list ez-toc-list-level-1"><li' +
+                    ' class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-hea' +
+                    'ding-1" href="https://media.vwcity.net/stock-dividend/#%E9%85%8D%E5%BD%93%E3%8' +
+                    '1%A8%E3%81%AF" title="配当とは">配当とは</a><ul class="ez-toc-list-level-3"><li class=' +
+                    '"ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-2" href="https:/' +
+                    '/media.vwcity.net/stock-dividend/#%E6%A0%AA%E3%81%AE%E9%85%8D%E5%BD%93%E3%82%9' +
+                    '2%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%81%99%E3%82%8B%E3%81%A8" title="株の配当を' +
+                    'イメージすると">株の配当をイメージすると</a></li></ul></li><li class="ez-toc-page-1 ez-toc-headin' +
+                    'g-level-2"><a class="ez-toc-link ez-toc-heading-3" href="https://media.vwcity.' +
+                    'net/stock-dividend/#%E5%BF%85%E3%81%9A%E3%82%82%E3%82%89%E3%81%88%E3%82%8B%EF%' +
+                    'BC%9F" title="必ずもらえる？">必ずもらえる？</a><ul class="ez-toc-list-level-3"><li class="e' +
+                    'z-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-4" href="https://m' +
+                    'edia.vwcity.net/stock-dividend/#%E6%A8%A9%E5%88%A9%E7%A2%BA%E5%AE%9A%E6%97%A5%' +
+                    'E3%81%AB%E6%A0%AA%E4%B8%BB%E5%90%8D%E7%B0%BF%E3%81%AE%E7%99%BB%E9%8C%B2%E3%81%' +
+                    '8C%E3%81%AA%E3%81%91%E3%82%8C%E3%81%B0%E3%82%82%E3%82%89%E3%81%88%E3%81%AA%E3%' +
+                    '81%84" title="権利確定日に株主名簿の登録がなければもらえない">権利確定日に株主名簿の登録がなければもらえない</a></li></ul></' +
+                    'li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-t' +
+                    'oc-heading-5" href="https://media.vwcity.net/stock-dividend/#%E3%81%84%E3%81%A' +
+                    '4%E3%82%82%E3%82%89%E3%81%88%E3%82%8B%EF%BC%9F" title="いつもらえる？">いつもらえる？</a></l' +
+                    'i></ul></nav></div>\n<h2><span class="ez-toc-section" id="%E9%85%8D%E5%BD%93%E' +
+                    '3%81%A8%E3%81%AF"></span>配当とは<span class="ez-toc-section-end"></span></h2>\n<p' +
+                    '><img loading="lazy" class="size-full wp-image-4382 alignnone" src="https://me' +
+                    'dia.vwcity.net/wp-content/uploads/2022/09/pexels-alesia-kozik-6770609.jpg" alt' +
+                    '="" width="750" height="500" srcset="https://media.vwcity.net/wp-content/uploa' +
+                    'ds/2022/09/pexels-alesia-kozik-6770609.jpg 750w, https://media.vwcity.net/wp-c' +
+                    'ontent/uploads/2022/09/pexels-alesia-kozik-6770609-300x200.jpg 300w" sizes="(m' +
+                    'ax-width: 750px) 100vw, 750px" /></p>\n<p>配当の意味は、企業が事業で得た利益を自社の株主に現金を分配する行為のこと' +
+                    'です。配当は、企業ごとに異なります。<strong>配当による分配金は、株主が保有する株数を基準</strong>として決定します。</p>\n<p>配当す' +
+                    'る企業が特別に大きな利益を上げたときなどは、通常の配当以外に特別配当などを分配する企業もあります。</p>\n<h3><span class="ez-toc' +
+                    '-section" id="%E6%A0%AA%E3%81%AE%E9%85%8D%E5%BD%93%E3%82%92%E3%82%A4%E3%83%A1%' +
+                    'E3%83%BC%E3%82%B8%E3%81%99%E3%82%8B%E3%81%A8"></span>株の配当をイメージすると<span class="' +
+                    'ez-toc-section-end"></span></h3>\n<p>株が配当される仕組みは、企業の利益から一株あたりで設定した配当金を支払います。</' +
+                    'p>\n<p>配当金が、30円の場合は、株主の保有株数に応じて支払われるイメージです。</p>\n<p>100株保有の株主：30円×100株＝3,000円<' +
+                    'br />\n500株保有の株主：30円×500株＝15,000円<br />\n1,000株保有の株主：30円×1000株＝30,000円</p>\n<h' +
+                    '2><span class="ez-toc-section" id="%E5%BF%85%E3%81%9A%E3%82%82%E3%82%89%E3%81%' +
+                    '88%E3%82%8B%EF%BC%9F"></span>必ずもらえる？<span class="ez-toc-section-end"></span></' +
+                    'h2>\n<p><img loading="lazy" class="size-full wp-image-4383 alignnone" src="htt' +
+                    'ps://media.vwcity.net/wp-content/uploads/2022/09/pexels-artem-podrez-5716016.j' +
+                    'pg" alt="" width="750" height="500" srcset="https://media.vwcity.net/wp-conten' +
+                    't/uploads/2022/09/pexels-artem-podrez-5716016.jpg 750w, https://media.vwcity.n' +
+                    'et/wp-content/uploads/2022/09/pexels-artem-podrez-5716016-300x200.jpg 300w" si' +
+                    'zes="(max-width: 750px) 100vw, 750px" /></p>\n<p>株の配当は、<b>必ずもらえるわけではありません</b>。' +
+                    '</p>\n<p>日本証券業協会の投資の時間「投資Q&amp;A」によると、企業によっては利益があっても配当しないケースもあるとのことです。一方で、利益がな' +
+                    'くても配当する企業もあります。</p>\n<p>配当金は、必ずしも黒字だからもらえるというわけではありません。積極的な成長を目指す企業などは、新規事業に向け' +
+                    'て内部留保することも考えられます。逆に、株主へ安定した配当を目指している場合は、赤字でも会社資金から配当する企業もあります。</p>\n<h3><span ' +
+                    'class="ez-toc-section" id="%E6%A8%A9%E5%88%A9%E7%A2%BA%E5%AE%9A%E6%97%A5%E3%81' +
+                    '%AB%E6%A0%AA%E4%B8%BB%E5%90%8D%E7%B0%BF%E3%81%AE%E7%99%BB%E9%8C%B2%E3%81%8C%E3' +
+                    '%81%AA%E3%81%91%E3%82%8C%E3%81%B0%E3%82%82%E3%82%89%E3%81%88%E3%81%AA%E3%81%84' +
+                    '"></span>権利確定日に株主名簿の登録がなければもらえない<span class="ez-toc-section-end"></span></h3>' +
+                    '\n<p>株の配当を受けられる基準として、<b>権利確定日に株を保有しているかどうかも重要</b>です。株を購入した日が、配当の権利付最終売買期日前であれば' +
+                    '、配当対象に該当します。</p>\n<p>具体的には、株主としての権利確定日に株主名簿への登録が必要です。権利確定日は、決算日と同日となる企業が多く見受けら' +
+                    'れます。</p>\n<h2><span class="ez-toc-section" id="%E3%81%84%E3%81%A4%E3%82%82%E3%' +
+                    '82%89%E3%81%88%E3%82%8B%EF%BC%9F"></span>いつもらえる？<span class="ez-toc-section-en' +
+                    'd"></span></h2>\n<p><img loading="lazy" class="size-full wp-image-4384 alignno' +
+                    'ne" src="https://media.vwcity.net/wp-content/uploads/2022/09/pexels-burak-the-' +
+                    'weekender-186464.jpg" alt="" width="750" height="500" srcset="https://media.vw' +
+                    'city.net/wp-content/uploads/2022/09/pexels-burak-the-weekender-186464.jpg 750w' +
+                    ', https://media.vwcity.net/wp-content/uploads/2022/09/pexels-burak-the-weekend' +
+                    'er-186464-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /></p>\n<p' +
+                    '>配当金をもらえるタイミングは、<b>企業ごとに異なります</b>。通常は、決算期の2〜3カ月後に支払われます。</p>\n<p>配当金は、4つの方法による' +
+                    '受取りが可能です。</p>\n<ul>\n<li>企業から届いた「配当金領収書」を引き換えに銀行や郵便局で受領する配当金領収証方式</li>\n<li>証券' +
+                    '会社の証券口座から受け取る株式数比例配分方式</li>\n<li>個別の銘柄ごとに指定した口座で配当金を受け取る個別銘柄指定方式</li>\n<li>保管振' +
+                    '替機構の残高に応じて配当金が指定した口座に入金される登録配当金受領口座方式</li>\n</ul>\n<p>一般的な例として、決算が3月末の企業であれば、6' +
+                    '月頃に株主総会が開催され、総会の決議を終えて6月後半から7月前半に配当金の支払われます。支払われるペースは、年2回（中間配当や期末配当として権利日を年2回で' +
+                    '設定）、または年1回の企業が多いです。</p>\n<h5><a href="https://media.vwcity.net/about-securityc' +
+                    'ompanies/" target="_blank" rel="noopener">【投資の基本】証券会社とは？役割と開設できる口座の種類を解説</a></' +
+                    'h5>\n<h5><a href="https://media.vwcity.net/howtoselect-securitycompanies/" tar' +
+                    'get="_blank" rel="noopener">証券会社の選び方とは？初心者が株投資を始める第一歩</a></h5>\n',
+            protected: false
+        },
+        excerpt: {
+            rendered: "<p>株取引において、保有している株式銘柄の企業から届く配当金。配当金は、株式の売買利益とは別に得られる分配益です。 今回は、株の配当について、配当している" +
+                    "企業の特徴や配当される時期などを解説します。 目次（クリックで項目へジ   \n",
+            protected: false
+        },
+        categories: []
+    }, {
+        id: 2,
+        VmonthCount: 3,
+        VdayCount: 3,
+        Vfeature: "",
+        video: "O",
+        weekCount: 3,
+        kind: "ブロックチェーン",
+        date: "2022-10-04T09:30:29",
+        url: "https://www.youtube.com/embed/RC6PAXpysCk",
+        title: {
+            rendered: "つみたてNISAの特徴は？一般NISAとの違いは？"
+        },
+        keyword: [
+            "#口座開設", "#メタバース"
+        ],
+        content: {
+            rendered: '<p>資産運用について調べていると、NISAのことをよく耳にしませんか？NISAは、少額投資非課税制度です。</p>\n<p>NISAには、一般NISAとつ' +
+                    'みたてNISAがあります。同じNISA制度なのに、何が違うのでしょうか？</p>\n<p>今回は、つみたてNISAの特徴について解説します。</p>\n<p' +
+                    '>一般NISAとの違いなど、合わせて紹介するのでぜひ、参考にしてください。</p>\n<p>&nbsp;</p>\n<div id="ez-toc-cont' +
+                    'ainer" class="ez-toc-v2_0_22 counter-hierarchy ez-toc-grey">\n<div class="ez-t' +
+                    'oc-title-container">\n<p class="ez-toc-title">目次（クリックで項目へジャンプ）</p>\n<span clas' +
+                    's="ez-toc-title-toggle"><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs e' +
+                    'z-toc-btn-default ez-toc-toggle" style="display: none;"><i class="ez-toc-glyph' +
+                    'icon ez-toc-icon-toggle"></i></a></span></div>\n<nav><ul class="ez-toc-list ez' +
+                    '-toc-list-level-1"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="' +
+                    'ez-toc-link ez-toc-heading-1" href="https://media.vwcity.net/nisa-feature/#%E3' +
+                    '%81%A4%E3%81%BF%E3%81%9F%E3%81%A6NISA%E3%81%AF%E3%81%A9%E3%82%93%E3%81%AA%E5%8' +
+                    '8%B6%E5%BA%A6%EF%BC%9F" title="つみたてNISAはどんな制度？">つみたてNISAはどんな制度？</a></li><li cl' +
+                    'ass="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-headin' +
+                    'g-2" href="https://media.vwcity.net/nisa-feature/#%E4%B8%80%E8%88%ACNISA%E3%81' +
+                    '%A8%E3%81%AE%E9%81%95%E3%81%84" title="一般NISAとの違い">一般NISAとの違い</a></li><li clas' +
+                    's="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-' +
+                    '3" href="https://media.vwcity.net/nisa-feature/#%E3%81%93%E3%82%93%E3%81%AA%E4' +
+                    '%BA%BA%E3%81%AF%E3%81%A4%E3%81%BF%E3%81%9F%E3%81%A6NISA%E3%81%8C%E3%81%8A%E3%8' +
+                    '1%99%E3%81%99%E3%82%81" title="こんな人はつみたてNISAがおすすめ">こんな人はつみたてNISAがおすすめ</a></li>' +
+                    '</ul></nav></div>\n<h2><span class="ez-toc-section" id="%E3%81%A4%E3%81%BF%E3%' +
+                    '81%9F%E3%81%A6NISA%E3%81%AF%E3%81%A9%E3%82%93%E3%81%AA%E5%88%B6%E5%BA%A6%EF%BC' +
+                    '%9F"></span>つみたてNISAはどんな制度？<span class="ez-toc-section-end"></span></h2>\n<p><' +
+                    'img loading="lazy" class="size-full wp-image-3553 alignnone" src="https://medi' +
+                    'a.vwcity.net/wp-content/uploads/2022/07/pexels-anna-nekrashevich-6801874.jpg" ' +
+                    'alt="" width="750" height="540" srcset="https://media.vwcity.net/wp-content/up' +
+                    'loads/2022/07/pexels-anna-nekrashevich-6801874.jpg 750w, https://media.vwcity.' +
+                    'net/wp-content/uploads/2022/07/pexels-anna-nekrashevich-6801874-300x216.jpg 30' +
+                    '0w" sizes="(max-width: 750px) 100vw, 750px" /><br />\nつみたてNISAは、長期・積立・分散の3要素にお' +
+                    'ける投資をサポートする目的で作られた非課税制度。つみたてNISA専用の口座を一人ひとつまで開設ができます。日本居住の20歳以上の方なら、誰でも取り組める資産' +
+                    '運用の制度です。</p>\n<p>制度の特徴としては、一般NISAとつみたてNISAを同時に利用できない点があげられます。利用者は、一般NISAもしくはつみ' +
+                    'たてNISAのどちらかを選ばなければなりません。最長で20年間続けて運用ができるため、長期目線で取り組める制度です。</p>\n<h2><span clas' +
+                    's="ez-toc-section" id="%E4%B8%80%E8%88%ACNISA%E3%81%A8%E3%81%AE%E9%81%95%E3%81' +
+                    '%84"></span>一般NISAとの違い<span class="ez-toc-section-end"></span></h2>\n<p><img l' +
+                    'oading="lazy" class="size-full wp-image-3554 alignnone" src="https://media.vwc' +
+                    'ity.net/wp-content/uploads/2022/07/pexels-burak-kebaber-186461.jpg" alt="" wid' +
+                    'th="750" height="500" srcset="https://media.vwcity.net/wp-content/uploads/2022' +
+                    '/07/pexels-burak-kebaber-186461.jpg 750w, https://media.vwcity.net/wp-content/' +
+                    'uploads/2022/07/pexels-burak-kebaber-186461-300x200.jpg 300w" sizes="(max-widt' +
+                    'h: 750px) 100vw, 750px" /><br />\nつみたてNISAは、同じ非課税制度でありながら、一般NISAとの違いがいくつかあります。' +
+                    '</p>\n<table style="border-collapse: collapse; width: 100%; height: 135px;" bo' +
+                    'rder="1">\n<tbody>\n<tr style="height: 15px;">\n<td style="width: 33.3333%; he' +
+                    'ight: 15px; text-align: center;"></td>\n<td style="width: 33.3333%; height: 15' +
+                    'px; text-align: center;"><span style="font-size: 12pt;">一般NISA</span></td>\n<t' +
+                    'd style="width: 33.3333%; height: 15px; text-align: center;"><span style="font' +
+                    '-size: 12pt;">つみたてNISA</span></td>\n</tr>\n<tr style="height: 15px;">\n<td sty' +
+                    'le="width: 33.3333%; height: 15px; text-align: center;"><span style="font-size' +
+                    ': 12pt;">非課税枠</span></td>\n<td style="width: 33.3333%; height: 15px; text-alig' +
+                    'n: center;"><span style="font-size: 12pt;">年間120万円</span></td>\n<td style="wid' +
+                    'th: 33.3333%; height: 15px; text-align: center;"><span style="font-size: 12pt;' +
+                    '">年間40万円</span></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 33.' +
+                    '3333%; height: 15px; text-align: center;"><span style="font-size: 12pt;">非課税期間' +
+                    '</span></td>\n<td style="width: 33.3333%; height: 15px; text-align: center;"><' +
+                    'span style="font-size: 12pt;">最長5年間</span></td>\n<td style="width: 33.3333%; h' +
+                    'eight: 15px; text-align: center;"><span style="font-size: 12pt;">最長20年間</span>' +
+                    '</td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 33.3333%; height: ' +
+                    '15px; text-align: center;"><span style="font-size: 12pt;">非課税対象</span></td>\n<' +
+                    'td style="width: 33.3333%; height: 15px; text-align: center;"><span style="fon' +
+                    't-size: 12pt;">譲渡益<br />\n</span><span style="font-size: 12pt;">配当金<br />\n</s' +
+                    'pan><span style="font-size: 12pt;">分配金</span></td>\n<td style="width: 33.3333%' +
+                    '; height: 15px; text-align: center;"><span style="font-size: 12pt;">譲渡益<br />' +
+                    '\n</span><span style="font-size: 12pt;">配当金<br />\n</span><span style="font-si' +
+                    'ze: 12pt;">分配金</span></td>\n</tr>\n<tr style="height: 15px;">\n<td style="widt' +
+                    'h: 33.3333%; height: 15px; text-align: center;"><span style="font-size: 12pt;"' +
+                    '>投資スタイル</span></td>\n<td style="width: 33.3333%; height: 15px; text-align: cen' +
+                    'ter;"><span style="font-size: 12pt;">通常の買付け・積立投資</span></td>\n<td style="width' +
+                    ': 33.3333%; height: 15px; text-align: center;"><span style="font-size: 12pt;">' +
+                    '積立投資のみ</span></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 33.33' +
+                    '33%; height: 15px; text-align: center;"><span style="font-size: 12pt;">引き出し制限<' +
+                    '/span></td>\n<td style="width: 33.3333%; height: 15px; text-align: center;"><s' +
+                    'pan style="font-size: 12pt;">なし</span></td>\n<td style="width: 33.3333%; heigh' +
+                    't: 15px; text-align: center;"><span style="font-size: 12pt;">なし</span></td>\n<' +
+                    '/tr>\n<tr style="height: 15px;">\n<td style="width: 33.3333%; height: 15px; te' +
+                    'xt-align: center;"><span style="font-size: 12pt;">利用対象年齢　</span></p>\n<p><span' +
+                    ' style="font-size: 12pt;">※2023年1月以降は18歳以上が利用可能</span></td>\n<td style="width:' +
+                    ' 33.3333%; height: 15px; text-align: center;"><span style="font-size: 12pt;">2' +
+                    '0歳以上</span></td>\n<td style="width: 33.3333%; height: 15px; text-align: center' +
+                    ';"><span style="font-size: 12pt;">20歳以上</span></td>\n</tr>\n<tr style="height:' +
+                    ' 15px;">\n<td style="width: 33.3333%; height: 15px; text-align: center;"><span' +
+                    ' style="font-size: 12pt;">購入対象となる金融商品</span></td>\n<td style="width: 33.3333%;' +
+                    ' height: 15px; text-align: center;"><span style="font-size: 12pt;">株式<br />\n<' +
+                    '/span><span style="font-size: 12pt;">ETF<br />\n</span><span style="font-size:' +
+                    ' 12pt;">公募株式投資信託など</span></td>\n<td style="width: 33.3333%; height: 15px; text' +
+                    '-align: center;"><span style="font-size: 12pt;">長期・積立・分散の投資条件を一定基準満たした投資信託</sp' +
+                    'an></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 33.3333%; heigh' +
+                    't: 15px; text-align: center;"><span style="font-size: 12pt;">投資利用期間</span></td' +
+                    '>\n<td style="width: 33.3333%; height: 15px; text-align: center;"><span style=' +
+                    '"font-size: 12pt;">2014年～2023年</span></td>\n<td style="width: 33.3333%; height' +
+                    ': 15px; text-align: center;"><span style="font-size: 12pt;">2018年～2042年</span>' +
+                    '<br />\n<span style="font-size: 12pt;">※期間内の最長20年間で可能な期間</span></td>\n</tr>\n<' +
+                    '/tbody>\n</table>\n<p>一般NISAは、投資方法と対象となる金融商品の種類が豊富です。また、非課税投資枠も大きくなります。</p>\n<' +
+                    'p>一方のつみたてNISAは、非課税期間と投資できる期間が長い特徴を持っています。</p>\n<h2><span class="ez-toc-section' +
+                    '" id="%E3%81%93%E3%82%93%E3%81%AA%E4%BA%BA%E3%81%AF%E3%81%A4%E3%81%BF%E3%81%9F' +
+                    '%E3%81%A6NISA%E3%81%8C%E3%81%8A%E3%81%99%E3%81%99%E3%82%81"></span>こんな人はつみたてNI' +
+                    'SAがおすすめ<span class="ez-toc-section-end"></span></h2>\n<p><img loading="lazy" c' +
+                    'lass="size-full wp-image-3555 alignnone" src="https://media.vwcity.net/wp-cont' +
+                    'ent/uploads/2022/07/pexels-max-vakhtbovych-6794921.jpg" alt="" width="750" hei' +
+                    'ght="509" srcset="https://media.vwcity.net/wp-content/uploads/2022/07/pexels-m' +
+                    'ax-vakhtbovych-6794921.jpg 750w, https://media.vwcity.net/wp-content/uploads/2' +
+                    '022/07/pexels-max-vakhtbovych-6794921-300x204.jpg 300w" sizes="(max-width: 750' +
+                    'px) 100vw, 750px" /></p>\n<p>つみたてNISAは、次のような人に向いている制度ではないでしょうか。</p>\n<ul>\n<li' +
+                    '>長期で利用したい人</li>\n<li>毎月コツコツと貯めたい人</li>\n<li>毎月一定額を積み立てたい人</li>\n<li>投資するタイミングを' +
+                    'がわからない人</li>\n<li>定期的に積み立てられることから忙しくても資産運用をしたい人</li>\n<li>まとまった資金のない人</li>\n</' +
+                    'ul>\n<p>長期投資や積立投資を分散投資によるリスク軽減を目指して貯金感覚で資産運用する場合は、つみたてNISAをおすすめします。</p>\n<div ' +
+                    'class="balloon-over">月々の積み立ても許容範囲であれば、コツコツと楽しめるかもしれませんね！</div>\n<div></div>\n<' +
+                    'h5><a href="https://media.vwcity.net/nisa-features/" target="_blank" rel="noop' +
+                    'ener">3種類の現行NISAの特徴を解説</a></h5>\n<p><a href="https://media.vwcity.net/shin-nis' +
+                    'a-point/" target="_blank" rel="noopener">2024年からスタートする「新NISA」とは？ポイントを解説</a></p' +
+                    '>\n',
+            protected: false
+        },
+        excerpt: {
+            rendered: "<p>資産運用について調べていると、NISAのことをよく耳にしませんか？NISAは、少額投資非課税制度です。 NISAには、一般NISAとつみたてNISAが" +
+                    "あります。同じNISA制度なのに、何が違うのでしょうか？ 今回は、つみ   \n",
+            protected: false
+        },
+        categories: []
+    }, {
+        id: 1,
+        VmonthCount: 100,
+        VdayCount: 20,
+        VweekCount: 40,
+        feature: "",
+        video: "O",
+        kind: "投資の基本",
+        date: "2022-10-04T09:30:21",
+        title: {
+            rendered: "株の信用取引とは？どういうしくみ？"
+        },
+        url: "https://www.youtube.com/embed/xdEBXXLmeb4",
+        keyword: [
+            "#暗号資産", "#ブロックチェーン"
+        ],
+        content: {
+            rendered: '<p>株取引には、保有する資金などを担保にして株を売買する方法として<strong>「信用取引」</strong>があります。</p>\n<p>今回はその信' +
+                    '用取引について、仕組みや利用するメリット・デメリットなどを説明します。</p>\n<div id="ez-toc-container" class="ez-' +
+                    'toc-v2_0_22 counter-hierarchy ez-toc-grey">\n<div class="ez-toc-title-containe' +
+                    'r">\n<p class="ez-toc-title">目次（クリックで項目へジャンプ）</p>\n<span class="ez-toc-title-t' +
+                    'oggle"><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default' +
+                    ' ez-toc-toggle" style="display: none;"><i class="ez-toc-glyphicon ez-toc-icon-' +
+                    'toggle"></i></a></span></div>\n<nav><ul class="ez-toc-list ez-toc-list-level-1' +
+                    '"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-to' +
+                    'c-heading-1" href="https://media.vwcity.net/margin-trading/#%E4%BF%A1%E7%94%A8' +
+                    '%E5%8F%96%E5%BC%95%E3%81%A8%E3%81%AF%EF%BC%9F" title="信用取引とは？">信用取引とは？</a></li' +
+                    '><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc' +
+                    '-heading-2" href="https://media.vwcity.net/margin-trading/#%E4%BF%A1%E7%94%A8%' +
+                    'E5%8F%96%E5%BC%95%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF" title="信用取引の仕組み">信用取引の仕' +
+                    '組み</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-level-3"><a cl' +
+                    'ass="ez-toc-link ez-toc-heading-3" href="https://media.vwcity.net/margin-tradi' +
+                    'ng/#%E5%88%B6%E5%BA%A6%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%AE%E5%AF%BE%E' +
+                    '8%B1%A1%E9%8A%98%E6%9F%84" title="制度信用取引の対象銘柄">制度信用取引の対象銘柄</a></li></ul></li><' +
+                    'li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-h' +
+                    'eading-4" href="https://media.vwcity.net/margin-trading/#%E4%BF%A1%E7%94%A8%E5' +
+                    '%8F%96%E5%BC%95%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%83%A1%E3%83%AA' +
+                    '%E3%83%83%E3%83%88%E3%83%BB%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88" titl' +
+                    'e="信用取引を利用するメリット・デメリット">信用取引を利用するメリット・デメリット</a><ul class="ez-toc-list-level-3"' +
+                    '><li class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-5" hr' +
+                    'ef="https://media.vwcity.net/margin-trading/#%E3%83%A1%E3%83%AA%E3%83%83%E3%83' +
+                    '%88" title="メリット">メリット</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3' +
+                    '"><a class="ez-toc-link ez-toc-heading-6" href="https://media.vwcity.net/margi' +
+                    'n-trading/#%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88" title="デメリット">デメリット<' +
+                    '/a></li></ul></li></ul></nav></div>\n<h2><span class="ez-toc-section" id="%E4%' +
+                    'BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%A8%E3%81%AF%EF%BC%9F"></span>信用取引とは？<sp' +
+                    'an class="ez-toc-section-end"></span></h2>\n<p><img loading="lazy" class="size' +
+                    '-full wp-image-4369 alignnone" src="https://media.vwcity.net/wp-content/upload' +
+                    's/2022/09/pexels-alesia-kozik-6770610.jpg" alt="" width="750" height="500" src' +
+                    'set="https://media.vwcity.net/wp-content/uploads/2022/09/pexels-alesia-kozik-6' +
+                    '770610.jpg 750w, https://media.vwcity.net/wp-content/uploads/2022/09/pexels-al' +
+                    'esia-kozik-6770610-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /' +
+                    '></p>\n<p>信用取引は、<strong>資金または証券などを証券会社に委託保証金として担保にする</strong>取引方法です。証券会社に預けた委託' +
+                    '保証金により定められた期限内で資金を借りたり、証券を借りたりできます。</p>\n<p>返済する際は、借りた対象となる反対売買で対応します。</p>\n<h' +
+                    '2><span class="ez-toc-section" id="%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%' +
+                    'AE%E4%BB%95%E7%B5%84%E3%81%BF"></span>信用取引の仕組み<span class="ez-toc-section-end"' +
+                    '></span></h2>\n<p><img loading="lazy" class="size-full wp-image-4370 alignnone' +
+                    '" src="https://media.vwcity.net/wp-content/uploads/2022/09/tyy.jpg" alt="" wid' +
+                    'th="750" height="500" srcset="https://media.vwcity.net/wp-content/uploads/2022' +
+                    '/09/tyy.jpg 750w, https://media.vwcity.net/wp-content/uploads/2022/09/tyy-300x' +
+                    '200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /></p>\n<p>信用取引は、2つの形式から' +
+                    '選びます。<b>一般信用取引と制度信用取引</b>です。</p>\n<p>それぞれの仕組みを比べてみましょう。</p>\n<table style="bor' +
+                    'der-collapse: collapse; width: 100%; height: 90px;" border="1">\n<tbody>\n<tr ' +
+                    'style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; text-align: ' +
+                    'center;"></td>\n<td style="width: 40.8164%; height: 15px; text-align: center;"' +
+                    '><span style="font-size: 12pt;">一般信用取引</span></td>\n<td style="width: 40.4761%' +
+                    '; height: 15px; text-align: center;"><span style="font-size: 12pt;">制度信用取引</sp' +
+                    'an></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; heigh' +
+                    't: 15px; text-align: center;"><span style="font-size: 12pt;">取引対象の銘柄</span></t' +
+                    'd>\n<td style="width: 40.8164%; height: 15px; text-align: center;"><span style' +
+                    '="font-size: 12pt;">原則として全上場銘柄対象</span></td>\n<td style="width: 40.4761%; heig' +
+                    'ht: 15px; text-align: center;"><span style="font-size: 12pt;">取引所で選定された銘柄</spa' +
+                    'n></td>\n</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height' +
+                    ': 15px; text-align: center;"><span style="font-size: 12pt;">返済期限</span></td>\n' +
+                    '<td style="width: 40.8164%; height: 15px; text-align: center;"><span style="fo' +
+                    'nt-size: 12pt;">証券会社と顧客で取り決める</span></td>\n<td style="width: 40.4761%; height:' +
+                    ' 15px; text-align: center;"><span style="font-size: 12pt;">6カ月まで</span></td>\n' +
+                    '</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; t' +
+                    'ext-align: center;"><span style="font-size: 12pt;">品貸料（逆日歩）※</span></td>\n<td ' +
+                    'style="width: 40.8164%; height: 15px; text-align: center;"><span style="font-s' +
+                    'ize: 12pt;">証券会社と顧客で取り決める</span></td>\n<td style="width: 40.4761%; height: 15p' +
+                    'x; text-align: center;"><span style="font-size: 12pt;">取引所の発表による</span></td>\n' +
+                    '</tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; t' +
+                    'ext-align: center;"><span style="font-size: 12pt;">権利処理方法</span></td>\n<td sty' +
+                    'le="width: 40.8164%; height: 15px; text-align: center;"><span style="font-size' +
+                    ': 12pt;">証券会社と顧客で取り決める</span></td>\n<td style="width: 40.4761%; height: 15px; ' +
+                    'text-align: center;"><span style="font-size: 12pt;">取引所の定めるところ</span></td>\n</' +
+                    'tr>\n<tr style="height: 15px;">\n<td style="width: 18.7074%; height: 15px; tex' +
+                    't-align: center;"><span style="font-size: 12pt;">貸借の可否</span></td>\n<td style=' +
+                    '"width: 40.8164%; height: 15px; text-align: center;"><span style="font-size: 1' +
+                    '2pt;">貸借不可</span></td>\n<td style="width: 40.4761%; height: 15px; text-align: ' +
+                    'center;"><span style="font-size: 12pt;">貸借可能</span></td>\n</tr>\n</tbody>\n</t' +
+                    'able>\n<p>※信用取引において貸株料以外に発生する、<b>売り建てで借りている株の手数料</b></p>\n<h3><span class="ez-' +
+                    'toc-section" id="%E5%88%B6%E5%BA%A6%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%81%' +
+                    'AE%E5%AF%BE%E8%B1%A1%E9%8A%98%E6%9F%84"></span>制度信用取引の対象銘柄<span class="ez-toc-' +
+                    'section-end"></span></h3>\n<p>制度信用取引の対象銘柄は、一定の基準を満たすことで取引所に選定されます。</p>\n<p>以下の' +
+                    'ような基準が設けられています。</p>\n<ul>\n<li>制度信用銘柄：　証券会社との貸借取引において資金のみ借り入れできる</li>\n<li>制度信' +
+                    '用取引の貸借銘柄：　証券会社との貸借取引において資金および株式どちらも借り入れできる</li>\n</ul>\n<h2><span class="ez-to' +
+                    'c-section" id="%E4%BF%A1%E7%94%A8%E5%8F%96%E5%BC%95%E3%82%92%E5%88%A9%E7%94%A8' +
+                    '%E3%81%99%E3%82%8B%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%83%BB%E3%83%87%E3%83' +
+                    '%A1%E3%83%AA%E3%83%83%E3%83%88"></span>信用取引を利用するメリット・デメリット<span class="ez-toc-' +
+                    'section-end"></span></h2>\n<p><img loading="lazy" class="size-full wp-image-43' +
+                    '71 alignnone" src="https://media.vwcity.net/wp-content/uploads/2022/09/van-tay' +
+                    '-media-chyT9XPAdcg-unsplash.jpg" alt="" width="750" height="500" srcset="https' +
+                    '://media.vwcity.net/wp-content/uploads/2022/09/van-tay-media-chyT9XPAdcg-unspl' +
+                    'ash.jpg 750w, https://media.vwcity.net/wp-content/uploads/2022/09/van-tay-medi' +
+                    'a-chyT9XPAdcg-unsplash-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750p' +
+                    'x" /></p>\n<p>信用取引を利用する場合は、メリットとなる部分とデメリットになる部分を理解しましょう。</p>\n<h3><span class=' +
+                    '"ez-toc-section" id="%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88"></span>メリット<span cl' +
+                    'ass="ez-toc-section-end"></span></h3>\n<p>信用取引のメリットは、証券会社に担保として預託した委託保証金の約3倍まで' +
+                    '売買が可能なことです。例えば、30万円の資金を委託保証金とした場合、約90万円までの株を購入できます。株価が予想どおりの結果になれば大きな成果も考えられます' +
+                    '。</p>\n<p>また、現物取引の差金決済禁止とは違い、当日中複数回取引できることもメリットです。さらに、株価が下落する局面で取引する信用売り（空売り）が' +
+                    '利用できることも特徴のひとつです。</p>\n<p>信用売りは、証券会社から借りた株を市場で売却します。売却した株を株価が下がったタイミングで買い戻して返却' +
+                    'する方法です。</p>\n<h3><span class="ez-toc-section" id="%E3%83%87%E3%83%A1%E3%83%AA%' +
+                    'E3%83%83%E3%83%88"></span>デメリット<span class="ez-toc-section-end"></span></h3>\n' +
+                    '<p>信用取引のデメリットは、担保として預託した資金以上に取引できることから、リスクも大きくなる点です。思惑どおりに株価が変動すれば利益が期待できますが、逆' +
+                    'の場合は、大きな損失になることも考えられます。</p>\n<p>また、選んだ銘柄に信用取引の制限が掛けられることも有り得ます。</p>\n<p>コスト面にお' +
+                    'いても、信用取引のほうが現物取引よりも手数料が高くなることが多いことでしょう。</p>\n<h5><a href="https://media.vwcity' +
+                    '.net/about-stock/" target="_blank" rel="noopener">株（株式）とは？初心者にもわかりやすく解説</a></h' +
+                    '5>\n<h5><a href="https://media.vwcity.net/investment-tax/" target="_blank" rel' +
+                    '="noopener">投資の税金が気になる！「特定口座」を覚えておこう</a></h5>\n',
+            protected: false
+        },
+        excerpt: {
+            rendered: "<p>株取引には、保有する資金などを担保にして株を売買する方法として「信用取引」があります。 今回はその信用取引について、仕組みや利用するメリット・デメリッ" +
+                    "トなどを説明します。 目次（クリックで項目へジャンプ） 信用取引とは？   \n",
+            protected: false
+        },
+        categories: []
+    }, 
 ];

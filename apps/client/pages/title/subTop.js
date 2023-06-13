@@ -14,20 +14,20 @@ const SubTop = (props) => {
                 </span>
             );
         }
-        if (movie.triangle === "注目の投資") {
-            triangle = <div className={style['top-sub-triangle-r']}></div>
-        } else if (movie.triangle === "投資の基本") {
-            triangle = <div className={style['top-sub-triangle-y']}></div>
-        } else if (movie.triangle === "ブロックチェーン") {
-            triangle = <div className={style['top-sub-triangle-b']}></div>
+        if (movie.kind === "注目の投資") {
+            kind = <div className={style['top-sub-kind-r']}></div>
+        } else if (movie.kind === "投資の基本") {
+            kind = <div className={style['top-sub-kind-y']}></div>
+        } else if (movie.kind === "ブロックチェーン") {
+            kind = <div className={style['top-sub-kind-b']}></div>
         }
         return (
             <div
                 className={style['top-sub-list']}
                 onClick={() => props.setViewSubTitle(<Detail title={movie.id}/>)}>
-                <div className={style['top-sub-triangle-img']}>
-                    <div className={style['top-sub-triangle-text']}>{movie.triangle}</div>
-                    {triangle}
+                <div className={style['top-sub-kind-img']}>
+                    <div className={style['top-sub-kind-text']}>{movie.kind}</div>
+                    {kind}
                     <img src={movie.url} className={style['top-sub-content-img']} alt='React'/>
                 </div>
                 <div className={style['top-sub-content']}>
@@ -47,7 +47,7 @@ const SubTop = (props) => {
 
     const obj2 = props
         .obj.slice(2, 4);
-    const triangle = "";
+    const kind = "";
     const ViewSubTitle2 = obj2.map(movie => {
         const result = [];
         for (let num = 0; num < movie.keyword.length; num++) {
@@ -57,21 +57,21 @@ const SubTop = (props) => {
                 </span>
             );
         }
-        if (movie.triangle === "注目の投資") {
-            triangle = <div className={style['top-sub-triangle-r']}></div>
-        } else if (movie.triangle === "投資の基本") {
-            triangle = <div className={style['top-sub-triangle-y']}></div>
-        } else if (movie.triangle === "ブロックチェーン") {
-            triangle = <div className={style['top-sub-triangle-b']}></div>
+        if (movie.kind === "注目の投資") {
+            kind = <div className={style['top-sub-kind-r']}></div>
+        } else if (movie.kind === "投資の基本") {
+            kind = <div className={style['top-sub-kind-y']}></div>
+        } else if (movie.kind === "ブロックチェーン") {
+            kind = <div className={style['top-sub-kind-b']}></div>
         }
 
         return (
             <div
                 className={style['top-sub-list']}
                 onClick={() => props.setViewSubTitle(<Detail title={movie.id}/>)}>
-                <div className={style['top-sub-triangle-img']}>
-                    <div className={style['top-sub-triangle-text']}>{movie.triangle}</div>
-                    {triangle}
+                <div className={style['top-sub-kind-img']}>
+                    <div className={style['top-sub-kind-text']}>{movie.kind}</div>
+                    {kind}
                     <img src={movie.url} className={style['top-sub-content-img']} alt='React'/>
                     <div className={style['top-sub-content']}>
                         {movie.title.rendered}
@@ -102,21 +102,21 @@ const SubTop = (props) => {
                 </span>
             );
         }
-        if (movie.triangle === "注目の投資") {
-            triangle = <div className={style['top-sub-triangle-r']}></div>
-        } else if (movie.triangle === "投資の基本") {
-            triangle = <div className={style['top-sub-triangle-y']}></div>
-        } else if (movie.triangle === "ブロックチェーン") {
-            triangle = <div className={style['top-sub-triangle-b']}></div>
+        if (movie.kind === "注目の投資") {
+            kind = <div className={style['top-sub-kind-r']}></div>
+        } else if (movie.kind === "投資の基本") {
+            kind = <div className={style['top-sub-kind-y']}></div>
+        } else if (movie.kind === "ブロックチェーン") {
+            kind = <div className={style['top-sub-kind-b']}></div>
         }
 
         return (
             <div
                 className={style['top-sub-list']}
                 onClick={() => props.setViewSubTitle(<Detail title={movie.id}/>)}>
-                <div className={style['top-sub-triangle-img']}>
-                    <div className={style['top-sub-triangle-text']}>{movie.triangle}</div>
-                    {triangle}
+                <div className={style['top-sub-kind-img']}>
+                    <div className={style['top-sub-kind-text']}>{movie.kind}</div>
+                    {kind}
                     <img src={movie.url} className={style['top-sub-content-img']} alt='React'/>
                 </div>
                 <div className={style['top-sub-content']}>
